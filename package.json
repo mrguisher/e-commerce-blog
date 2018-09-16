@@ -1,0 +1,27 @@
+{
+  "name": "jakpozyskacklienta_pl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrguisher/jakpozyskacklienta_pl.git"
+  },
+  "keywords": [
+    "e-commerce",
+    "blog",
+    "website"
+  ],
+  "author": "Mateusz Pęciak",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mrguisher/jakpozyskacklienta_pl/issues"
+  },
+  "homepage": "https://github.com/mrguisher/jakpozyskacklienta_pl#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.3"
+  }
+}
