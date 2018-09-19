@@ -5,4 +5,29 @@
     --color-dark-2: #464646;
     --color-light: #FAF8F8;
     --color-light-2: #ECECEC;
+
+    --shadow-box: 0 0 3 3 var( --color-dark-2);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$bp-largest: 75rem;  // 1200px
+$bp-large: 68.75rem;  // 1100px
+$bp-medium: 56.25rem;  // 900px
+$bp-small: 37.5rem;  // 600px
+$bp-smallest: 31.25rem;  // 500px
+$bp-small-phone: 28.4rem;  // 450px
+$bp-smallest-phone: 23.90rem;  // 385px
+
+html {
+    font-size: 62.5%; // 1rem = 10px
+}
+body {
+    background-color: var(--color-light-2);
 }
