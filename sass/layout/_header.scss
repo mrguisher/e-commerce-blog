@@ -1,0 +1,53 @@
+.header {
+// background-color: var(--color-dark-2);
+background-image: url(../img/bcg.jpg);
+background-size: cover;
+position: sticky;
+display: flex;
+flex-direction: column;
+min-height: 85vh;
+}
+   
+.nav-bar {
+    height: 10vh;
+    background-color: rgba(0, 128, 128, 0.342);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+        &_logo {
+            height: 6rem;
+            width: 8rem;
+            margin-left: 5rem;
+            
+        }
+        &_navigation {
+            width: 6rem;
+            background-color: transparent;
+            height: 6rem;
+            position: relative;
+            margin-right: 5rem;
+            border: 2px solid white;
+
+        }
+        &_nav-list {
+            display: none;
+        }
+        &_navigation-item {
+            font-size: var(--default-font-size);
+        }
+    }
+
+    .slider {
+        position: relative;
+        margin-top: 15rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
+
+        &_paragraph { 
+            font-size: 1.5rem;
+            position: absolute;
+            top: 20rem;
+        }
+    }

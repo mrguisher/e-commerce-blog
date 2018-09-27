@@ -1,12 +1,17 @@
 :root {
+    //  COLORS
     --color-primary: #00B894;
     --color-primary-light: #55EFC4;
     --color-dark: #1E1E1E;
     --color-dark-2: #464646;
     --color-light: #FAF8F8;
     --color-light-2: #ECECEC;
-
+    
+    //  SHADOW
     --shadow-box: 0 0 3 3 var( --color-dark-2);
+    
+    //  FONT
+    --default-font-size: 1.6rem;
 }
 
 *,
@@ -17,17 +22,22 @@
     padding: 0;
 }
 
-$bp-largest: 75rem;  // 1200px
-$bp-large: 68.75rem;  // 1100px
-$bp-medium: 56.25rem;  // 900px
-$bp-small: 37.5rem;  // 600px
-$bp-smallest: 31.25rem;  // 500px
-$bp-small-phone: 28.4rem;  // 450px
-$bp-smallest-phone: 23.90rem;  // 385px
+// $bp-largest: 75rem;  // 1200px
+// $bp-large: 68.75rem;  // 1100px
+// $bp-medium: 56.25rem;  // 900px
+// $bp-phone: 37.5rem;  // 600px
+// $bp-small-phone: 29.5rem;  // 460px
+
 
 html {
-    font-size: 62.5%; // 1rem = 10px
+    font-size: 55.5%;
+    font-family: 'Nunito', sans-serif;
+
+    @include respond(phone) {
+        font-size: 62.5%  // 1rem = 10px
+    }
 }
 body {
     background-color: var(--color-light-2);
+    min-height: 100vh;
 }

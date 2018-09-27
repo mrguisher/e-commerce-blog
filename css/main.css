@@ -1,0 +1,92 @@
+/*
+0-600px     phone
+600-900px   tablet portrait
+900-1200    tablet landscape
+1200-1800px   normal style of Natours
+1800px+      big desktop
+*/
+/*
+$breakpoint argument choices:
+-small-phone
+-phone
+-tab-port
+-tab-land
+-big-desktop
+
+ORDER:  BASE + TYPOGRAPHY  >   GENERAL LAYOUT + GRID  >  PAGE LAYOUT  >  COMPONENTS
+*/
+.heading-home {
+  font-size: 4rem;
+  position: absolute; }
+
+:root {
+  --color-primary: #00B894;
+  --color-primary-light: #55EFC4;
+  --color-dark: #1E1E1E;
+  --color-dark-2: #464646;
+  --color-light: #FAF8F8;
+  --color-light-2: #ECECEC;
+  --shadow-box: 0 0 3 3 var( --color-dark-2);
+  --default-font-size: 1.6rem; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 55.5%;
+  font-family: 'Nunito', sans-serif; }
+  @media only screen and (min-width: 25.5em) {
+    html {
+      font-size: 62.5%; } }
+
+body {
+  background-color: var(--color-light-2);
+  min-height: 100vh; }
+
+.header {
+  background-image: url(../img/bcg.jpg);
+  background-size: cover;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  min-height: 85vh; }
+
+.nav-bar {
+  height: 10vh;
+  background-color: rgba(0, 128, 128, 0.342);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .nav-bar_logo {
+    height: 6rem;
+    width: 8rem;
+    margin-left: 5rem; }
+  .nav-bar_navigation {
+    width: 6rem;
+    background-color: transparent;
+    height: 6rem;
+    position: relative;
+    margin-right: 5rem;
+    border: 2px solid white; }
+  .nav-bar_nav-list {
+    display: none; }
+  .nav-bar_navigation-item {
+    font-size: var(--default-font-size); }
+
+.slider {
+  position: relative;
+  margin-top: 15rem;
+  padding-left: 4rem;
+  padding-right: 4rem; }
+  .slider_paragraph {
+    font-size: 1.5rem;
+    position: absolute;
+    top: 20rem; }
+
+.main-home {
+  min-height: 320vh; }
