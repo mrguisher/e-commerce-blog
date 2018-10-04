@@ -16,7 +16,7 @@ $breakpoint argument choices:
 ORDER:  BASE + TYPOGRAPHY  >   GENERAL LAYOUT + GRID  >  PAGE LAYOUT  >  COMPONENTS
 */
 .heading-primary {
-  font-size: 4rem;
+  font-size: 5rem;
   color: var(--color-light);
   text-align: center; }
 
@@ -27,11 +27,15 @@ ORDER:  BASE + TYPOGRAPHY  >   GENERAL LAYOUT + GRID  >  PAGE LAYOUT  >  COMPONE
   --color-dark-2: rgb(70, 70, 70);
   --color-light: rgb(250, 248, 248);
   --color-light-2: rgb(236, 236, 236);
-  --color-photo-overlay: rgb(75, 73, 73);
+  --color-photo-overlay: rgb(61, 61, 61);
   --shadow-box: 0 0 3 3 var( --color-dark-2);
   --default-font-size: 1.6rem; }
 
-*,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
 *::before,
 *::after {
   box-sizing: border-box;
@@ -65,8 +69,9 @@ body {
   justify-content: space-between;
   align-items: center; }
   .nav-bar__logo {
-    height: 6rem;
-    width: 8rem;
+    color: transparent;
+    height: 1px;
+    width: 1px;
     margin-left: 5rem; }
   .nav-bar__navigation {
     width: 6rem;
@@ -82,19 +87,40 @@ body {
     display: none; }
     @media only screen and (min-width: 37.5em) {
       .nav-bar__nav-list {
+        margin-right: 5rem;
         display: flex;
         align-items: stretch;
-        align-content: space-between;
-        justify-items: stretch;
         list-style-type: none; } }
   .nav-bar__navigation-item {
     font-size: var(--default-font-size);
-    color: var(--color-light); }
+    color: var(--color-light);
+    margin: 0 2rem; }
 
 .slider {
-  position: relative; }
+  display: flex;
+  flex-direction: row;
+  margin-top: 14rem; }
+  .slider__arrow {
+    flex-grow: 1;
+    text-decoration: none;
+    color: var(--color-light);
+    align-self: center; }
+    .slider__arrow--left {
+      order: 1; }
+    .slider__arrow--right {
+      order: 3;
+      padding-left: 5rem; }
   .slider__text-box {
-    margin: 10rem 5rem; }
+    position: relative;
+    flex-grow: 5;
+    order: 2;
+    padding: 2rem 0;
+    border: 2px solid red;
+    height: 40vh; }
+  .slider__description-box {
+    position: relative;
+    display: none;
+    border: 2px solid blue; }
   .slider__heading {
     position: absolute; }
   .slider__description {

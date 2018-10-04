@@ -18,10 +18,10 @@
     align-items: center;
 
         &__logo {
-            height: 6rem;
-            width: 8rem;
+            color: transparent;
+            height: 1px;
+            width: 1px;
             margin-left: 5rem;
-            
         }
         &__navigation {
             width: 6rem;
@@ -39,39 +39,78 @@
             display: none;
 
             @include respond(tab-port) {
+                margin-right: 5rem;
                 display: flex;
                 align-items: stretch;
-                align-content: space-between;
-                justify-items: stretch;
 
                 list-style-type: none;
                
             }
+            
         }
         &__navigation-item {
             font-size: var(--default-font-size);
             color: var(--color-light);
-
-            @include respond(tab-port) {
-                
-            }
+            margin: 0 2rem;
         }
     }
 
 .slider {
-    position: relative;
+    display: flex;
+    flex-direction: row;
+    margin-top: 14rem;
+    
     // margin-top: 15rem;
     
     // height: 60vh;
 
+    &__arrow {
+        // position: relative;
+        flex-grow: 1;
+        text-decoration: none;
+        color: var(--color-light);
+        align-self: center;
+
+
+        &--left {
+            order: 1;
+            
+        }
+        &--right {
+            order: 3;
+            padding-left: 5rem;
+        }
+    }
     &__text-box {
-        margin: 10rem 5rem;
+        position: relative;
+        flex-grow: 5;
+        order: 2;
+        // margin: 10rem auto;
+        padding: 2rem 0;
+        border: 2px solid red;
+        height: 40vh;
+        // display: flex;
+        // flex-direction: row;
+        // left: 50%;
+        // right: 50%;
+        // transform: translate(-50%, -50%);
+    }
+    &__description-box {
+        position: relative;
+        display: none;
+        border: 2px solid blue;
     }
     &__heading { 
         position: absolute;
+        // margin-left: auto;
+        // margin-right: auto;
+        // width: 50%;
+        // margin: 0 auto;
+
         // top: 1rem;
     }
     &__description {
         position: absolute;
+    
     }
 }

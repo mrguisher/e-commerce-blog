@@ -6,7 +6,7 @@
     --color-dark-2: rgb(70, 70, 70);
     --color-light: rgb(250, 248, 248);
     --color-light-2: rgb(236, 236, 236);
-    --color-photo-overlay: rgb(75, 73, 73); 
+    --color-photo-overlay: rgb(61, 61, 61); 
     
     //  SHADOW
     --shadow-box: 0 0 3 3 var( --color-dark-2);
@@ -14,8 +14,12 @@
     //  FONT
     --default-font-size: 1.6rem;
 }
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-*,
 *::before,
 *::after {
     box-sizing: border-box;
