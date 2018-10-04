@@ -67,11 +67,7 @@
     display: flex;
     flex-direction: row;
     margin-top: 14rem;
-    
-    // margin-top: 15rem;
-    
-    // height: 60vh;
-
+   
     &__arrow {
         // position: relative;
         flex-grow: 1;
@@ -97,11 +93,7 @@
         padding: 2rem 0;
         border: 2px solid red;
         height: 40vh;
-        // display: flex;
-        // flex-direction: row;
-        // left: 50%;
-        // right: 50%;
-        // transform: translate(-50%, -50%);
+   
     }
     &__description-box {
         position: relative;
@@ -110,12 +102,7 @@
     }
     &__heading { 
         position: absolute;
-        // margin-left: auto;
-        // margin-right: auto;
-        // width: 50%;
-        // margin: 0 auto;
-
-        // top: 1rem;
+      
     }
     &__description {
         position: absolute;
