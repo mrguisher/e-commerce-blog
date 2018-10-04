@@ -1,28 +1,29 @@
 .header {
-// background-color: var(--color-dark-2);
-background-image: url(../img/bcg.jpg);
-background-size: cover;
-position: sticky;
-display: flex;
-flex-direction: column;
-min-height: 85vh;
+    background-image: url("../img/bcg2.jpg");
+    background-color: var(--color-photo-overlay);
+    background-blend-mode: overlay;
+    background-size: cover;
+    // position: sticky;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-   
+
 .nav-bar {
     height: 10vh;
-    background-color: rgba(0, 128, 128, 0.342);
+    // background-color: rgba(0, 128, 128, 0.342);
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-        &_logo {
+        &__logo {
             height: 6rem;
             width: 8rem;
             margin-left: 5rem;
             
         }
-        &_navigation {
+        &__navigation {
             width: 6rem;
             background-color: transparent;
             height: 6rem;
@@ -30,24 +31,47 @@ min-height: 85vh;
             margin-right: 5rem;
             border: 2px solid white;
 
+            @include respond(tab-port) {
+                display: none;
+            }
         }
-        &_nav-list {
+        &__nav-list {
             display: none;
+
+            @include respond(tab-port) {
+                display: flex;
+                align-items: stretch;
+                align-content: space-between;
+                justify-items: stretch;
+
+                list-style-type: none;
+               
+            }
         }
-        &_navigation-item {
+        &__navigation-item {
             font-size: var(--default-font-size);
+            color: var(--color-light);
+
+            @include respond(tab-port) {
+                
+            }
         }
     }
 
-    .slider {
-        position: relative;
-        margin-top: 15rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
+.slider {
+    position: relative;
+    // margin-top: 15rem;
+    
+    // height: 60vh;
 
-        &_paragraph { 
-            font-size: 1.5rem;
-            position: absolute;
-            top: 20rem;
-        }
+    &__text-box {
+        margin: 10rem 5rem;
     }
+    &__heading { 
+        position: absolute;
+        // top: 1rem;
+    }
+    &__description {
+        position: absolute;
+    }
+}

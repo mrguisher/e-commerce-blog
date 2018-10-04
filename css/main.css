@@ -15,17 +15,19 @@ $breakpoint argument choices:
 
 ORDER:  BASE + TYPOGRAPHY  >   GENERAL LAYOUT + GRID  >  PAGE LAYOUT  >  COMPONENTS
 */
-.heading-home {
+.heading-primary {
   font-size: 4rem;
-  position: absolute; }
+  color: var(--color-light);
+  text-align: center; }
 
 :root {
-  --color-primary: #00B894;
-  --color-primary-light: #55EFC4;
-  --color-dark: #1E1E1E;
-  --color-dark-2: #464646;
-  --color-light: #FAF8F8;
-  --color-light-2: #ECECEC;
+  --color-primary: rgb(0, 184, 147);
+  --color-primary-2: rgb(85, 239, 195);
+  --color-dark: rgb(30, 30, 30);
+  --color-dark-2: rgb(70, 70, 70);
+  --color-light: rgb(250, 248, 248);
+  --color-light-2: rgb(236, 236, 236);
+  --color-photo-overlay: rgb(75, 73, 73);
   --shadow-box: 0 0 3 3 var( --color-dark-2);
   --default-font-size: 1.6rem; }
 
@@ -48,45 +50,55 @@ body {
   min-height: 100vh; }
 
 .header {
-  background-image: url(../img/bcg.jpg);
+  background-image: url("../img/bcg2.jpg");
+  background-color: var(--color-photo-overlay);
+  background-blend-mode: overlay;
   background-size: cover;
-  position: sticky;
   display: flex;
   flex-direction: column;
-  min-height: 85vh; }
+  min-height: 100vh; }
 
 .nav-bar {
   height: 10vh;
-  background-color: rgba(0, 128, 128, 0.342);
   position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  .nav-bar_logo {
+  .nav-bar__logo {
     height: 6rem;
     width: 8rem;
     margin-left: 5rem; }
-  .nav-bar_navigation {
+  .nav-bar__navigation {
     width: 6rem;
     background-color: transparent;
     height: 6rem;
     position: relative;
     margin-right: 5rem;
     border: 2px solid white; }
-  .nav-bar_nav-list {
+    @media only screen and (min-width: 37.5em) {
+      .nav-bar__navigation {
+        display: none; } }
+  .nav-bar__nav-list {
     display: none; }
-  .nav-bar_navigation-item {
-    font-size: var(--default-font-size); }
+    @media only screen and (min-width: 37.5em) {
+      .nav-bar__nav-list {
+        display: flex;
+        align-items: stretch;
+        align-content: space-between;
+        justify-items: stretch;
+        list-style-type: none; } }
+  .nav-bar__navigation-item {
+    font-size: var(--default-font-size);
+    color: var(--color-light); }
 
 .slider {
-  position: relative;
-  margin-top: 15rem;
-  padding-left: 4rem;
-  padding-right: 4rem; }
-  .slider_paragraph {
-    font-size: 1.5rem;
-    position: absolute;
-    top: 20rem; }
+  position: relative; }
+  .slider__text-box {
+    margin: 10rem 5rem; }
+  .slider__heading {
+    position: absolute; }
+  .slider__description {
+    position: absolute; }
 
-.main-home {
+.home {
   min-height: 320vh; }
