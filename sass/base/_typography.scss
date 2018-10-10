@@ -1,5 +1,9 @@
 .heading-primary {
-    font-size: 5rem;
+    font-size: 4rem;
+    
     color: var(--color-light);
     text-align: center;
+    @include respond(tab-port) {
+    font-size: 5rem;
+    }
 }

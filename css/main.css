@@ -16,9 +16,12 @@ $breakpoint argument choices:
 ORDER:  BASE + TYPOGRAPHY  >   GENERAL LAYOUT + GRID  >  PAGE LAYOUT  >  COMPONENTS
 */
 .heading-primary {
-  font-size: 5rem;
+  font-size: 4rem;
   color: var(--color-light);
   text-align: center; }
+  @media only screen and (min-width: 37.5em) {
+    .heading-primary {
+      font-size: 5rem; } }
 
 :root {
   --color-primary: rgb(0, 184, 147);
@@ -58,47 +61,50 @@ body {
   background-color: var(--color-photo-overlay);
   background-blend-mode: overlay;
   background-size: cover;
-  display: flex;
-  flex-direction: column;
   min-height: 100vh; }
 
 .nav-bar {
   height: 10vh;
-  position: relative;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  padding-top: 5rem; }
   .nav-bar__logo {
     color: transparent;
-    height: 1px;
-    width: 1px;
+    height: 4rem;
+    width: 4rem;
     margin-left: 5rem; }
   .nav-bar__navigation {
-    width: 6rem;
-    background-color: transparent;
-    height: 6rem;
     position: relative;
-    margin-right: 5rem;
-    border: 2px solid white; }
+    margin-right: 5rem; }
+  .nav-bar__nav-phone {
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    background-color: transparent;
+    width: 4rem;
+    height: 4rem; }
     @media only screen and (min-width: 37.5em) {
-      .nav-bar__navigation {
+      .nav-bar__nav-phone {
         display: none; } }
   .nav-bar__nav-list {
-    display: none; }
+    display: flex;
+    align-items: stretch;
+    list-style-type: none; }
     @media only screen and (min-width: 37.5em) {
       .nav-bar__nav-list {
-        margin-right: 5rem;
-        display: flex;
-        align-items: stretch;
-        list-style-type: none; } }
+        display: inline-block; } }
   .nav-bar__navigation-item {
-    font-size: 1rem;
-    color: var(--color-light);
-    margin: 0 2rem;
-    text-transform: uppercase; }
-    .nav-bar__navigation-item:first-child {
-      padding-bottom: 1rem;
-      border-bottom: 2px solid var(--color-primary); }
+    display: none; }
+    @media only screen and (min-width: 37.5em) {
+      .nav-bar__navigation-item {
+        display: inline-block;
+        font-size: 1rem;
+        color: var(--color-light);
+        margin: 0 2rem;
+        text-transform: uppercase; }
+        .nav-bar__navigation-item:first-child {
+          padding-bottom: 1rem;
+          border-bottom: 2px solid var(--color-primary); } }
 
 .slider {
   display: flex;
