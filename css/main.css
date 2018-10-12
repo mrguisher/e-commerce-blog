@@ -55,10 +55,21 @@ body {
   background-color: var(--color-light-2);
   min-height: 100vh; }
 
-.btn {
+.btn, .btn:link, .btn:visited {
+  text-align: center;
   color: var(--color-light);
   display: inline-block;
-  text-align: center; }
+  text-decoration: none;
+  transition: all .2s;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+  .btn:hover, .btn:link:hover, .btn:visited:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
+    cursor: pointer; }
+  .btn:active, .btn:focus, .btn:link:active, .btn:link:focus, .btn:visited:active, .btn:visited:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 4rem rgba(var(--color-dark), 0.4); }
 
 .header {
   background-image: url("../img/bcg2.jpg");
@@ -135,7 +146,7 @@ body {
     flex-grow: 3;
     order: 2;
     padding: 0 1rem;
-    margin-top: 5rem;
+    margin-top: 3rem;
     position: relative; }
   .slider__heading {
     text-align: center; }
@@ -149,10 +160,14 @@ body {
     color: var(--color-light-2); }
   .slider__btn-header {
     align-self: center;
-    margin-top: 7rem;
+    margin-top: 5rem;
     width: 15rem;
     height: 4rem;
+    font-size: 1.4rem;
+    font-weight: 900;
+    border-radius: 5px;
     padding: 1rem 0;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
     background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2)); }
 
 .home {

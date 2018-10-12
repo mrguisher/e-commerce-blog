@@ -1,5 +1,25 @@
 .btn {
+    &,
+    &:link,
+    &:visited {
+    text-align: center;
     color: var(--color-light);
     display: inline-block;
-    text-align: center;
+    text-decoration: none;
+    transition: all .2s;
+    box-shadow: 0 .5rem 1rem rgba(black,.5);
+
+    &:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba(black,.5);
+        cursor: pointer;
+    }
+    
+    &:active,
+    &:focus {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: 0 .5rem 4rem rgba(var(--color-dark),.4);
+    }
+    }
 }
