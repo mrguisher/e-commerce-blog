@@ -11,14 +11,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 5rem;
+    padding-top: 4rem;
 
         &__logo {
 
             // TEST
             color: transparent;
-            height: 4rem;
-            width: 4rem;
+            height: 1px;
+            width: 1px;
             margin-left: 5rem;
         }
 
@@ -73,46 +73,60 @@
 .slider {
     display: flex;
     flex-direction: row;
-    margin-top: 14rem;
+    margin-top: 8rem;
+    margin-bottom: 6rem;
    
     &__arrow {
-        // position: relative;
         flex-grow: 1;
         text-decoration: none;
-        color: var(--color-light);
         align-self: center;
-
+       
+        &__link {
+            color: var(--color-light);
+            font-size: 5rem;
+            font-weight: 100;
+            text-decoration: none;
+            justify-content: center;
+        }
 
         &--left {
             order: 1;
-            
+            margin-left: 2rem;
         }
         &--right {
             order: 3;
-            padding-left: 5rem;
+            margin-right: 2rem;
         }
     }
+
     &__text-box {
-        position: relative;
-        flex-grow: 5;
+        flex-grow: 3;
         order: 2;
-        // margin: 10rem auto;
-        padding: 2rem 0;
-        border: 2px solid red;
-        height: 40vh;
-   
-    }
-    &__description-box {
+        padding: 0 1rem;
+        margin-top: 5rem;
         position: relative;
-        display: none;
-        border: 2px solid blue;
     }
     &__heading { 
-        position: absolute;
-      
+        text-align: center;
+    }
+    &__description-box {
+        // position: absolute;
+        // top: 1rem;
+        padding: 5rem 3rem;
+        display: flex;
+        flex-direction: column;
     }
     &__description {
-        position: absolute;
-    
+        font-size: 1.4rem;
+        text-align: justify;
+        color: var(--color-light-2);
+    }
+    &__btn-header {
+        align-self: center;
+        margin-top: 7rem;
+        width: 15rem;
+        height: 4rem;
+        padding: 1rem 0;
+        background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2))
     }
 }

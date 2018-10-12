@@ -17,19 +17,18 @@ ORDER:  BASE + TYPOGRAPHY  >   GENERAL LAYOUT + GRID  >  PAGE LAYOUT  >  COMPONE
 */
 .heading-primary {
   font-size: 4rem;
-  color: var(--color-light);
-  text-align: center; }
+  color: var(--color-light); }
   @media only screen and (min-width: 37.5em) {
     .heading-primary {
       font-size: 5rem; } }
 
 :root {
-  --color-primary: rgb(0, 184, 147);
-  --color-primary-2: rgb(85, 239, 195);
+  --color-primary: #FF26D9;
+  --color-primary-2: #FF4646;
   --color-dark: rgb(30, 30, 30);
   --color-dark-2: rgb(70, 70, 70);
   --color-light: rgb(250, 248, 248);
-  --color-light-2: rgb(236, 236, 236);
+  --color-light-2: rgb(206, 205, 205);
   --color-photo-overlay: rgb(61, 61, 61);
   --shadow-box: 0 0 3 3 var( --color-dark-2);
   --default-font-size: 1.6rem; }
@@ -56,6 +55,11 @@ body {
   background-color: var(--color-light-2);
   min-height: 100vh; }
 
+.btn {
+  color: var(--color-light);
+  display: inline-block;
+  text-align: center; }
+
 .header {
   background-image: url("../img/bcg2.jpg");
   background-color: var(--color-photo-overlay);
@@ -68,11 +72,11 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 5rem; }
+  padding-top: 4rem; }
   .nav-bar__logo {
     color: transparent;
-    height: 4rem;
-    width: 4rem;
+    height: 1px;
+    width: 1px;
     margin-left: 5rem; }
   .nav-bar__navigation {
     position: relative;
@@ -109,32 +113,47 @@ body {
 .slider {
   display: flex;
   flex-direction: row;
-  margin-top: 14rem; }
+  margin-top: 8rem;
+  margin-bottom: 6rem; }
   .slider__arrow {
     flex-grow: 1;
     text-decoration: none;
-    color: var(--color-light);
     align-self: center; }
+    .slider__arrow__link {
+      color: var(--color-light);
+      font-size: 5rem;
+      font-weight: 100;
+      text-decoration: none;
+      justify-content: center; }
     .slider__arrow--left {
-      order: 1; }
+      order: 1;
+      margin-left: 2rem; }
     .slider__arrow--right {
       order: 3;
-      padding-left: 5rem; }
+      margin-right: 2rem; }
   .slider__text-box {
-    position: relative;
-    flex-grow: 5;
+    flex-grow: 3;
     order: 2;
-    padding: 2rem 0;
-    border: 2px solid red;
-    height: 40vh; }
-  .slider__description-box {
-    position: relative;
-    display: none;
-    border: 2px solid blue; }
+    padding: 0 1rem;
+    margin-top: 5rem;
+    position: relative; }
   .slider__heading {
-    position: absolute; }
+    text-align: center; }
+  .slider__description-box {
+    padding: 5rem 3rem;
+    display: flex;
+    flex-direction: column; }
   .slider__description {
-    position: absolute; }
+    font-size: 1.4rem;
+    text-align: justify;
+    color: var(--color-light-2); }
+  .slider__btn-header {
+    align-self: center;
+    margin-top: 7rem;
+    width: 15rem;
+    height: 4rem;
+    padding: 1rem 0;
+    background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2)); }
 
 .home {
   min-height: 320vh; }
