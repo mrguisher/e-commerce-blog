@@ -28,7 +28,7 @@ ORDER:  BASE + TYPOGRAPHY  >   GENERAL LAYOUT + GRID  >  PAGE LAYOUT  >  COMPONE
   --color-dark: rgb(30, 30, 30);
   --color-dark-2: rgb(70, 70, 70);
   --color-light: rgb(250, 248, 248);
-  --color-light-2: rgb(206, 205, 205);
+  --color-light-2: rgb(228, 227, 227);
   --color-photo-overlay: rgb(61, 61, 61);
   --shadow-box: 0 0 3 3 var( --color-dark-2);
   --default-font-size: 1.6rem; }
@@ -72,11 +72,14 @@ body {
     box-shadow: 0 0.5rem 4rem rgba(var(--color-dark), 0.4); }
 
 .header {
-  background-image: url("../img/bcg2.jpg");
-  background-color: var(--color-photo-overlay);
-  background-blend-mode: overlay;
+  background: #614385;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #516395, #614385);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #516395, #614385);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
-  min-height: 100vh; }
+  min-height: 85vh; }
 
 .nav-bar {
   height: 10vh;
