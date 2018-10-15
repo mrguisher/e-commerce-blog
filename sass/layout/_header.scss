@@ -12,69 +12,7 @@
     min-height: 85vh;
 }
 
-.nav-bar {
-    height: 10vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 4rem;
 
-        &__logo {
-
-            // TEST
-            color: transparent;
-            height: 1px;
-            width: 1px;
-            margin-left: 5rem;
-        }
-
-        &__navigation {
-            position: relative;
-            margin-right: 5rem;
-        }
-
-        &__nav-phone {
-            border-bottom: 2px solid white;
-            border-top: 2px solid white;
-            background-color: transparent;
-            width: 4rem;
-            height: 4rem;
-            
-            @include respond(tab-port) {
-                display: none;
-            }
-        }
-        &__nav-list {
-            
-           
-            @include respond(tab-port) {
-                display: inline-block; 
-            }
-            // margin-right: 2rem;
-            display: flex;
-            align-items: stretch;
-            list-style-type: none;
-        }
-
-        &__navigation-item {
-            display: none;
-
-            @include respond(tab-port) {
-            display: inline-block;
-            font-size: 1rem;;
-            color: var(--color-light);
-            margin: 0 2rem;
-            text-transform: uppercase;
-
-
-            &:first-child {
-                padding-bottom: 1rem;
-                border-bottom: 2px solid var(--color-primary);
-                // width: rem;
-            }
-        }
-        }
-    }
 
 .slider {
     display: flex;
