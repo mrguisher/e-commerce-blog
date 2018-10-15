@@ -1,8 +1,15 @@
-.heading-primary {
+h1 {
     font-size: 4rem;
+}
+
+.heading-primary {
     color: var(--color-light);
     
     @include respond(tab-port) {
     font-size: 5rem;
     }
+}
+.heading-black {
+    color: var(--color-dark);
+    text-align: center;
 }
