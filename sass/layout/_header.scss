@@ -1,11 +1,11 @@
 .header {
-    // background-image: url("../img/bcg2.jpg");
-    // background-color: var(--color-photo-overlay);
-    // background-blend-mode: overlay;
+    background-image: url("../img/bcg2.jpg");
+    background-color: var(--color-photo-overlay);
+    background-blend-mode: overlay;
     
-    background: #614385;
-    background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    // background: #614385;
+    // background: -webkit-linear-gradient(to right, #516395, #614385);  /* Chrome 10-25, Safari 5.1-6 */
+    // background: linear-gradient(to right, #516395, #614385); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     
 
     background-size: cover;
@@ -79,8 +79,8 @@
 .slider {
     display: flex;
     flex-direction: row;
-    margin-top: 4rem;
-    margin-bottom: 6rem;
+    margin-top: 2rem;
+    margin-bottom: 8rem;
    
     &__arrow {
         flex-grow: 1;
@@ -107,6 +107,8 @@
 
     &__text-box {
         flex-grow: 3;
+        display: flex;
+        flex-direction: column;
         order: 2;
         padding: 0 1rem;
         margin-top: 3rem;
@@ -129,7 +131,7 @@
     }
     &__btn-header {
         align-self: center;
-        margin-top: 5rem;
+        margin-top: 3rem;
         width: 15rem;
         height: 4rem;
         font-size: 1.4rem;
@@ -138,5 +140,12 @@
         padding: 1rem 0;
         box-shadow: 0 2rem 4rem rgba(black,.5);
         background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2));
+    }
+    &__nav {
+        align-self: center;
+        margin-top: 8rem;
+        // border: 2px solid blue;
+        // width: 15rem;
+        // height: 3rem;
     }
 }

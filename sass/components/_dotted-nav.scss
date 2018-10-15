@@ -1,0 +1,22 @@
+.dotted-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    // border: 2px solid skyblue;
+
+    &__item{
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid var(--color-light);
+        border-radius: 5rem;
+
+        &--marked {
+            background-color: var(--color-light);
+            border: 1px solid var(--color-light);
+        }
+
+        &:not(:last-child) {
+            margin-right: .7rem;
+        }
+    }
+}
