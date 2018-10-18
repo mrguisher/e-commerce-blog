@@ -13,7 +13,14 @@ h2 {
     font-size: 5rem;
     }
 }
+.heading-secondary {
+    margin-bottom: 2rem;
+}
 .heading-black {
     color: var(--color-dark);
+    text-align: center;
+}
+.heading-white {
+    color: var(--color-light-2);
     text-align: center;
 }

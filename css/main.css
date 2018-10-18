@@ -28,17 +28,28 @@ h2 {
     .heading-primary {
       font-size: 5rem; } }
 
+.heading-secondary {
+  margin-bottom: 2rem; }
+
 .heading-black {
   color: var(--color-dark);
   text-align: center; }
 
+.heading-white {
+  color: var(--color-light-2);
+  text-align: center; }
+
 :root {
-  --color-primary: #FF26D9;
-  --color-primary-2: #FF4646;
+  --color-primary: rgb(255, 38, 215);
+  --color-primary-2: rgb(255, 70, 70);
+  --color-primary-opacity: rgba(255, 38, 215, 0.329);
+  --color-primary-2-opacity: rgba(255, 70, 70, 0.253);
   --color-dark: rgb(30, 30, 30);
   --color-dark-2: rgb(70, 70, 70);
+  --color-dark-3: #2E2E2E;
   --color-light: rgb(250, 248, 248);
   --color-light-2: rgb(228, 227, 227);
+  --color-light-3: #EDF0F6;
   --color-photo-overlay: rgb(61, 61, 61);
   --shadow-box: 0 0 3 3 var( --color-dark-2);
   --default-font-size: 1.6rem; }
@@ -67,11 +78,15 @@ body {
 
 .btn, .btn:link, .btn:visited {
   text-align: center;
-  color: var(--color-light);
   display: inline-block;
   text-decoration: none;
   transition: all .2s;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5); }
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+  align-self: center;
+  width: 17rem;
+  height: 5rem;
+  font-size: 1.4rem;
+  border-radius: 5px; }
   .btn:hover, .btn:link:hover, .btn:visited:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
@@ -107,7 +122,7 @@ body {
   display: flex;
   flex-direction: row;
   margin-top: 2rem;
-  margin-bottom: 8rem; }
+  margin-bottom: 0rem; }
   .slider__arrow {
     flex-grow: 1;
     text-decoration: none;
@@ -143,14 +158,11 @@ body {
     text-align: justify;
     color: var(--color-light-2); }
   .slider__btn-header {
-    align-self: center;
-    margin-top: 3rem;
-    width: 15rem;
-    height: 4rem;
-    font-size: 1.4rem;
+    color: var(--color-light);
+    margin-top: 5rem;
+    padding: 1.5rem 0;
     font-weight: 900;
-    border-radius: 5px;
-    padding: 1rem 0;
+    letter-spacing: .2rem;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
     background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2)); }
   .slider__nav {
@@ -162,7 +174,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 4rem; }
+  padding-top: 1rem; }
   .nav-bar__logo {
     color: transparent;
     height: 1px;
@@ -170,7 +182,7 @@ body {
     margin-left: 5rem; }
   .nav-bar__navigation {
     position: relative;
-    margin-right: 5rem; }
+    margin-right: 3.5rem; }
   .nav-bar__nav-phone {
     position: relative; }
     .nav-bar__nav-phone, .nav-bar__nav-phone::before, .nav-bar__nav-phone::after {
@@ -209,30 +221,50 @@ body {
           border-bottom: 2px solid var(--color-primary); } }
 
 .home {
-  min-height: 320vh; }
+  background: linear-gradient(110deg, rgba(121, 204, 255, 0.034), rgba(155, 116, 255, 0.37));
+  padding-top: 5rem; }
   .home__heading-text-box {
     margin-bottom: 5rem; }
   .home__blogpost-container {
-    background-color: var(--color-light-2); }
+    margin-left: 5rem;
+    margin-right: 5rem; }
 
 .post-min {
-  margin-left: 5rem;
-  margin-right: 5rem;
-  background: linear-gradient(45deg, rgba(175, 173, 173, 0.11), rgba(199, 198, 199, 0.26));
-  margin-bottom: 5rem; }
+  position: relative;
+  margin-bottom: 5rem;
+  border-radius: 1rem;
+  height: 55rem;
+  overflow: hidden;
+  box-shadow: 0 1.3rem 3rem var(--color-dark-2);
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-light); }
+  .post-min__img-container {
+    overflow: hidden;
+    height: 45%; }
   .post-min__img {
     width: 100%; }
   .post-min__heading {
-    padding-top: 2rem;
-    padding-bottom: 2rem; }
+    padding: 2rem 3rem; }
   .post-min__category {
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.4rem;
     color: var(--color-light);
-    background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2)); }
+    letter-spacing: .4rem;
+    background-color: var(--color-dark-3); }
   .post-min__description {
     padding: 2rem 5rem;
     font-size: 1.2rem;
-    text-align: justify; }
+    text-align: justify;
+    color: var(--color-dark-2); }
+  .post-min__read-more {
+    margin-bottom: 3rem;
+    color: var(--color-primary);
+    padding: 1.5rem 0;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    box-shadow: 0 0.2rem 4rem rgba(0, 0, 0, 0.2);
+    background: transparent;
+    border: 0.2rem solid var(--color-primary); }

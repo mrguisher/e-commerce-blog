@@ -1,33 +1,43 @@
 .home {
-    min-height: 320vh;
+    // min-height: 320vh;
+    background: linear-gradient(110deg, rgba(121, 204, 255, 0.034), rgba(155, 116, 255, 0.37));
+    padding-top: 5rem;
     
-
+    
     &__heading-text-box{
         margin-bottom: 5rem;
     }
     
     
     &__blogpost-container {
-        background-color: var(--color-light-2);
+        margin-left: 5rem;
+        margin-right: 5rem;
     }
 }
 
 .post-min {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    // border: 3px solid red;
-    background: linear-gradient(45deg, rgba(175, 173, 173, 0.11), rgba(199, 198, 199, 0.26));
+    position: relative;
     margin-bottom: 5rem;
-    
+    border-radius: 1rem;
+    height: 55rem;
+    overflow: hidden;
+    box-shadow: 0 1.3rem 3rem var(--color-dark-2);
+    display: flex;
+    flex-direction: column;
 
+    background-color: var(--color-light);
+
+    &__img-container {
+        overflow: hidden;
+        height: 45%;
+    }
     &__img{
         width: 100%;
-
-
     }
+
     &__heading {
-        padding-top: 2rem;
-        padding-bottom: 2rem;
+        padding: 2rem 3rem;
+        
 
     }
     &__category {
@@ -37,17 +47,30 @@
         font-weight: 700;
         font-size: 1.4rem;
         color: var(--color-light);
-        background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2));
+        letter-spacing: .4rem;
+        background-color: var(--color-dark-3);
+      
     }
 
     &__description {
         padding: 2rem 5rem;
         font-size: 1.2rem;
         text-align: justify;
+        color: var(--color-dark-2);
     }
 
     &__read-more {
+        margin-bottom: 3rem;
+        color: var(--color-primary) ;
+        padding: 1.5rem 0;
+        font-weight: 600;
+        letter-spacing: .2rem;
+        box-shadow: 0 .2rem 4rem rgba(black,.2);
+        background: transparent;
+        border: .2rem solid var(--color-primary); 
 
-        
+        // border-width: .5rem;
+        // border-style: solid;
+        // border-image: linear-gradient(45deg, var(--color-primary), var(--color-primary-2) 1 100%);
     }
 }

@@ -3,11 +3,16 @@
     &:link,
     &:visited {
     text-align: center;
-    color: var(--color-light);
     display: inline-block;
     text-decoration: none;
     transition: all .2s;
     box-shadow: 0 .5rem 1rem rgba(black,.5);
+    align-self: center;
+    width: 17rem;
+    height: 5rem;
+    font-size: 1.4rem;
+    border-radius: 5px;
+    
 
     &:hover {
         transform: translateY(-3px);

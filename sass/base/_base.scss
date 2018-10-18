@@ -1,11 +1,15 @@
 :root {
     //  COLORS
-    --color-primary: #FF26D9;
-    --color-primary-2: #FF4646;
+    --color-primary: rgb(255, 38, 215);
+    --color-primary-2: rgb(255, 70, 70);
+    --color-primary-opacity: rgba(255, 38, 215, 0.329);
+    --color-primary-2-opacity: rgba(255, 70, 70, 0.253);
     --color-dark: rgb(30, 30, 30);
     --color-dark-2: rgb(70, 70, 70);
+    --color-dark-3: #2E2E2E;
     --color-light: rgb(250, 248, 248);
     --color-light-2: rgb(228, 227, 227);
+    --color-light-3: #EDF0F6;
     --color-photo-overlay: rgb(61, 61, 61); 
     
     //  SHADOW
