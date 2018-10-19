@@ -111,6 +111,17 @@ body {
     .dotted-nav__item:not(:last-child) {
       margin-right: .7rem; }
 
+.pagination {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: row; }
+  .pagination__item {
+    width: 2rem;
+    border: 2px solid black;
+    text-align: center; }
+
 .header {
   background-image: url("../img/bcg2.jpg");
   background-color: var(--color-photo-overlay);
