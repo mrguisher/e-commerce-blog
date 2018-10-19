@@ -1,6 +1,6 @@
 .home {
     // min-height: 320vh;
-    background: linear-gradient(110deg, rgba(121, 204, 255, 0.034), rgba(155, 116, 255, 0.37));
+    background: linear-gradient(180deg, #EDF0F6, rgba(255, 70, 70, 0.412), rgba(255, 38, 215, 0.433), #EDF0F6);
     padding-top: 5rem;
     
     
@@ -8,10 +8,15 @@
         margin-bottom: 5rem;
     }
     
-    
     &__blogpost-container {
-        margin-left: 5rem;
-        margin-right: 5rem;
+        margin-left: 3.5rem;
+        margin-right: 3.5rem;
+    }
+    &__pagination {
+        margin-top: 5rem;
+        min-width: 50%;
+        background-color: green;
+        position: relative;
     }
 }
 
@@ -36,7 +41,8 @@
     }
 
     &__heading {
-        padding: 2rem 3rem;
+        padding: 4rem 2rem;
+        display: inline-block;
         
 
     }
@@ -44,8 +50,8 @@
         // display: inline-block;
         text-align: center;
         text-transform: uppercase;
-        font-weight: 700;
-        font-size: 1.4rem;
+        font-weight: 900;
+        font-size: 1rem;
         color: var(--color-light);
         letter-spacing: .4rem;
         background-color: var(--color-dark-3);
@@ -61,6 +67,7 @@
 
     &__read-more {
         margin-bottom: 3rem;
+        margin-top: 2rem;
         color: var(--color-primary) ;
         padding: 1.5rem 0;
         font-weight: 600;
