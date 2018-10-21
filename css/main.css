@@ -21,6 +21,9 @@ h1 {
 h2 {
   font-size: 2.2rem; }
 
+h3 {
+  font-size: 3rem; }
+
 .heading-primary {
   color: var(--color-light);
   font-weight: 200; }
@@ -325,6 +328,41 @@ body {
 .aside {
   position: relative;
   margin: 5rem 0;
-  background-color: bisque;
   display: flex;
   flex-direction: column; }
+  .aside__box {
+    margin-bottom: 14rem;
+    padding: 2rem 3rem;
+    background-color: var(--color-dark-3); }
+  .aside__box-category {
+    padding: 0 3rem; }
+  .aside__heading {
+    font-weight: 300;
+    padding-top: 1rem; }
+
+.newsletter__category {
+  display: block;
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 100;
+  color: var(--color-light);
+  text-align: center; }
+
+.newsletter__main {
+  display: flex;
+  padding-top: 3rem; }
+
+.newsletter__mail {
+  flex-grow: 3;
+  background-color: var(--color-light-2);
+  padding: 1.5rem 2rem;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-right: 2rem; }
+
+.newsletter__button {
+  color: var(--color-light);
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
+  background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2));
+  width: 15rem; }

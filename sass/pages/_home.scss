@@ -82,7 +82,51 @@
 .aside {
     position: relative;
     margin: 5rem 0;
-    background-color: bisque;
     display: flex;
     flex-direction: column;
+
+&__box {
+    margin-bottom: 14rem;
+    padding: 2rem 3rem;
+    background-color: var(--color-dark-3);
+    }
+&__box-category {
+    padding: 0 3rem;
+}
+&__heading {
+    font-weight: 300;
+    padding-top: 1rem;
+}
+}
+
+
+.newsletter {
+
+    &__category {
+        display: block;
+        letter-spacing: .2rem;
+        text-transform: uppercase;
+        font-size: 1.5rem;
+        font-weight: 100;
+        color: var(--color-light);
+        text-align: center;
+    }
+    &__main {
+        display: flex;
+        padding-top: 3rem;
+    }
+    &__mail {
+        flex-grow: 3;
+        background-color: var(--color-light-2);
+        padding: 1.5rem 2rem;
+        font-size: 1.5rem;
+        font-weight: 100;
+        margin-right: 2rem;
+    }
+    &__button {
+        color: var(--color-light);
+        box-shadow: 0 2rem 4rem rgba(black,.5);
+        background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2));
+        width: 15rem;
+    }
 }
