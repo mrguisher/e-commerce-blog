@@ -24,3 +24,8 @@ h2 {
     color: var(--color-light-2);
     text-align: center;
 }
+.text-gradient {
+    background: -webkit-linear-gradient(var(--color-primary), var(--color-primary-2));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
