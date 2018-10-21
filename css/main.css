@@ -15,44 +15,6 @@ $breakpoint argument choices:
 
 ORDER:  BASE + TYPOGRAPHY  >   GENERAL LAYOUT + GRID  >  PAGE LAYOUT  >  COMPONENTS
 */
-.pagination {
-  display: -ms-flexbox;
-  display: flex;
-  list-style: none; }
-
-.page-link {
-  position: relative;
-  display: block;
-  padding: 1rem 1rem;
-  margin-left: .5rem;
-  line-height: 1.5;
-  color: var(--color-light);
-  background-color: var(--color-dark-3);
-  border-radius: 0.125rem;
-  cursor: pointer; }
-
-.page-link:hover {
-  color: var(--color-light);
-  text-decoration: none;
-  background-color: var(--color-dark); }
-
-.page-item:first-child .page-link {
-  margin-left: 0;
-  border-top-left-radius: 0.25rem;
-  border-bottom-left-radius: 0.25rem; }
-
-.page-item.active .page-link {
-  z-index: 1;
-  color: var(--color-light);
-  background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2)); }
-
-.page-item.disabled .page-link {
-  color: #6c757d;
-  pointer-events: none;
-  cursor: auto;
-  background-color: #fff;
-  border-color: #dee2e6; }
-
 h1 {
   font-size: 4rem; }
 
@@ -74,7 +36,7 @@ h2 {
   text-align: center; }
 
 .heading-white {
-  color: var(--color-light-2);
+  color: var(--color-light);
   text-align: center; }
 
 .text-gradient {
@@ -85,7 +47,7 @@ h2 {
 :root {
   --color-primary: rgb(233, 26, 128);
   --color-primary-2: rgb(255, 73, 24);
-  --color-primary-2-opacity: rgba(255, 70, 70, 0.122);
+  --color-primary-2-opacity: rgba(255, 70, 70, 0.722);
   --color-dark: rgb(30, 30, 30);
   --color-dark-2: rgb(70, 70, 70);
   --color-dark-3: rgb(46, 46, 46);
@@ -157,11 +119,47 @@ body {
       margin-right: .7rem; }
 
 .pagination-nav {
-  width: 50vw;
-  height: 30vh;
+  margin: 0 auto;
   margin-bottom: 15rem;
-  margin-left: auto;
-  margin-right: auto; }
+  margin-top: 10rem;
+  width: 21rem; }
+
+.pagination {
+  display: flex;
+  list-style: none; }
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: 1rem 1rem;
+  margin-left: .5rem;
+  line-height: 1.5;
+  color: var(--color-light);
+  background-color: var(--color-dark-3);
+  border-radius: 0.125rem;
+  cursor: pointer; }
+
+.page-link:hover {
+  color: var(--color-light);
+  text-decoration: none;
+  background-color: var(--color-dark); }
+
+.page-item:first-child .page-link {
+  margin-left: 0;
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem; }
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: var(--color-light);
+  background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2)); }
+
+.page-item.disabled .page-link {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: auto;
+  background-color: #fff;
+  border-color: #dee2e6; }
 
 .header {
   background-image: url("../img/bcg2.jpg");
@@ -295,12 +293,13 @@ body {
   background-color: var(--color-dark-3); }
   .post-min__img-container {
     overflow: hidden;
-    height: 45%; }
+    height: 40%; }
   .post-min__img {
     width: 100%; }
   .post-min__heading {
-    padding: 2rem 2rem;
-    display: inline-block; }
+    padding: 2rem 4rem;
+    font-weight: 300;
+    letter-spacing: .1rem; }
   .post-min__category {
     text-align: center;
     text-transform: uppercase;
@@ -318,6 +317,7 @@ body {
     color: var(--color-light-2);
     line-height: 1.7rem; }
   .post-min__read-more {
-    margin-bottom: 3rem;
-    margin-top: 2rem;
-    background-color: var(--color-primary-2-opacity); }
+    position: absolute;
+    bottom: 4rem;
+    background-color: transparent;
+    border: 3px solid var(--color-primary-2-opacity); }

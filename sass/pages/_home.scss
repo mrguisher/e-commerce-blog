@@ -34,18 +34,18 @@
 
     &__img-container {
         overflow: hidden;
-        height: 45%;
+        height: 40%;
     }
     &__img{
         width: 100%;
     }
 
     &__heading {
-        padding: 2rem 2rem;
-        display: inline-block;
+        padding: 2rem 4rem;
+        font-weight: 300;
+        letter-spacing: .1rem;
     }
     &__category {
-        // display: inline-block;
         text-align: center;
         text-transform: uppercase;
         font-weight: 900;
@@ -68,19 +68,11 @@
     }
 
     &__read-more {
-        margin-bottom: 3rem;
-        margin-top: 2rem;
-        // color: var(--color-primary-2);
-        
-        // box-shadow: 0 .2rem 4rem rgba(black,.2);
-        background-color: var(--color-primary-2-opacity);
+        position: absolute;
+        bottom: 4rem;
+        // background-color: var(--color-primary-2-opacity);
+        background-color: transparent;
+        border: 3px solid var(--color-primary-2-opacity);
        
-       
-       
-    
-        
-
-        
-        // border-image: linear-gradient(45deg, var(--color-primary), var(--color-primary-2) 1 100%);
     }
 }
