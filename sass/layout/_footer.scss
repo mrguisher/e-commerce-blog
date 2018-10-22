@@ -1,0 +1,9 @@
+.footer {
+    background-color: var(--color-dark-4);
+    height: 60rem;
+
+    &__legal {
+        background-color: var(--color-dark);
+        height: 10rem;
+    }
+}

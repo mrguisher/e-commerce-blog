@@ -53,7 +53,8 @@ h3 {
   --color-primary-2-opacity: rgba(255, 70, 70, 0.722);
   --color-dark: rgb(30, 30, 30);
   --color-dark-2: rgb(70, 70, 70);
-  --color-dark-3: rgb(46, 46, 46);
+  --color-dark-3: hsl(0, 0%, 18%);
+  --color-dark-4: rgb(24, 24, 24);
   --color-light: rgb(250, 248, 248);
   --color-light-2: rgb(228, 227, 227);
   --color-light-3: rgb(237, 240, 246);
@@ -215,6 +216,13 @@ body {
     align-self: center;
     margin-top: 8rem; }
 
+.footer {
+  background-color: var(--color-dark-4);
+  height: 60rem; }
+  .footer__legal {
+    background-color: var(--color-dark);
+    height: 10rem; }
+
 .nav-bar {
   height: 10vh;
   display: flex;
@@ -222,10 +230,10 @@ body {
   align-items: center;
   padding-top: 1rem; }
   .nav-bar__logo {
-    color: transparent;
-    height: 1px;
-    width: 1px;
-    margin-left: 5rem; }
+    height: 4.8rem;
+    width: 15rem;
+    margin-left: 3.5rem;
+    margin-top: 1.4rem; }
   .nav-bar__navigation {
     position: relative;
     margin-right: 3.5rem; }
@@ -310,6 +318,7 @@ body {
     font-size: var(--default-font-size);
     color: var(--color-light);
     letter-spacing: .4rem;
+    line-height: 1.8rem;
     background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2)); }
   .post-min__description-box {
     padding: 2rem 5rem;

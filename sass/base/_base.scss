@@ -6,15 +6,14 @@
     --color-primary-2-opacity: rgba(255, 70, 70, 0.722);
     --color-dark: rgb(30, 30, 30);
     --color-dark-2: rgb(70, 70, 70);
-    --color-dark-3: rgb(46, 46, 46);
+    --color-dark-3: hsl(0, 0%, 18%);
+    --color-dark-4: rgb(24, 24, 24);
     --color-light: rgb(250, 248, 248);
     --color-light-2: rgb(228, 227, 227);
     --color-light-3: rgb(237, 240, 246);
     --color-photo-overlay: rgb(61, 61, 61); 
-    
     //  SHADOW
     --shadow-box: 0 0 3 3 var( --color-dark-2);
-    
     //  FONT
     --default-font-size: 1rem;
 }
