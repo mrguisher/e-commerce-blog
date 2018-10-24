@@ -27,7 +27,18 @@
     }
 
     &__main {
+        display: flex;
+        flex-direction: column;
+    }
 
+    &__about {
 
     }
+    &__logo {
+        width: 100px;
+        height: 33px;
+        align-self: center;
+    }
+
+    
 }

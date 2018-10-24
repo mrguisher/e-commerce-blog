@@ -238,6 +238,13 @@ body {
       padding-right: 2rem; }
     .footer__legal--right {
       padding-left: 2rem; }
+  .footer__main {
+    display: flex;
+    flex-direction: column; }
+  .footer__logo {
+    width: 100px;
+    height: 33px;
+    align-self: center; }
 
 .nav-bar {
   height: 10vh;
