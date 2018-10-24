@@ -37,7 +37,7 @@
 
     &__img-container {
         overflow: hidden;
-        height: 40%;
+        height: 35%;
     }
     &__img{
         width: 100%;
@@ -114,16 +114,35 @@
     }
     &__main {
         display: flex;
-        padding-top: 3rem;
+        margin-top: 2rem;
+        flex-direction: column;
     }
-    &__mail {
-        flex-grow: 3;
+    &__input {
+        width: 80vw;
         background-color: var(--color-light-2);
         padding: 1.5rem 2rem;
         font-size: 1.5rem;
         font-weight: 100;
-        margin-right: 2rem;
+        margin: 2rem 0;
+        align-self: center;
+        border: none;
+        border-bottom: .5rem solid transparent;
+        transition: all .7s;
+
+        &:focus {
+            outline: none;
+            border-bottom: .5rem solid var(--color-green);
+        }
+
+        &:focus:invalid {
+            border-bottom: .5rem solid transparent;
+        }
+
+        &::-webkit-input-placeholder {
+            color: var(--color-dark-2);
+        }
     }
+
     &__button {
         color: var(--color-light);
         box-shadow: 0 2rem 4rem rgba(black,.5);
