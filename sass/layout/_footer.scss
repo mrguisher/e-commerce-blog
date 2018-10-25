@@ -1,14 +1,10 @@
 .footer {
     background-color: var(--color-dark-4);
-    height: 60rem;
     position: relative;
+    color: var(--color-light-4);
 
     &__legal {
         background-color: var(--color-dark-3);
-        // height: 4rem;
-        width: 100vw;
-        position: absolute;
-        bottom: 0;
         display: flex;
         padding: 2rem 0;
         line-height: 2rem;
@@ -23,22 +19,100 @@
         &--right {
             padding-left: 2rem;
         }
-
     }
-
     &__main {
         display: flex;
         flex-direction: column;
+        align-content: center;
+        padding: 4rem 10rem;
     }
+
+    //  --- ABOUT ---
 
     &__about {
-
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
     }
     &__logo {
-        width: 100px;
-        height: 33px;
+        width: 50%;
+        height: 50%;
         align-self: center;
+        margin-bottom: 4rem;
+    }
+    &__about-text {
+        text-align: justify;
+        font-size: 1.3rem;
+        color: var(--color-light-5);
+        font-weight: 300;
+        letter-spacing: .2rem;
     }
 
+    // --- SITE-MAP ---
+
+    &__site-map {
+        margin-bottom: 5rem;
+    }
+    &__heading {
+        text-align: center;
+        margin-bottom: 3rem;
+        font-weight: 300;
+    }
+    &__map {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.6rem;
+    }
+    &__map-item {
+        text-decoration: none;
+        color: silver;
+        font-weight: 300;
+        letter-spacing: .1rem;
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+    }
+    
+    &__list {
+        list-style-type: none;
+        padding-left: 2rem;
+        margin-bottom: 1rem;
+        color: var(--color-light-5);
+        font-weight: 300;
+        letter-spacing: .1rem;
+    }
+    &__list-item {
+        line-height: 2.5rem;
+    }
+
+    // --- CONTACT ---
+
+    &__contact {
+        margin-bottom: 5rem;
+    }
+    &__contact-heading {
+        font-weight: 300;
+        letter-spacing: .1rem;
+        margin-bottom: 3rem; 
+    }
+    &__contact-box {
+        
+    }
+    &__contact-email, &__contact-mobile {
+        display: flex;
+        &:first-of-type {
+            margin-bottom: 2rem;
+        }
+    }
+    &__contact-email-link, &__contact-mobile-link {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: var(--color-light-5);
+    }
+    &__contact-icon {
+        color: red;
+    }
     
 }

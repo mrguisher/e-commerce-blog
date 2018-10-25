@@ -7,6 +7,9 @@ h2 {
 h3 {
     font-size: 3rem;
 }
+h4 {
+    font-size: 2.5rem;
+}
 
 .heading-primary {
     color: var(--color-light);
@@ -31,4 +34,11 @@ h3 {
     background: -webkit-linear-gradient(var(--color-primary), var(--color-primary-2));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+// --- font-awesome ---
+.contact-icon  {
+    font-size: 3rem;
+    margin-right: 3rem;
+   
 }
