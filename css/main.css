@@ -54,6 +54,9 @@ h4 {
   font-size: 3rem;
   margin-right: 3rem; }
 
+.social-icon {
+  font-size: 5rem; }
+
 :root {
   --color-primary: rgb(233, 26, 128);
   --color-primary-2: rgb(255, 73, 24);
@@ -290,12 +293,14 @@ body {
     letter-spacing: .1rem; }
   .footer__list-item {
     line-height: 2.5rem; }
-  .footer__contact {
-    margin-bottom: 5rem; }
   .footer__contact-heading {
     font-weight: 300;
     letter-spacing: .1rem;
     margin-bottom: 3rem; }
+  .footer__contact-box {
+    margin-bottom: 5rem;
+    display: flex;
+    flex-direction: column; }
   .footer__contact-email, .footer__contact-mobile {
     display: flex; }
     .footer__contact-email:first-of-type, .footer__contact-mobile:first-of-type {
@@ -303,9 +308,13 @@ body {
   .footer__contact-email-link, .footer__contact-mobile-link {
     text-decoration: none;
     font-size: 1.5rem;
-    color: var(--color-light-5); }
-  .footer__contact-icon {
-    color: red; }
+    color: var(--color-light-5);
+    align-self: center; }
+  .footer__socials {
+    display: flex;
+    justify-content: center; }
+  .footer__fb {
+    margin-right: 3rem; }
 
 .nav-bar {
   height: 10vh;

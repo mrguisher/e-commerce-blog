@@ -89,16 +89,15 @@
 
     // --- CONTACT ---
 
-    &__contact {
-        margin-bottom: 5rem;
-    }
     &__contact-heading {
         font-weight: 300;
         letter-spacing: .1rem;
         margin-bottom: 3rem; 
     }
     &__contact-box {
-        
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: column;
     }
     &__contact-email, &__contact-mobile {
         display: flex;
@@ -110,9 +109,15 @@
         text-decoration: none;
         font-size: 1.5rem;
         color: var(--color-light-5);
+        align-self: center;
     }
-    &__contact-icon {
-        color: red;
+    &__socials {
+        display: flex;
+        justify-content: center;
     }
+    &__fb {
+        margin-right: 3rem;
+    }
+    
     
 }
