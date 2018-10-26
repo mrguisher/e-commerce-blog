@@ -13,7 +13,6 @@ $breakpoint argument choices:
 -tab-land
 -big-desktop
 
-ORDER:  BASE + TYPOGRAPHY  >   GENERAL LAYOUT + GRID  >  PAGE LAYOUT  >  COMPONENTS
 */
 h1 {
   font-size: 4rem; }
@@ -29,7 +28,7 @@ h4 {
 
 .heading-primary {
   color: var(--color-light);
-  font-weight: 200; }
+  font-weight: 100; }
   @media only screen and (min-width: 37.5em) {
     .heading-primary {
       font-size: 5rem; } }
@@ -50,7 +49,7 @@ h4 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-.contact-icon {
+.contact-icon-email, .contact-icon-mobile {
   font-size: 3rem;
   margin-right: 3rem; }
 
@@ -87,15 +86,12 @@ h4 {
   padding: 0; }
 
 html {
-  font-size: 55.5%;
-  font-family: 'Nunito', sans-serif; }
-  @media only screen and (min-width: 25.5em) {
-    html {
-      font-size: 62.5%; } }
+  font-size: 62.5%;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 300; }
 
 body {
-  background-color: var(--color-light-2);
-  min-height: 100vh; }
+  background-color: var(--color-light-2); }
 
 .btn, .btn:link, .btn:visited {
   text-align: center;
@@ -106,7 +102,7 @@ body {
   align-self: center;
   width: 17rem;
   padding: 1.3rem 0;
-  font-weight: 600;
+  font-weight: 300;
   letter-spacing: .2rem;
   font-size: 1.4rem;
   border: none;
@@ -283,19 +279,24 @@ body {
     font-weight: 300;
     letter-spacing: .1rem;
     margin-bottom: 3rem; }
-  .footer__contact-box {
+  .footer__contact {
     margin-bottom: 5rem;
     display: flex;
-    flex-direction: column; }
-  .footer__contact-email, .footer__contact-mobile {
-    display: flex; }
-    .footer__contact-email:first-of-type, .footer__contact-mobile:first-of-type {
-      margin-bottom: 2rem; }
+    flex-direction: row;
+    height: 10rem; }
   .footer__contact-email-link, .footer__contact-mobile-link {
     text-decoration: none;
     font-size: 1.8rem;
-    color: var(--color-light-5);
-    align-self: center; }
+    color: var(--color-light-5); }
+  .footer__contact-icons, .footer__contact-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 3rem; }
+  .footer__contact-icons {
+    align-items: center; }
+  .footer__contact-mobile-link {
+    align-self: end; }
   .footer__socials {
     display: flex;
     justify-content: center; }
@@ -388,7 +389,7 @@ body {
   margin-bottom: 5rem;
   border-radius: .6rem;
   height: 55rem;
-  box-shadow: 0 1.3rem 3rem var(--color-dark-2);
+  box-shadow: 0 1rem 3rem var(--color-dark-2);
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -406,7 +407,7 @@ body {
     text-align: center;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: var(--default-font-size);
+    font-size: 1.2rem;
     color: var(--color-light);
     letter-spacing: .4rem;
     line-height: 2rem;
@@ -416,9 +417,10 @@ body {
     overflow: hidden; }
   .post-min__description-text {
     font-size: 1.3rem;
+    font-weight: 300;
     text-align: justify;
     color: var(--color-light-2);
-    line-height: 1.7rem; }
+    line-height: 1.8rem; }
   .post-min__read-more {
     position: absolute;
     bottom: 4rem;
@@ -491,7 +493,7 @@ body {
 
 .blog-categories__item {
   line-height: 2.5rem;
-  letter-spacing: .2rem;
+  letter-spacing: .15rem;
   font-size: 1.5rem;
   margin-bottom: 1rem;
   font-weight: 300;
@@ -508,7 +510,7 @@ body {
   position: relative;
   line-height: 2rem;
   list-style-type: none;
-  letter-spacing: .2rem;
+  letter-spacing: .15rem;
   font-size: 1.5rem;
   font-weight: 300;
   color: var(--color-light-2);

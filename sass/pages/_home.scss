@@ -29,7 +29,7 @@
     margin-bottom: 5rem;
     border-radius: .6rem;
     height: 55rem;
-    box-shadow: 0 1.3rem 3rem var(--color-dark-2);
+    box-shadow: 0 1rem 3rem var(--color-dark-2);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -51,7 +51,7 @@
         text-align: center;
         text-transform: uppercase;
         font-weight: 900;
-        font-size: var(--default-font-size);
+        font-size: 1.2rem;
         color: var(--color-light);
         letter-spacing: .4rem;
         line-height: 2rem;
@@ -63,9 +63,10 @@
     }
     &__description-text {
         font-size: 1.3rem;
+        font-weight: 300;
         text-align: justify;
         color: var(--color-light-2);
-        line-height: 1.7rem;
+        line-height: 1.8rem;
     }
 
     &__read-more {
@@ -167,7 +168,7 @@
 
     &__item {
         line-height: 2.5rem;
-        letter-spacing: .2rem;
+        letter-spacing: .15rem;
         font-size: 1.5rem;
         margin-bottom: 1rem;
         font-weight: 300;
@@ -191,7 +192,7 @@
         position: relative;
         line-height: 2rem;
         list-style-type: none;
-        letter-spacing: .2rem;
+        letter-spacing: .15rem;
         font-size: 1.5rem;
         font-weight: 300;
         color: var(--color-light-2);

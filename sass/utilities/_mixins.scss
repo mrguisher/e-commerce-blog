@@ -16,14 +16,11 @@ $breakpoint argument choices:
 -tab-land
 -big-desktop
 
-ORDER:  BASE + TYPOGRAPHY  >   GENERAL LAYOUT + GRID  >  PAGE LAYOUT  >  COMPONENTS
 */
 
 // 
 @mixin respond($breakpoint) {
-    @if  $breakpoint == phone {
-        @media only screen and (min-width: 25.5em) {@content};  //400px
-    }
+    
     @if  $breakpoint == tab-port {
         @media only screen and (min-width: 37.5em) {@content};  //600px
     }

@@ -77,23 +77,31 @@
         letter-spacing: .1rem;
         margin-bottom: 3rem; 
     }
-    &__contact-box {
+    &__contact {
         margin-bottom: 5rem;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        height: 10rem;
     }
-    &__contact-email, &__contact-mobile {
-        display: flex;
-        &:first-of-type {
-            margin-bottom: 2rem;
-        }
-    }
+   
     &__contact-email-link, &__contact-mobile-link {
         text-decoration: none;
         font-size: 1.8rem;
         color: var(--color-light-5);
-        align-self: center;
     }
+    &__contact-icons, &__contact-links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        line-height: 3rem;
+    }
+    &__contact-icons {
+        align-items: center;
+    }
+    &__contact-mobile-link {
+        align-self: end;
+    }
+
     &__socials {
         display: flex;
         justify-content: center;
