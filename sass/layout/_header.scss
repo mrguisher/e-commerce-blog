@@ -3,7 +3,8 @@
     background-color: var(--color-photo-overlay);
     background-blend-mode: overlay;
     background-size: cover;
-    height: 85vh;
+    min-height: 90vh;
+    max-height: 95vh;
 }
 
 
@@ -13,7 +14,7 @@
     flex-direction: row;
     margin-top: 2rem;
     margin-bottom: 0rem;
-   
+    
     &__arrow {
         flex-grow: 1;
         text-decoration: none;
@@ -50,9 +51,13 @@
         text-align: center;
     }
     &__description-box {
-        padding: 5rem 3rem;
+        padding: 3rem 3rem;
         display: flex;
         flex-direction: column;
+        
+        @include respond(small-phone) {
+            padding: 3rem 2rem;
+        }
     }
     &__description {
         font-size: 1.5rem;
@@ -61,7 +66,7 @@
     }
     &__btn-header {
         color: var(--color-light);
-        margin-top: 5rem;
+        margin-top: 3rem;
         box-shadow: 0 2rem 4rem rgba(black,.5);
         background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2));
     }

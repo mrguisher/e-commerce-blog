@@ -1,5 +1,11 @@
 h1 {
-    font-size: 4rem;
+    font-size: 3.8rem;
+    @include respond(tab-port) {
+        font-size: 4.2rem;
+        }
+    @include respond(small-phone) {
+        font-size: 3.5rem;
+        }
 }
 h2 {
     font-size: 2.2rem;
@@ -15,9 +21,7 @@ h4 {
     color: var(--color-light);
     font-weight: 100;
     
-    @include respond(tab-port) {
-    font-size: 5rem;
-    }
+    
 }
 .heading-secondary {
     margin-bottom: 2rem;
@@ -40,7 +44,16 @@ h4 {
 .contact-icon-email, .contact-icon-mobile  {
     font-size: 3rem;
     margin-right: 3rem;
+
+    @include respond(small-phone) {
+        margin-right: 2rem;
+        font-size: 2.5rem;
+    }
 }
 .social-icon {
     font-size: 5rem;
+
+    @include respond(small-phone) {
+        font-size: 3.5rem;
+    }
 }

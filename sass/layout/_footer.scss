@@ -88,6 +88,10 @@
         text-decoration: none;
         font-size: 1.8rem;
         color: var(--color-light-5);
+
+        @include respond(small-phone) {
+            font-size: 1.6rem;
+        }
     }
     &__contact-icons, &__contact-links {
         display: flex;
@@ -127,5 +131,4 @@
             padding-left: 2rem;
         }
     }
-    
 }

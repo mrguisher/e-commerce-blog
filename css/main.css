@@ -8,14 +8,19 @@
 /*
 $breakpoint argument choices:
 -small-phone
--phone
 -tab-port
 -tab-land
 -big-desktop
 
 */
 h1 {
-  font-size: 4rem; }
+  font-size: 3.8rem; }
+  @media only screen and (min-width: 37.5em) {
+    h1 {
+      font-size: 4.2rem; } }
+  @media only screen and (max-width: 25em) {
+    h1 {
+      font-size: 3.5rem; } }
 
 h2 {
   font-size: 2.2rem; }
@@ -29,9 +34,6 @@ h4 {
 .heading-primary {
   color: var(--color-light);
   font-weight: 100; }
-  @media only screen and (min-width: 37.5em) {
-    .heading-primary {
-      font-size: 5rem; } }
 
 .heading-secondary {
   margin-bottom: 2rem; }
@@ -52,9 +54,16 @@ h4 {
 .contact-icon-email, .contact-icon-mobile {
   font-size: 3rem;
   margin-right: 3rem; }
+  @media only screen and (max-width: 25em) {
+    .contact-icon-email, .contact-icon-mobile {
+      margin-right: 2rem;
+      font-size: 2.5rem; } }
 
 .social-icon {
   font-size: 5rem; }
+  @media only screen and (max-width: 25em) {
+    .social-icon {
+      font-size: 3.5rem; } }
 
 :root {
   --color-primary: rgb(233, 26, 128);
@@ -89,6 +98,9 @@ html {
   font-size: 62.5%;
   font-family: 'Nunito', sans-serif;
   font-weight: 300; }
+  @media only screen and (max-width: 25em) {
+    html {
+      font-size: 56.25%; } }
 
 body {
   background-color: var(--color-light-2); }
@@ -175,7 +187,8 @@ body {
   background-color: var(--color-photo-overlay);
   background-blend-mode: overlay;
   background-size: cover;
-  height: 85vh; }
+  min-height: 90vh;
+  max-height: 95vh; }
 
 .slider {
   display: flex;
@@ -209,16 +222,19 @@ body {
   .slider__heading {
     text-align: center; }
   .slider__description-box {
-    padding: 5rem 3rem;
+    padding: 3rem 3rem;
     display: flex;
     flex-direction: column; }
+    @media only screen and (max-width: 25em) {
+      .slider__description-box {
+        padding: 3rem 2rem; } }
   .slider__description {
     font-size: 1.5rem;
     text-align: justify;
     color: var(--color-light-2); }
   .slider__btn-header {
     color: var(--color-light);
-    margin-top: 5rem;
+    margin-top: 3rem;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
     background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2)); }
   .slider__nav {
@@ -288,6 +304,9 @@ body {
     text-decoration: none;
     font-size: 1.8rem;
     color: var(--color-light-5); }
+    @media only screen and (max-width: 25em) {
+      .footer__contact-email-link, .footer__contact-mobile-link {
+        font-size: 1.6rem; } }
   .footer__contact-icons, .footer__contact-links {
     display: flex;
     flex-direction: column;
@@ -389,11 +408,12 @@ body {
   margin-bottom: 5rem;
   border-radius: .6rem;
   height: 55rem;
-  box-shadow: 0 1rem 3rem var(--color-dark-2);
+  box-shadow: 0 0.3rem 3rem var(--color-dark-2);
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background-color: var(--color-dark-3); }
+  background-color: var(--color-dark-3);
+  border: 1px solid var(--color-dark-2); }
   .post-min__img-container {
     overflow: hidden;
     height: 35%; }
@@ -403,6 +423,10 @@ body {
     padding: 2rem 4rem;
     font-weight: 300;
     letter-spacing: .1rem; }
+    @media only screen and (max-width: 25em) {
+      .post-min__heading {
+        padding: 0 2rem;
+        padding-bottom: 2rem; } }
   .post-min__category {
     text-align: center;
     text-transform: uppercase;
@@ -413,8 +437,13 @@ body {
     line-height: 2rem;
     background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2)); }
   .post-min__description-box {
-    padding: 2rem 5rem;
-    overflow: hidden; }
+    padding: 0 5rem;
+    margin: 2rem 0;
+    overflow: hidden;
+    height: 15rem; }
+    @media only screen and (max-width: 25em) {
+      .post-min__description-box {
+        padding: 0 4rem; } }
   .post-min__description-text {
     font-size: 1.3rem;
     font-weight: 300;
@@ -425,7 +454,10 @@ body {
     position: absolute;
     bottom: 4rem;
     background-color: transparent;
-    border: 3px solid var(--color-primary-2-opacity); }
+    border: 1px solid var(--color-primary-2-opacity); }
+    @media only screen and (max-width: 25em) {
+      .post-min__read-more {
+        bottom: 3rem; } }
 
 .aside {
   position: relative;
@@ -438,6 +470,9 @@ body {
     background-color: var(--color-dark-3); }
   .aside__box-category {
     padding: 0 3rem; }
+    @media only screen and (max-width: 25em) {
+      .aside__box-category {
+        padding: 0 1rem; } }
   .aside__heading {
     font-weight: 300;
     padding-top: 1rem;

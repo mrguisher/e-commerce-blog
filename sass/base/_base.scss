@@ -34,13 +34,13 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 62.5%; // 1rem = 10px
     font-family: 'Nunito', sans-serif;
     font-weight: 300;
 
-    // @include respond(phone) {
-    //     font-size: 62.5%  // 1rem = 10px
-    // }
+    @include respond(small-phone) {
+        font-size: 56.25%  // 1rem = 9px
+    }
 }
 body {
     background-color: var(--color-light-2);
