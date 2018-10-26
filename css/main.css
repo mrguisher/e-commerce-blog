@@ -236,7 +236,8 @@ body {
     color: var(--color-light);
     margin-top: 3rem;
     box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.5);
-    background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2)); }
+    background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2));
+    cursor: pointer; }
   .slider__nav {
     align-self: center;
     margin-top: 8rem; }
@@ -320,7 +321,10 @@ body {
     display: flex;
     justify-content: center; }
   .footer__fb {
-    margin-right: 3rem; }
+    margin-right: 3rem;
+    color: var(---color-light); }
+  .footer__twitter {
+    color: var(---color-light); }
   .footer__legal {
     background-color: var(--color-dark-3);
     display: flex;
@@ -345,6 +349,8 @@ body {
     height: 4.2rem;
     margin-left: 3.5rem;
     margin-top: 1.4rem; }
+  .nav-bar__logo-link {
+    cursor: pointer; }
   .nav-bar__navigation {
     position: relative;
     margin-right: 3.5rem; }
@@ -453,8 +459,10 @@ body {
   .post-min__read-more {
     position: absolute;
     bottom: 4rem;
-    background-color: transparent;
-    border: 1px solid var(--color-primary-2-opacity); }
+    background-color: var(--color-dark-2);
+    border: 2px solid var(--color-primary-2-opacity);
+    color: var(--color-light-2);
+    font-weight: 400; }
     @media only screen and (max-width: 25em) {
       .post-min__read-more {
         bottom: 3rem; } }

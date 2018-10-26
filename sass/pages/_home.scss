@@ -86,8 +86,10 @@
     &__read-more {
         position: absolute;
         bottom: 4rem;
-        background-color: transparent;
-        border: 1px solid var(--color-primary-2-opacity);
+        background-color: var(--color-dark-2);
+        border: 2px solid var(--color-primary-2-opacity);
+        color: var(--color-light-2);
+        font-weight: 400;
         
         @include respond(small-phone) {
             bottom: 3rem;

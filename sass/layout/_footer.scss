@@ -109,9 +109,14 @@
     &__socials {
         display: flex;
         justify-content: center;
+        
     }
     &__fb {
         margin-right: 3rem;
+        color: var(---color-light);
+    }
+    &__twitter {
+        color: var(---color-light);
     }
     // --- LEGAL ---
     &__legal {

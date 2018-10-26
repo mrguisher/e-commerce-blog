@@ -52,6 +52,7 @@ h4 {
 }
 .social-icon {
     font-size: 5rem;
+    
 
     @include respond(small-phone) {
         font-size: 3.5rem;
