@@ -240,7 +240,7 @@ body {
     cursor: pointer; }
   .slider__nav {
     align-self: center;
-    margin-top: 8rem; }
+    margin-top: 4rem; }
 
 .footer {
   background-color: var(--color-dark-4);
