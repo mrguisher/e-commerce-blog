@@ -20,7 +20,7 @@ h1 {
       font-size: 4.2rem; } }
   @media only screen and (max-width: 25em) {
     h1 {
-      font-size: 3.5rem; } }
+      font-size: 3.3rem; } }
 
 h2 {
   font-size: 2.2rem; }
@@ -220,7 +220,11 @@ body {
     margin-top: 3rem;
     position: relative; }
   .slider__heading {
-    text-align: center; }
+    text-align: center;
+    padding: 0 2rem; }
+    @media only screen and (max-width: 25em) {
+      .slider__heading {
+        padding: 0; } }
   .slider__description-box {
     padding: 3rem 3rem;
     display: flex;
@@ -229,9 +233,12 @@ body {
       .slider__description-box {
         padding: 3rem 2rem; } }
   .slider__description {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-align: justify;
     color: var(--color-light-2); }
+    @media only screen and (max-width: 25em) {
+      .slider__description {
+        font-size: 1.2rem; } }
   .slider__btn-header {
     color: var(--color-light);
     margin-top: 3rem;
@@ -241,6 +248,9 @@ body {
   .slider__nav {
     align-self: center;
     margin-top: 4rem; }
+    @media only screen and (max-width: 25em) {
+      .slider__nav {
+        margin-top: 2rem; } }
 
 .footer {
   background-color: var(--color-dark-4);
@@ -403,23 +413,17 @@ body {
     margin-right: 4rem;
     display: flex;
     flex-direction: column; }
-  .home__pagination {
-    margin-top: 5rem;
-    min-width: 50%;
-    background-color: green;
-    position: relative; }
 
 .post-min {
   position: relative;
   margin-bottom: 5rem;
   border-radius: .6rem;
-  height: 55rem;
   box-shadow: 0 0.3rem 3rem var(--color-dark-2);
   display: flex;
   flex-direction: column;
   overflow: hidden;
   background-color: var(--color-dark-3);
-  border: 1px solid var(--color-dark-2); }
+  border: 5px solid var(--color-dark-2); }
   .post-min__img-container {
     overflow: hidden;
     height: 35%; }
@@ -432,7 +436,8 @@ body {
     @media only screen and (max-width: 25em) {
       .post-min__heading {
         padding: 0 2rem;
-        padding-bottom: 2rem; } }
+        padding-bottom: 2rem;
+        font-size: 2rem; } }
   .post-min__category {
     text-align: center;
     text-transform: uppercase;
@@ -445,27 +450,28 @@ body {
   .post-min__description-box {
     padding: 0 5rem;
     margin: 2rem 0;
-    overflow: hidden;
-    height: 15rem; }
+    overflow: hidden; }
     @media only screen and (max-width: 25em) {
       .post-min__description-box {
-        padding: 0 4rem; } }
+        padding: 0 3rem; } }
   .post-min__description-text {
     font-size: 1.3rem;
     font-weight: 300;
     text-align: justify;
     color: var(--color-light-2);
     line-height: 1.8rem; }
+    @media only screen and (max-width: 25em) {
+      .post-min__description-text {
+        font-size: 1.2rem; } }
   .post-min__read-more {
-    position: absolute;
-    bottom: 4rem;
+    margin: 3rem 0;
     background-color: var(--color-dark-2);
     border: 2px solid var(--color-primary-2-opacity);
     color: var(--color-light-2);
     font-weight: 400; }
     @media only screen and (max-width: 25em) {
       .post-min__read-more {
-        bottom: 3rem; } }
+        margin: 3rem 0; } }
 
 .aside {
   position: relative;

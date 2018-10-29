@@ -47,6 +47,11 @@
     }
     &__heading { 
         text-align: center;
+        padding: 0 2rem;
+
+        @include respond(small-phone) {
+            padding: 0;
+        }
     }
     &__description-box {
         padding: 3rem 3rem;
@@ -58,9 +63,13 @@
         }
     }
     &__description {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-align: justify;
         color: var(--color-light-2);
+
+        @include respond(small-phone) {
+            font-size: 1.2rem;
+        }
     }
     &__btn-header {
         color: var(--color-light);
@@ -72,8 +81,9 @@
     &__nav {
         align-self: center;
         margin-top: 4rem;
-        // border: 2px solid blue;
-        // width: 15rem;
-        // height: 3rem;
+
+        @include respond(small-phone) {
+            margin-top: 2rem;
+        }
     }
 }
