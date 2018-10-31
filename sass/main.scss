@@ -1,5 +1,6 @@
 @import "utilities/mixins";
 @import "utilities/bootstrap";
+@import "utilities/utilities";
 
 
 @import "base/typography";
@@ -9,6 +10,7 @@
 @import "components/form";
 @import "components/dotted-nav";
 @import "components/pagination";
+@import "components/breadcrumb";
 
 @import "layout/header";
 @import "layout/grid";

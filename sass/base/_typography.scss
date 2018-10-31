@@ -20,19 +20,19 @@ h4 {
 .heading-primary {
     color: var(--color-light);
     font-weight: 100;
-    
-    
 }
 .heading-secondary {
     margin-bottom: 2rem;
+    font-weight: 300;
 }
-.heading-black {
-    color: var(--color-dark);
+.heading {
     text-align: center;
 }
-.heading-white {
+.text-white {
     color: var(--color-light);
-    text-align: center;
+}
+.text-dark {
+    color: var(--color-dark);
 }
 .text-gradient {
     background: -webkit-linear-gradient(var(--color-primary), var(--color-primary-2));
@@ -51,10 +51,14 @@ h4 {
     }
 }
 .social-icon {
-    font-size: 5rem;
+    font-size: 4.7rem;
     
-
     @include respond(small-phone) {
         font-size: 3.5rem;
     }
+}
+
+// --- SELECTORS ---
+a {
+    text-decoration: none;
 }

@@ -11,7 +11,7 @@
 </head>
 <body>
     <header class="header">
-        <section class="nav-bar">
+        <section class="nav-bar nav-bar__dark-version">
             <a href="#" class="nav-bar__logo-link"><img src="img/logo-head-phone.png" alt="Logo" class="nav-bar__logo"></a>
             <nav class="nav-bar__navigation">
                 <div class="nav-bar__nav-phone"></div>
@@ -23,44 +23,49 @@
                 </ol>
             </nav>
         </section>
-        <section class="slider">
-            <div  class="slider__arrow slider__arrow--left"><a href="#" class="slider__arrow__link">&lt;</a></div>
-            <div  class="slider__arrow slider__arrow--right"><a href="#" class="slider__arrow__link">&gt;</a></div>
-
-            <div class="slider__text-box">
-                <h1 class="slider__heading heading-primary ">Jak zdobywać klientów lekko i przyjemnie?</h1>
-                
-                <div class="slider__description-box">
-                <p class="slider__description">Stałe źródła klientów są niezbędne w każdym biznesie, dlatego nie dziwią mnie pytania które ciągle dostaję: gdzie szukać nowych klientów i jakie są najlepsze sposoby na pozyskiwanie klientów?</p>
-                 <a hfer="#" class="btn slider__btn-header">CZYTAJ DALEJ</div></a>
-                    
-                <div class="slider__nav dotted-nav">
-                    <div class="dotted-nav__item dotted-nav__item--marked"></div>
-                    <div class="dotted-nav__item"></div>
-                    <div class="dotted-nav__item"></div>
-                    <div class="dotted-nav__item"></div>
-                </div>
-                </div>
-
-              
-                
-            </div>
-           
-                
-
-        </section>
-
     </header>
 
 
     <main class="home">
-        <div class="home__heading-text-box">
-            <h1 class="heading-black heading-secondary">Najnowsze wpisy</h1>
+        <nav class="home__breadcrumb">
+            <ul class="breadcrumb__list text-dark">
+                <li class="breadcrumb__item"> <a href="index.html" class="breadcrumb__link">Strona główna</a></li>
+                <span class="breadcrumb__item-slash"> / </span> 
+                <li class="breadcrumb__item"><a href="ecommerce.html" class="breadcrumb__link">E-commerce</a></li>
+                <li class="breadcrumb__item"></li>
+            </ul>
+        </nav>
+        
+        <div class="home__heading-text-box margin-bottom-small">
+            <h1 class="heading text-dark heading-secondary home__heading-blogpost">Jak zdobywać klientów lekko i przyjemnie?</h1>
         </div>
 
         <section class="home__blogpost-container">
-
             
+            <img src="img/blog4.jpg" alt="Photo_1" class="home__blogpost-img margin-bottom-small margin-medium-small">
+            <div class="home__text-content">
+                Just because you don’t have $10M lying around to quit your job, hire an all-star team and launch a product with all the bells and whistles you could ever desire does not mean your product or startup idea is destined to fail. In fact, you’re probably better off this way. Some of the biggest, most successful startups today began as bootstrapped side projects.
+                <br>
+                <br>
+                I imagine this seems obvious to a lot of people, and has been said countless times by people much, much smarter than I am. But, there’s a reason it’s been said so many times. I cannot stress it’s importance enough. You need to become obsessed with the problem, not potential solutions.
+                <br>
+                <br>
+                I’d suggest you start with your personal experience. What problems have you, or a loved one, faced? What drives you? For me, it’s my passion for mental health. I’ve struggled with depression, and unfortunately, so have many of my loved ones. This helps push me forward when being an entrepreneur isn’t so fun, and gives me unique insight into the problem that I wouldn’t otherwise have.
+                <br>
+                <br>
+                You’ll also want to talk to your customers - friends, family, anyone that faces the problem you’re trying to solve. Find out the intricacies of the problems they face (their “pain points”), what they’re currently using to solve those problems, and why the problem still sucks.
+                Furthermore, you don’t have to master it all. This is where finding a team comes in. You can attend local meetups, hackathons, or connect with others online in forums and freelancing sites (a freelancing site is how I met my co-founder).
+                <br>
+                <br>
+                Connect with someone you know at school or work. Ideally, your team member will be someone with skill sets that complement your own, as well as someone who shares some of your passions. For me and my co-founder, that shared passion is health/medicine. Again, ideally, this will be someone you have (or are willing to develop) a close, trusting relationship with.
+                <br>
+                <br>
+                Sketch some ideas for what your product could look like in a notebook. Bring it back to your potential customers, get their input and feedback. Continue to iterate and improve. Eventually when you get more serious with your designs and move into prototyping, figure out what an actual website or mobile app will look and feel like. You can move up to easy to use, easy to learn classic design tools like Sketch (for mocking up your app) and InVision (for connecting the different screens of your app to make a clickable prototype).
+
+
+
+
+            </div>
 
         </section>
 
@@ -71,7 +76,7 @@
         <section class="aside__box">
             <div class="aside__box-category">
                 <span class="newsletter__category">newsletter</span>
-                <h3 class="heading-white aside__heading">Stay updated</h3>
+                <h3 class="heading text-white aside__heading">Stay updated</h3>
             </div>
             <div class="newsletter__main">
                 <input type="email" class="newsletter__input" placeholder="Twój email" id="email" required>
@@ -79,9 +84,9 @@
             </div>
         </section>
 
-        <section class="aside__box">
+        <!-- <section class="aside__box">
             <div class="aside__box-category">
-                <h3 class="heading-white aside__heading">Kategorie</h3>
+                <h3 class="heading text-white aside__heading">Kategorie</h3>
             </div>
             <div class="blog-categories__main">
                 <ul class="blog-categories__list">
@@ -92,11 +97,11 @@
                 </ul>
             </div>
             
-        </section>
+        </section> -->
 
         <!-- <section class="articles-list aside__box">
             <div class="aside__box-category">
-                <h3 class="heading-white aside__heading">Najpopularniejsze wpisy</h3>
+                <h3 class="heading text-white aside__heading">Najpopularniejsze wpisy</h3>
             </div>
             <div class="articles-list__main">
                 <ul class="artiles-list__list">

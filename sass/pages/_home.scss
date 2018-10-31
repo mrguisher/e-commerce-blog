@@ -1,27 +1,35 @@
 .home {
-    // min-height: 320vh;
     background-color: var(--color-light-2);
     padding-top: 5rem;
     display: flex;
     flex-direction: column;
     
     &__heading-text-box{
-        margin-bottom: 5rem;
+        padding: 0 4rem;
     }
-    
     &__blogpost-container {
         margin-left: 4rem;
         margin-right: 4rem;
         display: flex;
         flex-direction: column;
     }
-    // &__pagination {
-    //     margin-top: 5rem;
-    //     min-width: 50%;
-    //     position: relative;
-    //     // display: inline;
-    // }
+    &__breadcrumb {
+        padding-left: 4rem;
+        padding-bottom: 2rem;
+    }
+    &__heading-blogpost {
+        margin-bottom: 2rem;
+    }
+    &__blogpost-img {
+        height: 22rem;
+    }
+    &__text-content {
+        text-align: justify;
+    }
+    
 }
+
+
 // --- POST-MIN ---
 .post-min {
     position: relative;
@@ -174,7 +182,13 @@
         color: var(--color-light);
         box-shadow: 0 2rem 4rem rgba(black,.5);
         background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2));
-        width: 15rem;
+        width: 17rem;
+    }
+    &__button-arrow {
+        font-size: 2rem;
+        display: inline;
+        padding: 0;
+        margin-left: 1rem;
     }
 }
 

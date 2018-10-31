@@ -1,9 +1,9 @@
 .nav-bar {
-    height: 10vh;
+    // height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 1rem;
+    padding: 1rem 0;
 
         &__logo {
             height: 4.2rem;
@@ -74,5 +74,8 @@
                 // width: rem;
             }
         }
+        }
+        &__dark-version {
+            background-color: var(--color-dark-3);
         }
     }
