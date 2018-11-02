@@ -1,13 +1,12 @@
 .nav-bar {
-    // height: 10vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 0;
+    padding: .5rem 0;
 
         &__logo {
-            height: 4.2rem;
-            margin-left: 3.5rem;
+            height: 3.6rem;
+            margin-left: 2.5rem;
             margin-top: 1.4rem;
         }
         &__logo-link {
@@ -16,7 +15,7 @@
 
         &__navigation {
             position: relative;
-            margin-right: 3.5rem;
+            margin-right: 2.5rem;
         }
 
         &__nav-phone {
@@ -28,8 +27,8 @@
             border-bottom: 2px solid white;
             border-top: 2px solid white;
             background-color: transparent;
-            width: 4rem;
-            height: 2rem;
+            width: 3.6rem;
+            height: 1.8rem;
             }
 
             // &::before,
@@ -40,7 +39,7 @@
             }
 
             // &::before {top: 1rem;}
-            &::after {top: .7rem;}
+            &::after {top: .6rem;}
 
             @include respond(tab-port) {
                 display: none;  
@@ -77,5 +76,6 @@
         }
         &__dark-version {
             background-color: var(--color-dark-3);
+            padding-bottom: 1rem;
         }
     }

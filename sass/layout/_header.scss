@@ -3,15 +3,15 @@
     background-color: var(--color-photo-overlay);
     background-blend-mode: overlay;
     background-size: cover;
-    min-height: 90vh;
-    max-height: 95vh;
+    padding-bottom: 5rem;
+    // min-height: 90vh;
+    // max-height: 95vh;
 }
 
 .slider {
     display: flex;
     flex-direction: row;
-    margin-top: 2rem;
-    margin-bottom: 0rem;
+
     
     &__arrow {
         flex-grow: 1;
@@ -54,7 +54,7 @@
         }
     }
     &__description-box {
-        padding: 3rem 3rem;
+        padding: 3rem 2rem;
         display: flex;
         flex-direction: column;
         
@@ -73,17 +73,17 @@
     }
     &__btn-header {
         color: var(--color-light);
-        margin-top: 3rem;
+        margin-top: 4rem;
         box-shadow: 0 2rem 4rem rgba(black,.5);
         background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2));
         cursor: pointer;
     }
     &__nav {
         align-self: center;
-        margin-top: 4rem;
+        margin-top: 5rem;
 
         @include respond(small-phone) {
-            margin-top: 2rem;
+            margin-top: 3rem;
         }
     }
 }
