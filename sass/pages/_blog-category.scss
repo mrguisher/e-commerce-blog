@@ -1,0 +1,16 @@
+.blog-category {
+
+    padding: 3rem 4rem;
+    background-color: var(--color-dark-3);
+    
+    &__heading {
+        margin-bottom: 2rem;
+    }
+    &__description {
+        font-size: 1.3rem;
+        color: var(--color-light);
+        letter-spacing: .1rem;
+        line-height: 2rem;
+        text-align: justify;
+    }
+}

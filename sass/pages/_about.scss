@@ -1,0 +1,15 @@
+.about {
+    padding: 3rem 3rem;
+
+    &__heading {
+        text-align: center;
+    }
+    &__description {
+        text-align: justify;
+        font-size: 1.3rem;
+        color: var(--color-dark-3);
+    }
+    &__name {
+        text-align: center;
+    } 
+}

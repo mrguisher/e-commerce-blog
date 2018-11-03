@@ -72,11 +72,8 @@
         }
     }
     &__btn-header {
-        color: var(--color-light);
         margin-top: 4rem;
-        box-shadow: 0 2rem 4rem rgba(black,.5);
-        background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2));
-        cursor: pointer;
+        
     }
     &__nav {
         align-self: center;

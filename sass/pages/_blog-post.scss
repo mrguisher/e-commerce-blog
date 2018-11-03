@@ -1,0 +1,28 @@
+.blogpost {
+
+    &__heading-text-box{
+        padding: 0 2rem;
+    }
+    &__heading {
+        margin-bottom: 2rem;
+    }
+    &__img {
+        height: 22rem;
+    }
+    &__text-content {
+        text-align: justify;
+        font-size: var(--default-font-size);
+    }
+    &__category {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 300;
+        font-size: 1.3rem;
+        color: var(--color-light);
+        letter-spacing: .5rem;
+        padding: .3rem 0;
+        // line-height: 1.8rem;
+        background: var(--color-dark-2);
+    }
+}
+
