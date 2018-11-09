@@ -60,4 +60,13 @@ h4 {
 // --- SELECTORS ---
 a {
     text-decoration: none;
+    color: inherit;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+    
+    &:active,
+    &:focus {
+        outline: none;
+        color: inherit;
+    }
 }
