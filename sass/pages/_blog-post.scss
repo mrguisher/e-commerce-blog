@@ -16,13 +16,13 @@
     &__category {
         text-align: center;
         text-transform: uppercase;
-        font-weight: 300;
+        font-weight: 900;
         font-size: 1.3rem;
         color: var(--color-light);
         letter-spacing: .5rem;
         padding: .3rem 0;
         // line-height: 1.8rem;
-        background: var(--color-dark-2);
+        background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2));
     }
 }
 

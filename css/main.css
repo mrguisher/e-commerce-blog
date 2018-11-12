@@ -25,6 +25,9 @@ $breakpoint argument choices:
 .margin-top-medium {
   margin-top: 4rem; }
 
+.padding-nav {
+  padding-top: 7rem; }
+
 h1 {
   font-size: 3.8rem; }
   @media only screen and (min-width: 37.5em) {
@@ -388,6 +391,8 @@ body {
 
 .nav-bar {
   display: flex;
+  position: fixed;
+  width: 100%;
   justify-content: space-between;
   align-items: center;
   padding: .5rem 0;
@@ -469,7 +474,8 @@ body {
   height: 100%;
   z-index: 10;
   background-color: var(--color-dark-3);
-  left: -100%; }
+  left: -100%;
+  padding-top: 7rem; }
   @media only screen and (min-width: 37.5em) {
     .navigation-phone {
       display: none; } }
@@ -621,12 +627,12 @@ body {
 .blogpost__category {
   text-align: center;
   text-transform: uppercase;
-  font-weight: 300;
+  font-weight: 900;
   font-size: 1.3rem;
   color: var(--color-light);
   letter-spacing: .5rem;
   padding: .3rem 0;
-  background: var(--color-dark-2); }
+  background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2)); }
 
 .home {
   background-color: var(--color-light-2);

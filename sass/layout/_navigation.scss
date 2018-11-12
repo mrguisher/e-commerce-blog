@@ -1,5 +1,7 @@
 .nav-bar {
     display: flex;
+    position: fixed;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: .5rem 0;
@@ -126,7 +128,7 @@
     z-index: 10;
     background-color: var(--color-dark-3);
     left: -100%;
-
+    padding-top: 7rem;
 
     @include respond(tab-port) {
         display: none;
