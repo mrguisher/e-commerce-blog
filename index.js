@@ -23,7 +23,13 @@ function nav_menu() {
             $(".navigation-phone").animate({
                 left: '0'    
             });
+
+
             
+            $('body').addClass('lock-scroll');
+            
+
+
             status = 0;
         }
         else {
@@ -45,9 +51,14 @@ function nav_menu() {
                 left: '-100%'    
             });
 
+
+            $('body').removeClass('lock-scroll');
+
             status = 1;
         }
     
     });
 
 };
+
+// BACKGROUND SCROLL DISABLED 
