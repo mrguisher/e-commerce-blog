@@ -130,6 +130,9 @@ html {
 body {
   background-color: var(--color-light-2); }
 
+.lock-scroll {
+  overflow: hidden; }
+
 .btn, .btn:link, .btn:visited {
   text-align: center;
   display: inline-block;
@@ -233,39 +236,23 @@ body {
   background-image: url("../img/bcg2.jpg");
   background-color: var(--color-photo-overlay);
   background-blend-mode: overlay;
-  background-size: cover;
-  padding-bottom: 5rem; }
+  background-size: cover; }
 
 .slider {
-  display: flex;
-  flex-direction: row; }
-  .slider__arrow {
-    flex-grow: 1;
-    text-decoration: none;
-    align-self: center; }
-    .slider__arrow__link {
-      color: var(--color-light);
-      font-size: 5rem;
-      font-weight: 100;
-      text-decoration: none;
-      justify-content: center; }
-    .slider__arrow--left {
-      order: 1;
-      margin-left: 2rem; }
-    .slider__arrow--right {
-      order: 3;
-      margin-right: 2rem; }
+  padding-left: 5rem;
+  padding-right: 5rem; }
   .slider__text-box {
-    flex-grow: 3;
     display: flex;
     flex-direction: column;
     order: 2;
-    padding: 0 1rem;
-    margin-top: 3rem;
+    padding-bottom: 5rem;
+    margin-top: 5em;
     position: relative; }
   .slider__heading {
     text-align: center;
-    padding: 0 2rem; }
+    padding: 0 2rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem; }
     @media only screen and (max-width: 25em) {
       .slider__heading {
         padding: 0; } }
@@ -306,7 +293,7 @@ body {
     flex-direction: column;
     margin-bottom: 5rem; }
   .footer__logo {
-    width: 100%;
+    width: 18rem;
     align-self: center;
     margin-bottom: 4rem; }
   .footer__about-text {
@@ -397,13 +384,19 @@ body {
   align-items: center;
   padding: .5rem 0;
   padding-bottom: 1rem;
-  z-index: 20; }
+  z-index: 20;
+  background-color: var(--color-dark-3);
+  min-height: 15vw;
+  box-shadow: 0 .3rem .5rem; }
   .nav-bar__logo {
     height: 3.6rem;
     margin-left: 2.5rem;
     margin-top: 1.4rem; }
   .nav-bar__logo-link {
     cursor: pointer; }
+  .nav-bar__logo-link img {
+    width: 10rem;
+    color: #edf0f6; }
   .nav-bar__navigation {
     position: relative;
     margin-right: 2.5rem;
@@ -465,13 +458,11 @@ body {
         .nav-bar__navigation-item:first-child {
           padding-bottom: 1rem;
           border-bottom: 2px solid var(--color-primary); } }
-  .nav-bar__dark-version {
-    background-color: var(--color-dark-3); }
 
 .navigation-phone {
   position: fixed;
   width: 60%;
-  height: 100%;
+  height: 100vh;
   z-index: 10;
   background-color: var(--color-dark-3);
   left: -100%;
