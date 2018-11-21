@@ -3,51 +3,29 @@
     background-color: var(--color-photo-overlay);
     background-blend-mode: overlay;
     background-size: cover;
-    padding-bottom: 5rem;
-    // min-height: 90vh;
-    // max-height: 95vh;
+
+    // min-height: 100vh;
+  
 }
 
 .slider {
-    display: flex;
-    flex-direction: row;
+    padding-left: 5rem;
+    padding-right: 5rem;
     
-    
-    &__arrow {
-        flex-grow: 1;
-        text-decoration: none;
-        align-self: center;
-       
-        &__link {
-            color: var(--color-light);
-            font-size: 5rem;
-            font-weight: 100;
-            text-decoration: none;
-            justify-content: center;
-        }
-
-        &--left {
-            order: 1;
-            margin-left: 2rem;
-        }
-        &--right {
-            order: 3;
-            margin-right: 2rem;
-        }
-    }
-
+   
     &__text-box {
-        flex-grow: 3;
         display: flex;
         flex-direction: column;
         order: 2;
-        padding: 0 1rem;
-        margin-top: 3rem;
+        padding-bottom: 5rem;
+        margin-top: 5em;
         position: relative;
     }
     &__heading { 
         text-align: center;
         padding: 0 2rem;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
 
         @include respond(small-phone) {
             padding: 0;
