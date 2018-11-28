@@ -1,17 +1,28 @@
 .ty-page {
     display: flex;
     flex-direction: column;
-    padding-left: 15rem;
-    padding-right: 15rem;
+    padding-left: 13rem;
+    padding-right: 13rem;
     justify-content: center;
+
+    @include respond(small-phone) {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
 
     &__img {
        width: 10rem;
        align-self: center;
        margin-top: 10rem;
-       
+
+       @include respond(small-phone) {
+        width: 8rem;
+        }
+        @include respond(tab-port) {
+        width: 12rem;
+        }
     }
     &__text {
-        margin-bottom: 5rem;
+        margin-bottom: 10rem;
     }   
 }

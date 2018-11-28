@@ -23,6 +23,9 @@ $breakpoint argument choices:
     @if  $breakpoint == small-phone {
         @media only screen and (max-width: 25em) {@content};  //400px
     }
+
+    // PHONE ~~~~  STANDARD
+
     @if  $breakpoint == tab-port {
         @media only screen and (min-width: 37.5em) {@content};  //600px
     }
