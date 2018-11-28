@@ -1,7 +1,7 @@
 .footer {
     background-color: var(--color-dark-4);
     position: relative;
-    color: var(--color-light-4);
+    color: var(--color-light-2);
 
     
     &__main {
@@ -46,9 +46,12 @@
         flex-direction: column;
         font-size: 1.6rem;
     }
+    &__map a {
+        color: var(--color-light-2);
+    }
     &__map-item {
         text-decoration: none;
-        color: silver;
+        color: var(--color-light-4);
         font-weight: 300;
         letter-spacing: .1rem;
         display: inline-block;
@@ -62,12 +65,14 @@
         list-style-type: none;
         padding-left: 2rem;
         margin-bottom: 1rem;
-        color: var(--color-light-5);
         font-weight: 300;
         letter-spacing: .1rem;
     }
     &__list-item {
-        line-height: 2.5rem;
+        line-height: 3rem;
+    }
+    &__list-item a {
+        color: var(--color-light-5);
     }
 
     // --- CONTACT ---
@@ -124,7 +129,7 @@
         display: flex;
         padding: 2rem 0;
         line-height: 2rem;
-        font-size: 1.1rem;
+        font-size: .9rem;
         color: var(--color-light-4);
         justify-content: center;
 

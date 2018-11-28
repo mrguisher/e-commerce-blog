@@ -1,0 +1,17 @@
+.ty-page {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15rem;
+    padding-right: 15rem;
+    justify-content: center;
+
+    &__img {
+       width: 10rem;
+       align-self: center;
+       margin-top: 10rem;
+       
+    }
+    &__text {
+        margin-bottom: 5rem;
+    }   
+}

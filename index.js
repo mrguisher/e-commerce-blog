@@ -60,5 +60,3 @@ function nav_menu() {
     });
 
 };
-
-// BACKGROUND SCROLL DISABLED 

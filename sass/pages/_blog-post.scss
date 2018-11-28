@@ -13,7 +13,7 @@
         text-align: justify;
         font-size: var(--default-font-size);
     }
-    &__category {
+    &__category, &__tag-category{
         text-align: center;
         text-transform: uppercase;
         font-weight: 900;
@@ -23,6 +23,22 @@
         padding: .3rem 0;
         // line-height: 1.8rem;
         background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2));
+    }
+    &__tag-container {
+        // margin-bottom: 0;
+    }
+    &__tag-category {
+        font-size: .8rem;
+        display: inline-block;
+        margin-bottom: 1rem;
+        background: var(--color-dark-2);
+        padding: .3rem 1rem;
+        letter-spacing: .3rem;
+        margin-right: 1rem;
+       
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
 
