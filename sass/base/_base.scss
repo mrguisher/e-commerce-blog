@@ -13,6 +13,7 @@
     --color-light-3: rgb(237, 240, 246);
     --color-light-4: rgb(189, 189, 189);
     --color-light-5: rgb(145, 145, 145);
+    --color-white: rgb(255, 253, 253);
     --color-photo-overlay: rgb(61, 61, 61); 
     --color-green: rgb(4, 151, 4);
     //  SHADOW
@@ -52,4 +53,7 @@ body {
 }
 .lock-scroll {
     overflow: hidden;
+}
+input {
+    padding: 0 0;
 }
