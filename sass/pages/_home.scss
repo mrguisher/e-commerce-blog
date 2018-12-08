@@ -1,53 +1,84 @@
-
+    .home {
     
-    .home__blogpost-container {
-        margin-left: 3rem;
-        margin-right: 3rem;
-        display: flex;
-        flex-direction: column;
+        &__blogpost-container {
+            padding-left: 3rem;
+            padding-right: 3rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            @include respond(tab-land) {
+                flex-flow: row wrap;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                justify-content: center;
+            }
+        }
     }
-   
-
-
 // --- POST-MIN ---
 .post-min {
     position: relative;
     margin-bottom: 5rem;
-    border-radius: .6rem;
-    // height: 55rem;
-    box-shadow: 0 .2rem 2rem var(--color-dark-3);
+    border-radius: .4rem;
+    box-shadow: 0 .5rem 1.5rem var(--color-dark-3);
     display: flex;
     flex-direction: column;
     overflow: hidden;
     background-color: var(--color-dark-3);
-    // border: 1px solid var(--color-dark-3);
+    max-width: 80vw;
+    border: 2px solid var(--color-dark-2);
+
+    &:nth-child(odd) {
+
+        @include respond(tab-land) {
+            margin-right: 3rem;
+        }
+    }
+
+    @include respond(large-phone) {
+        max-width: 70vw;
+    }
+    @include respond(tab-port) {
+        max-width: 60vw; 
+    }
+
+    @include respond(tab-land) {
+        max-width: 40vw; 
+        align-self: center;
+        min-height: 60vh;
+    }
+    
 
     &__img-container {
         overflow: hidden;
-        height: 35%;
-        opacity: .8;
+        height: 55%;
+        opacity: .6;
     }
     &__img{
         width: 100%;
         z-index: 5;
     }
     &__heading {
-        padding: 1rem 1rem;
-        
-        font-weight: 200;
+        padding: 2rem 3rem;
+        padding-bottom: 2rem;
+        font-weight: 300;
         letter-spacing: .1rem;
+        display: inline-block;
 
         @include respond(small-phone) {
-            padding: 0 2rem;
-            padding-bottom: 2rem;
-            font-size: 2rem;
+            padding: 2rem;
+        }
+        @include respond(tab-port) {
+            // padding: 4rem 6rem;
+            width: 80%;
+            align-self: center;
         }
     }
     &__category {
         text-align: center;
         text-transform: uppercase;
-        font-weight: 900;
-        font-size: 1rem;
+        font-weight: 300;
+        font-size: 1.2rem;
         color: var(--color-light);
         letter-spacing: .4rem;
         padding: .1rem 0;
@@ -67,16 +98,24 @@
         @include respond(small-phone) {
             padding: 0 3rem;
         }
+        @include respond(large-phone) {
+            width: 90%;
+            align-self: center;
+        }
+        @include respond(tab-port) {
+            width: 90%;
+            align-self: center;
+        }
     }
     &__description-text {
-        font-size: 1.3rem;
-        font-weight: 300;
+        font-size:  var(--default-font-size);
+        font-weight: 100;
         text-align: justify;
         color: var(--color-light-2);
-        line-height: 1.8rem;
+        // line-height: 1.8rem;
 
         @include respond(small-phone) {
-        font-size: 1.2rem;
+            letter-spacing: .1rem;
         }
     }
 
@@ -87,7 +126,7 @@
         background-color: var(--color-dark-2);
         border: 1px solid var(--color-light-2);
         color: var(--color-light-2);
-        font-weight: 400;
+        font-weight: 300;
         
         @include respond(small-phone) {
             margin: 3rem 0;

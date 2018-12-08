@@ -17,28 +17,22 @@
         text-align: center;
         text-transform: uppercase;
         font-weight: 900;
-        font-size: 1.3rem;
+        font-size: 1rem;
         color: var(--color-light);
         letter-spacing: .5rem;
         padding: .3rem 0;
         // line-height: 1.8rem;
         background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2));
     }
-    &__tag-container {
-        // margin-bottom: 0;
-    }
+  
     &__tag-category {
-        font-size: .8rem;
+        font-size: 1rem;
         display: inline-block;
-        margin-bottom: 1rem;
-        background: var(--color-dark-2);
         padding: .3rem 1rem;
         letter-spacing: .3rem;
         margin-right: 1rem;
-       
-        &:last-child {
-            margin-right: 0;
-        }
+        margin-bottom: 1rem;
+        border-radius: 2px;
+        
     }
 }
-

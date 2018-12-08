@@ -1,9 +1,11 @@
 // MEDIA QUERY MANAGER
 /*
-0-600px     phone
-600-900px   tablet portrait
+-400px      small phone
+400-550px      --- --- phone --- ---
+550-650px   large phone
+650-900px   tablet portrait
 900-1200    tablet landscape
-1200-1800px   normal style of Natours
+1200-1800px  desktop
 1800px+      big desktop
 */
 
@@ -11,6 +13,8 @@
 /*
 $breakpoint argument choices:
 -small-phone
+- --- phone standard ---
+-large phone 
 -tab-port
 -tab-land
 -big-desktop
@@ -23,11 +27,12 @@ $breakpoint argument choices:
     @if  $breakpoint == small-phone {
         @media only screen and (max-width: 25em) {@content};  //400px
     }
-
     // PHONE ~~~~  STANDARD
-
+    @if  $breakpoint == large-phone {
+        @media only screen and (min-width: 34.4em) {@content};  //550px
+    }
     @if  $breakpoint == tab-port {
-        @media only screen and (min-width: 37.5em) {@content};  //600px
+        @media only screen and (min-width: 40.6em) {@content};  //650px
     }
     @if  $breakpoint == tab-land {
         @media only screen and (min-width: 56.25em) {@content}; //900px
