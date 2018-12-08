@@ -9,6 +9,18 @@
         flex-direction: column;
         align-content: center;
         padding: 4rem 6rem;
+
+        @include respond(tab-port) {
+            padding: 6rem 10rem;
+        }
+        @include respond(tab-land) {
+            padding: 8rem 16rem;
+        }
+        @include respond(desktop) {
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
     }
 
     //  --- ABOUT ---
@@ -17,11 +29,20 @@
         display: flex;
         flex-direction: column;
         margin-bottom: 5rem;
+
+        @include respond(desktop) {
+            max-width: 25vw;
+        }
     }
     &__logo {
         width: 18rem;
         align-self: center;
         margin-bottom: 4rem;
+
+        @include respond(tab-port) {
+            width: 20rem;
+            margin-bottom: 6rem;
+        }
     }
     &__about-text {
         text-align: justify;
@@ -29,6 +50,11 @@
         color: var(--color-light-5);
         font-weight: 300;
         letter-spacing: .1rem;
+
+        @include respond(tab-port) {
+            font-size: 1.6rem;
+        }
+        
     }
 
     // --- SITE-MAP ---
@@ -76,6 +102,12 @@
     }
 
     // --- CONTACT ---
+
+    &__contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     &__contact-heading {
         font-weight: 300;

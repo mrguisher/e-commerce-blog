@@ -54,6 +54,13 @@
         border-bottom: .5rem solid transparent;
         transition: all .7s;
 
+        @include respond(tab-port) {
+            width: 70vw;
+        }
+        @include respond(tab-land) {
+            width: 60vw;
+        }
+
         &:focus {
             outline: none;
             border-bottom: .5rem solid var(--color-green);
