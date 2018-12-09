@@ -86,7 +86,6 @@
         margin-left: 1rem;
     }
 }
-
 .blog-categories {
 
     &__main {
@@ -117,10 +116,6 @@
         margin-bottom: 1rem;
         list-style-type: none;
         border-left: .25rem solid var(--color-primary-2-opacity);
-    }
-
-    &__list {
-        
     }
     &__item {
         position: relative;

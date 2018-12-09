@@ -1,13 +1,21 @@
 .about {
     padding: 3rem 3rem;
+   
+    @include respond(tab-port) {
+        width: 40vw;
+        margin: auto auto;
+        padding: 5rem 0;
+        padding-bottom: 0;
+    }
 
     &__heading {
         text-align: center;
     }
     &__description {
-        text-align: justify;
-        font-size: 1.3rem;
+        // text-align: justify;
+        font-size: 1.6rem;
         color: var(--color-dark-3);
+        letter-spacing: .2rem;
     }
     &__name {
         text-align: center;

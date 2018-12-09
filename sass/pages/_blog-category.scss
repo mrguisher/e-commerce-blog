@@ -12,6 +12,10 @@
         max-width: 55vw;
         padding: 6rem 8rem;
     }
+    @include respond(big-desktop) {
+        max-width: 50vw;
+        padding: 8rem 10rem;
+    }
     &__heading {
         margin-bottom: 2rem;
     }
@@ -21,7 +25,5 @@
         letter-spacing: .1rem;
         line-height: 2.4rem;
         text-align: justify;
-
-        
     }
 }

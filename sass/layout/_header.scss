@@ -1,10 +1,13 @@
 .header-home {
-    background-image: url("../img/blog3.jpg");
+    background-image: url("../img/bcg2.jpg");
     background-color: var(--color-photo-overlay);
     background-blend-mode: overlay;
     background-size: cover;
     display: flex;
     z-index: 0;
+
+    animation-duration: 2s;
+    animation-name: fadeIn;
 
     @include respond(large-phone) {
         min-height: 75vh;
@@ -18,22 +21,17 @@
     @include respond(big-desktop) {
         min-height: 60vh;
     }
-    
 }
 
 .slider {
     margin: auto auto;
     display: flex;
     flex-direction: column;
-    animation-duration: 3s;
-    animation-name: fadeIn;
     
     @include respond(small-phone) {
         padding-left: 2rem;
         padding-right: 2rem;
     }
-
-    
     &__text-box {
         display: flex;
         flex-direction: column;

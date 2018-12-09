@@ -1,18 +1,25 @@
 .breadcrumb {
     padding-left: 4rem;
     margin: 1rem 0;
+    
+    @include respond(desktop) {
+        padding-left: 8rem;
+        margin: 2rem 0;
+    }
     &__list {
         display: flex;
         flex-direction: row;
         font-size: 1.4rem;
         list-style-type: none;
-    }
 
+        @include respond(tab-port) {
+            font-size: 1.5rem;
+        }
+    }
     &__item-slash {
         padding: 0 1.2rem;
         font-weight: 300;
     }
-
     &__link{
         &:link,
         &:visited {
