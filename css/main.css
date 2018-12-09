@@ -441,8 +441,8 @@ input {
 
 .header-home {
   background-image: url("../img/bcg2.jpg");
-  background-color: var(--color-photo-overlay);
   background-blend-mode: overlay;
+  background-color: var(--color-photo-overlay);
   background-size: cover;
   display: flex;
   z-index: 0;
