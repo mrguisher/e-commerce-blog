@@ -1,16 +1,27 @@
 .blog-category {
-
     padding: 3rem 4rem;
     background-color: var(--color-dark-3);
     
+    @include respond(tab-port) {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 60vw;
+        padding: 4rem 5rem;
+    }
+    @include respond(desktop) {
+        max-width: 55vw;
+        padding: 6rem 8rem;
+    }
     &__heading {
         margin-bottom: 2rem;
     }
     &__description {
-        font-size: 1.3rem;
-        color: var(--color-light);
+        font-size: 1.6rem;
+        color: var(--color-light-4);
         letter-spacing: .1rem;
-        line-height: 2rem;
+        line-height: 2.4rem;
         text-align: justify;
+
+        
     }
 }

@@ -19,7 +19,8 @@
         @include respond(desktop) {
             flex-direction: row;
             align-items: flex-start;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            padding: 0 auto;
         }
     }
 
@@ -31,7 +32,7 @@
         margin-bottom: 5rem;
 
         @include respond(desktop) {
-            max-width: 25vw;
+            max-width: 15vw;
         }
     }
     &__logo {
@@ -41,6 +42,10 @@
 
         @include respond(tab-port) {
             width: 20rem;
+            margin-bottom: 6rem;
+        }
+        @include respond(desktop) {
+            width: 16rem;
             margin-bottom: 6rem;
         }
     }
@@ -55,12 +60,17 @@
             font-size: 1.6rem;
         }
         
+        
     }
 
     // --- SITE-MAP ---
 
     &__site-map {
         margin-bottom: 5rem;
+
+        @include respond(desktop) {
+            margin-bottom: 0;
+        }
     }
     &__heading {
         text-align: center;
@@ -130,23 +140,25 @@
             font-size: 1.6rem;
         }
     }
+    &__contact-mobile-link {
+        align-self: flex-start;
+    }
     &__contact-icons, &__contact-links {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         line-height: 3rem;
+        
+        @include respond(desktop) {
+            font-size: 1.2rem;
+        }
     }
     &__contact-icons {
         align-items: center;
     }
-    &__contact-mobile-link {
-        align-self: end;
-    }
-
     &__socials {
         display: flex;
         justify-content: center;
-        
     }
     &__fb {
         margin-right: 3rem;
@@ -164,6 +176,11 @@
         font-size: .9rem;
         color: var(--color-light-4);
         justify-content: center;
+        
+        @include respond(desktop) {
+            font-size: 1.2rem;
+            padding: 1rem 0;
+        }
 
         &--left {
             border-right: 1px solid var(--color-light-4);

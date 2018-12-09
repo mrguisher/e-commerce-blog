@@ -1,5 +1,8 @@
     .home {
-    
+        background-color: var(--color-light-4);
+        display: flex;
+        flex-direction: column;
+
         &__blogpost-container {
             padding-left: 3rem;
             padding-right: 3rem;
@@ -14,7 +17,13 @@
                 justify-content: center;
             }
             @include respond(desktop) {
-                width: 70%;
+                padding: 0;
+                width: 80%;
+                margin: 0 auto;
+                align-items: center;
+            }
+            @include respond(big-desktop) {
+                width: 60%;
             }
         }
     }
@@ -34,7 +43,10 @@
     &:nth-child(odd) {
 
         @include respond(tab-land) {
-            margin-right: 3rem;
+            margin-right: 5rem;
+        }
+        @include respond(desktop) {
+            margin-right: 10rem;
         }
     }
 
@@ -43,24 +55,29 @@
     }
     @include respond(tab-port) {
         max-width: 60vw; 
+        margin-bottom: 8rem;
     }
 
     @include respond(tab-land) {
         max-width: 40vw; 
         align-self: center;
         min-height: 60vh;
+        margin-bottom: 10rem;
     }
     @include respond(desktop) {
         max-width: 25vw; 
-        align-self: center;
-        min-height: 60vh;
+        align-self: auto;
+        min-height: 50vh;
+    }
+    @include respond(big-desktop) {
+        max-width: 18vw; 
+        min-height: 25vh;
     }
     
-
     &__img-container {
         overflow: hidden;
         height: 55%;
-        opacity: .6;
+        opacity: .8;
     }
     &__img{
         width: 100%;
@@ -92,7 +109,7 @@
         padding: .1rem 0;
         line-height: 1.8rem;
         background: linear-gradient(45deg, var(--color-primary), var(--color-primary-2) );
-        opacity: .9;
+        opacity: 1;
     }
  
 

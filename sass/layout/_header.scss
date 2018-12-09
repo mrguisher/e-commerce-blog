@@ -1,24 +1,33 @@
 .header-home {
-    background-image: url("../img/bcg2.jpg");
+    background-image: url("../img/blog3.jpg");
     background-color: var(--color-photo-overlay);
     background-blend-mode: overlay;
     background-size: cover;
     display: flex;
-    
+    z-index: 0;
 
-    @include respond(tab-port) {
-        min-height: 70vh;
-    }
     @include respond(large-phone) {
-        min-height: 85vh;
+        min-height: 75vh;
     }
+    @include respond(tab-port) {
+        min-height: 80vh;
+    }
+    @include respond(tab-land) {
+        min-height: 75vh;
+    }
+    @include respond(big-desktop) {
+        min-height: 60vh;
+    }
+    
 }
 
 .slider {
     margin: auto auto;
     display: flex;
     flex-direction: column;
-
+    animation-duration: 3s;
+    animation-name: fadeIn;
+    
     @include respond(small-phone) {
         padding-left: 2rem;
         padding-right: 2rem;
@@ -38,7 +47,14 @@
             max-width: 50vw;
             margin-top: 8rem;
         }
-        
+        @include respond(tab-land) {
+            max-width: 50vw;
+            margin-top: 30rem;
+        }
+        @include respond(big-desktop) {
+            max-width: 45vw;
+            margin-top: 30rem;
+        }
     }
     &__heading { 
         text-align: center;
@@ -46,6 +62,7 @@
         margin-bottom: 2rem;
         max-width: 60vw;
         align-self: center;
+        z-index: 5;
 
         @include respond(small-phone) {
             padding: 0;
@@ -59,19 +76,34 @@
         display: flex;
         flex-direction: column;
         
-        
+        &::after {
+            content: "";
+            width: 100%;
+            height: .01px;
+            background-color: transparent;
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            top: 50%;
+            box-shadow: 0 1rem 30rem 10rem rgba(0, 0, 0, .3);
+            z-index: 0;
+
+            @include respond(tab-port) {
+                box-shadow: 0 5rem 40rem 15rem rgba(0, 0, 0, .2);
+            }
+
+        }
         @include respond(small-phone) {
             padding: 3rem 1rem;
         }
-        
     }
     &__description {
         font-size: 1.6em;
         text-align: justify;
-        color: var(--color-light-2);
+        color: var(--color-light-3);
         letter-spacing: .1rem;
-        text-shadow: var(--text-shadow);
         font-weight: 100;
+        z-index: 5;
 
         @include respond(small-phone) {
             font-size: 1.4rem;
@@ -79,6 +111,7 @@
     }
     &__btn-header {
         margin-top: 4rem;
+        z-index: 1;
 
         @include respond(tab-port) {
             margin-top: 6rem;

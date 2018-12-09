@@ -1,4 +1,6 @@
 .blogpost {
+    display: flex;
+    flex-direction: column;
 
     &__heading-text-box{
         padding: 0 2rem;
@@ -7,7 +9,14 @@
         margin-bottom: 2rem;
     }
     &__img {
-        height: 22rem;
+        height: 40vw;
+        margin: auto auto;
+        @include respond(tab-port) {
+            height: 30vw;
+        }
+        @include respond(desktop) {
+            height: 25vw;
+        }
     }
     &__text-content {
         text-align: justify;
