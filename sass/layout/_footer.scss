@@ -3,7 +3,6 @@
     position: relative;
     color: var(--color-light-2);
 
-    
     &__main {
         display: flex;
         flex-direction: column;
@@ -35,6 +34,9 @@
             max-width: 15vw;
         }
     }
+    &__logo-box {
+        align-self: center;
+    }
     &__logo {
         width: 18rem;
         align-self: center;
@@ -59,8 +61,6 @@
         @include respond(tab-port) {
             font-size: 1.6rem;
         }
-        
-        
     }
 
     // --- SITE-MAP ---
@@ -96,7 +96,6 @@
             margin-bottom: 1rem;
         }
     }
-    
     &__list {
         list-style-type: none;
         padding-left: 2rem;
@@ -167,7 +166,9 @@
     &__twitter {
         color: var(---color-light);
     }
+
     // --- LEGAL ---
+
     &__legal {
         background-color: var(--color-dark-3);
         display: flex;
@@ -181,7 +182,6 @@
             font-size: 1.2rem;
             padding: 1rem 0;
         }
-
         &--left {
             border-right: 1px solid var(--color-light-4);
             padding-right: 2rem;

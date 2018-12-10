@@ -6,9 +6,6 @@
     display: flex;
     z-index: 0;
 
-    animation-duration: 2s;
-    animation-name: fadeIn;
-
     @include respond(large-phone) {
         min-height: 75vh;
     }
@@ -22,11 +19,13 @@
         min-height: 60vh;
     }
 }
-
 .slider {
     margin: auto auto;
     display: flex;
     flex-direction: column;
+
+    animation-duration: 2s;
+    animation-name: fadeIn;
     
     @include respond(small-phone) {
         padding-left: 2rem;
@@ -89,7 +88,6 @@
             @include respond(tab-port) {
                 box-shadow: 0 5rem 40rem 15rem rgba(0, 0, 0, .2);
             }
-
         }
         @include respond(small-phone) {
             padding: 3rem 1rem;

@@ -5,7 +5,7 @@
         margin-bottom: 4rem;
     }
     @include respond(desktop) {
-        margin-bottom: 8rem;
+        margin-bottom: 6rem;
     }
 }
 .margin-bottom-medium {
@@ -25,7 +25,7 @@
         margin-top: 4rem;
     }
     @include respond(desktop) {
-        margin-top: 8rem;
+        margin-top: 6rem;
     }
 }
 .margin-top-medium {

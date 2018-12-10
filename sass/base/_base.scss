@@ -43,13 +43,13 @@ html {
         font-size: 56.25%  // 1rem = 9px
     }
     @include respond(large-phone) {
-        font-size: 66%  // 1rem = 10.5px
+        font-size: 64%  // 1rem = 10.2px
     }
     @include respond(tab-port) {
-        font-size: 64%  // 1rem = 11px
+        font-size: 64%  // 1rem = 10.2px
     }
     @include respond(tab-land) {
-        font-size: 62.5%  // 1rem = 11.5px
+        font-size: 62.5%  // 1rem = 10px
     }
     @include respond(desktop) {
         font-size: 52.5%  // 1rem = 8.5px
@@ -58,7 +58,7 @@ html {
 }
 body {
     background-color: var(--color-light-2);
-    animation-duration: .6s;
+    animation-duration: .5s;
     animation-name: fadeIn;
     @keyframes fadeIn  {
         0% {
@@ -69,7 +69,6 @@ body {
         }
     }
 }
-
 .lock-scroll {
     overflow: hidden;
 }

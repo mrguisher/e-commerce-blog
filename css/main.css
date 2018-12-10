@@ -24,7 +24,7 @@ $breakpoint argument choices:
       margin-bottom: 4rem; } }
   @media only screen and (min-width: 75em) {
     .margin-bottom-small {
-      margin-bottom: 8rem; } }
+      margin-bottom: 6rem; } }
 
 .margin-bottom-medium {
   margin-bottom: 4rem; }
@@ -42,7 +42,7 @@ $breakpoint argument choices:
       margin-top: 4rem; } }
   @media only screen and (min-width: 75em) {
     .margin-top-small {
-      margin-top: 8rem; } }
+      margin-top: 6rem; } }
 
 .margin-top-medium {
   margin-top: 4rem; }
@@ -195,7 +195,7 @@ html {
       font-size: 56.25%; } }
   @media only screen and (min-width: 34.4em) {
     html {
-      font-size: 66%; } }
+      font-size: 64%; } }
   @media only screen and (min-width: 40.6em) {
     html {
       font-size: 64%; } }
@@ -208,7 +208,7 @@ html {
 
 body {
   background-color: var(--color-light-2);
-  animation-duration: .6s;
+  animation-duration: .5s;
   animation-name: fadeIn; }
 
 @keyframes fadeIn {
@@ -445,9 +445,7 @@ input {
   background-color: var(--color-photo-overlay);
   background-size: cover;
   display: flex;
-  z-index: 0;
-  animation-duration: 2s;
-  animation-name: fadeIn; }
+  z-index: 0; }
   @media only screen and (min-width: 34.4em) {
     .header-home {
       min-height: 75vh; } }
@@ -464,7 +462,9 @@ input {
 .slider {
   margin: auto auto;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  animation-duration: 2s;
+  animation-name: fadeIn; }
   @media only screen and (max-width: 25em) {
     .slider {
       padding-left: 2rem;
@@ -574,6 +574,8 @@ input {
     @media only screen and (min-width: 75em) {
       .footer__about {
         max-width: 15vw; } }
+  .footer__logo-box {
+    align-self: center; }
   .footer__logo {
     width: 18rem;
     align-self: center;
@@ -982,12 +984,13 @@ input {
         height: 45%; } }
     @media only screen and (min-width: 75em) {
       .blogpost__img-box {
-        width: 35%; } }
+        width: 75%; } }
   .blogpost__img {
     width: 100%; }
   .blogpost__text-content {
     text-align: justify;
-    font-size: var(--default-font-size); }
+    font-size: 1.8rem;
+    line-height: 2.8rem; }
     @media only screen and (min-width: 75em) {
       .blogpost__text-content {
         width: 60vw;
@@ -1157,6 +1160,14 @@ input {
     .ty-page {
       padding-left: 5rem;
       padding-right: 5rem; } }
+  @media only screen and (min-width: 75em) {
+    .ty-page {
+      height: 70vh;
+      margin: auto auto; } }
+  @media only screen and (min-width: 112.5em) {
+    .ty-page {
+      height: 80vh;
+      margin: auto auto; } }
   .ty-page__img {
     width: 10rem;
     align-self: center;
@@ -1167,5 +1178,11 @@ input {
     @media only screen and (min-width: 40.6em) {
       .ty-page__img {
         width: 12rem; } }
+    @media only screen and (min-width: 112.5em) {
+      .ty-page__img {
+        width: 16rem; } }
   .ty-page__text {
     margin-bottom: 10rem; }
+    @media only screen and (min-width: 75em) {
+      .ty-page__text {
+        margin-top: 4rem; } }
