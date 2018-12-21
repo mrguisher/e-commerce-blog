@@ -56,6 +56,19 @@ $breakpoint argument choices:
 .padding-nav {
   padding-top: 7rem; }
 
+@keyframes moveDownArrows {
+  0% {
+    opacity: 1;
+    transform: translateY(0); }
+  30% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  60% {
+    opacity: .8;
+    transform: translateY(-2rem); }
+  80% {
+    opacity: 1; } }
+
 h1 {
   font-size: 3.8rem;
   line-height: 4.5rem; }
@@ -159,9 +172,10 @@ hr {
 :root {
   --color-primary: #e91a80;
   --color-primary-2: #ff4918;
-  --color-primary-2-opacity: rgba(255, 70, 70, 0.722);
+  --color-primary-opacity: rgba(255, 38, 215, 0.564);
+  --color-primary-2-opacity: rgba(255, 70, 70, 0.622);
   --color-dark: rgb(30, 30, 30);
-  --color-dark-2: rgb(70, 70, 70);
+  --color-dark-2: #464646;
   --color-dark-3: hsl(0, 0%, 18%);
   --color-dark-4: rgb(24, 24, 24);
   --color-light: rgb(250, 248, 248);
@@ -208,14 +222,7 @@ html {
 
 body {
   background-color: var(--color-light-2);
-  animation-duration: .5s;
-  animation-name: fadeIn; }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
+  opacity: 0; }
 
 .lock-scroll {
   overflow: hidden; }
@@ -476,7 +483,7 @@ input {
     margin-top: 5em;
     position: relative;
     align-self: center;
-    max-width: 70vw; }
+    max-width: 80vw; }
     @media only screen and (min-width: 40.6em) {
       .slider__text-box {
         max-width: 50vw;
@@ -484,7 +491,7 @@ input {
     @media only screen and (min-width: 56.25em) {
       .slider__text-box {
         max-width: 50vw;
-        margin-top: 30rem; } }
+        margin-top: 25rem; } }
     @media only screen and (min-width: 112.5em) {
       .slider__text-box {
         max-width: 45vw;
@@ -545,6 +552,10 @@ input {
     @media only screen and (max-width: 25em) {
       .slider__nav {
         margin-top: 3rem; } }
+  .slider__arrow-down {
+    text-align: center;
+    font-size: 3rem;
+    animation: moveDownArrows 1s infinite; }
 
 .footer {
   background-color: var(--color-dark-4);
@@ -920,15 +931,23 @@ input {
   margin-bottom: 1.8rem; }
 
 .about {
-  padding: 3rem 3rem; }
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   @media only screen and (min-width: 40.6em) {
     .about {
-      width: 40vw;
+      width: 80vw;
       margin: auto auto;
       padding: 5rem 0;
-      padding-bottom: 0; } }
+      padding-bottom: 0;
+      flex-direction: row;
+      justify-content: space-evenly; } }
+  .about__description-box {
+    max-width: 30vw; }
   .about__heading {
-    text-align: center; }
+    text-align: center;
+    padding: 1rem 0;
+    background: linear-gradient(50deg, var(--color-primary-opacity), var(--color-primary-2)); }
   .about__description {
     font-size: 1.6rem;
     color: var(--color-dark-3);
@@ -936,9 +955,18 @@ input {
   .about__name {
     text-align: center; }
 
+.box1 {
+  width: 20vw;
+  height: 20vh;
+  background-color: rgba(0, 128, 128, 0.219);
+  display: inline-block; }
+
 .blog-category {
   padding: 3rem 4rem;
-  background-color: var(--color-dark-3); }
+  background-image: url("../img/category.png");
+  background-blend-mode: overlay;
+  background-color: rgba(36, 36, 36, 0.35);
+  background-size: cover; }
   @media only screen and (min-width: 40.6em) {
     .blog-category {
       margin-left: auto;
@@ -1051,13 +1079,13 @@ input {
   position: relative;
   margin-bottom: 5rem;
   border-radius: .4rem;
-  box-shadow: 0 0.5rem 1.5rem var(--color-dark-3);
+  box-shadow: 0 0 2rem 0.2rem var(--color-dark-3);
   display: flex;
   flex-direction: column;
   overflow: hidden;
   background-color: var(--color-dark-3);
   max-width: 80vw;
-  border: 2px solid var(--color-dark-2); }
+  border: 3px solid var(--color-dark-2); }
   @media only screen and (min-width: 56.25em) {
     .post-min:nth-child(odd) {
       margin-right: 5rem; } }

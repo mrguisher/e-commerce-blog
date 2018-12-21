@@ -2,10 +2,10 @@
     //  COLORS
     --color-primary: #e91a80;
     --color-primary-2: #ff4918;
-    // --color-primary-opacity: rgba(255, 38, 215, 0.664);
-    --color-primary-2-opacity: rgba(255, 70, 70, 0.722);
+    --color-primary-opacity: rgba(255, 38, 215, 0.564);
+    --color-primary-2-opacity: rgba(255, 70, 70, 0.622);
     --color-dark: rgb(30, 30, 30);
-    --color-dark-2: rgb(70, 70, 70);
+    --color-dark-2: #464646;
     --color-dark-3: hsl(0, 0%, 18%);
     --color-dark-4: rgb(24, 24, 24);
     --color-light: rgb(250, 248, 248);
@@ -58,16 +58,17 @@ html {
 }
 body {
     background-color: var(--color-light-2);
-    animation-duration: .5s;
-    animation-name: fadeIn;
-    @keyframes fadeIn  {
-        0% {
-            opacity: 0;
-        }
-        100% {
-            opacity: 1;
-        }
-    }
+    opacity: 0;
+    // animation-duration: .5s;
+    // animation-name: fadeIn;
+    // @keyframes fadeIn  {
+    //     0% {
+    //         opacity: 0;
+    //     }
+    //     100% {
+    //         opacity: 1;
+    //     }
+    // }
 }
 .lock-scroll {
     overflow: hidden;

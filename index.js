@@ -1,3 +1,14 @@
+// $(document).ready(body_opacity);
+
+function body_opacity() {
+    $("body").animate({
+        opacity: '1'
+    });
+}
+
+body_opacity();
+
+
 $(document).ready(nav_menu);
 var status = 1;
 

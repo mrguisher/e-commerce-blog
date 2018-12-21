@@ -1,6 +1,9 @@
 .blog-category {
     padding: 3rem 4rem;
-    background-color: var(--color-dark-3);
+    background-image: url("../img/category.png");
+    background-blend-mode: overlay;
+    background-color: rgba(36, 36, 36, .35);
+    background-size: cover;
     
     @include respond(tab-port) {
         margin-left: auto;

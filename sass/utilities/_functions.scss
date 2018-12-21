@@ -1,0 +1,17 @@
+@keyframes moveDownArrows {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    30% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    60% {
+        opacity: .8;
+        transform: translateY(-2rem);
+    }
+    80% {
+        opacity: 1;
+    }
+}
