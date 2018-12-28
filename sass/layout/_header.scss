@@ -6,17 +6,18 @@
     display: flex;
     z-index: 0;
    
-    @include respond(large-phone) {
-        min-height: 75vh;
-    }
-    @include respond(tab-port) {
-        min-height: 80vh;
-    }
-    @include respond(tab-land) {
-        min-height: 75vh;
-    }
+    min-height: 90vh;
+    // @include respond(large-phone) {
+    //     min-height: 95vh;
+    // }
+    // @include respond(tab-port) {
+    //     min-height: 95vh;
+    // }
+    // @include respond(tab-land) {
+    //     min-height: 100vh;
+    // }
     @include respond(big-desktop) {
-        min-height: 60vh;
+        min-height: 80vh;
     }
 }
 .slider {
@@ -46,11 +47,11 @@
         }
         @include respond(tab-land) {
             max-width: 50vw;
-            margin-top: 25rem;
+            margin-top: 15rem;
         }
         @include respond(big-desktop) {
             max-width: 45vw;
-            margin-top: 30rem;
+            margin-top: 20rem;
         }
     }
     &__heading { 
@@ -124,6 +125,6 @@
     &__arrow-down {
         text-align: center;
         font-size: 3rem;
-        animation: moveDownArrows 1s infinite;
+        animation: moveDownArrows 1.4s infinite;
     }
 }
