@@ -1,5 +1,4 @@
 .blog-category {
-    padding: 3rem 4rem;
     background-image: url("../img/category.png");
     background-blend-mode: overlay;
     background-color: rgba(36, 36, 36, .35);
@@ -8,16 +7,14 @@
     @include respond(tab-port) {
         margin-left: auto;
         margin-right: auto;
-        max-width: 60vw;
+        // max-width: 60vw;
         padding: 4rem 5rem;
     }
     @include respond(desktop) {
-        max-width: 55vw;
-        padding: 6rem 8rem;
+        padding: 8rem 20rem;
     }
     @include respond(big-desktop) {
-        max-width: 50vw;
-        padding: 8rem 10rem;
+        padding: 16rem 30rem;
     }
     &__heading {
         margin-bottom: 2rem;
