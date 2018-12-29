@@ -1,5 +1,5 @@
     .home {
-        background-color: var(--color-light-4);
+        background-color: var(--color-white);
         display: flex;
         flex-direction: column;
 
@@ -32,7 +32,7 @@
     position: relative;
     margin-bottom: 5rem;
     border-radius: .4rem;
-    box-shadow: 0 0 2rem .2rem var(--color-dark-3);
+    box-shadow: 0 0 1rem .1rem var(--color-dark-3);
     display: flex;
     flex-direction: column;
     overflow: hidden;
