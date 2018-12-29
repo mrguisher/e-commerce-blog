@@ -74,10 +74,11 @@
             left: 0;
         }
         &::after {
-            top: .55rem;
+            content: "";
+            top: .56rem;
             
             @include respond(large-phone) {
-                top: .63rem;
+                top: .65rem;
             }
         }
     }
@@ -145,10 +146,17 @@
         }
     }
     &__toggle {
-        height: 5rem;
-        width: 5rem;
-        // background-color: red;
+        height: 7rem;
+        width: 7rem;
+        background-color: transparent;
         display: inline;
+        position: absolute;
+        right: 0;
+        z-index: 10;
+
+        @include respond(tab-port) {
+            display: none;
+        }
     }
     }
 
