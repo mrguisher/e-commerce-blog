@@ -3,11 +3,9 @@
     background-blend-mode: overlay;
     background-color: rgba(36, 36, 36, .35);
     background-size: cover;
+    padding: 2rem 3rem;
     
-    @include respond(tab-port) {
-        margin-left: auto;
-        margin-right: auto;
-        // max-width: 60vw;
+    @include respond(large-phone) {
         padding: 4rem 5rem;
     }
     @include respond(desktop) {

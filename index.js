@@ -8,8 +8,10 @@ function body_opacity() {
 
 body_opacity();
 
-
 $(document).ready(nav_menu);
+
+$(document).ready(blog_items);
+
 var status = 1;
 
 function nav_menu() {
@@ -52,4 +54,32 @@ function nav_menu() {
             status = 1;
         }
     });
+
+
+    
 };
+
+var status_display = 0;
+
+    function blog_items() {
+
+    console.log("kniurwa");
+
+    $(".nav-phone__toggle").click(function() {
+
+        if(status_display === 0) {
+            $(".navigation-phone__blog-item").css(
+                "display", "inline"
+            );
+            status_display = 1;
+        }
+        else {
+            $(".navigation-phone__blog-item").css(
+                "display", "none"
+            );
+            status_display = 0;
+        }
+    })
+};
+
+

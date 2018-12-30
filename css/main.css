@@ -833,6 +833,16 @@ input {
     .navigation-phone__item:active, .navigation-phone__item:focus {
       background-color: var(--color-dark-2);
       color: var(--color-light); }
+  .navigation-phone__blog-item {
+    display: none;
+    color: var(--color-light-2);
+    font-size: 1.2rem;
+    letter-spacing: .1rem;
+    margin-left: 4rem;
+    line-height: 3em; }
+    .navigation-phone__blog-item:active, .navigation-phone__blog-item:focus {
+      background-color: var(--color-dark-2);
+      color: var(--color-light); }
 
 .aside {
   position: relative;
@@ -989,11 +999,10 @@ input {
   background-image: url("../img/category.png");
   background-blend-mode: overlay;
   background-color: rgba(36, 36, 36, 0.35);
-  background-size: cover; }
-  @media only screen and (min-width: 40.6em) {
+  background-size: cover;
+  padding: 2rem 3rem; }
+  @media only screen and (min-width: 34.4em) {
     .blog-category {
-      margin-left: auto;
-      margin-right: auto;
       padding: 4rem 5rem; } }
   @media only screen and (min-width: 75em) {
     .blog-category {

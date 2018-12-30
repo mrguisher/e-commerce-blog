@@ -191,4 +191,18 @@
             color: var(--color-light);
         }
     }
+    &__blog-item {
+        display: none;
+        color: var(--color-light-2);
+        font-size: 1.2rem;
+        letter-spacing: .1rem;
+        margin-left: 4rem;
+        line-height: 3em;
+
+        &:active,
+        &:focus {
+            background-color: var(--color-dark-2);
+            color: var(--color-light);
+        }
+    }
 }
