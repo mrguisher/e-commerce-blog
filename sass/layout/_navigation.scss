@@ -94,6 +94,10 @@
         background-color: white;
         width: 3.6rem;
         height: 2px;
+
+        @include respond(tab-port) {
+            display: none;
+        }
         }
 
         &::before,
@@ -120,6 +124,7 @@
         display: flex;
         align-items: stretch;
         list-style-type: none;
+        z-index: 1;
     }
 
     &__navigation-item {
@@ -129,20 +134,20 @@
             display: inline-block;
             font-size: 1.2rem;;
             color: var(--color-light);
-            margin: 0 2rem;
             text-transform: uppercase;
-            padding: .5rem 0;
+            padding: 1.5rem 3rem;
             letter-spacing: .1rem;
+            cursor: pointer;
+
+            &:hover {
+                background-color: var(--color-dark-2);
+            }
 
 
             @include respond(desktop) {
-                margin: auto 3.5rem;
+                margin-right: 4rem;
                 font-size: 1.4rem;
             }
-
-            // &:first-child {
-            //     border-bottom: 2px solid var(--color-primary);
-            // }
         }
     }
     &__toggle {
@@ -156,6 +161,44 @@
 
         @include respond(tab-port) {
             display: none;
+        }
+    }
+    &__navigation-blog-list {
+        display: none;
+        
+        @include respond(tab-port) {
+            display: none;
+            top: 3.8rem;
+            list-style-type: none;
+            position: absolute;
+            z-index: 15;
+            top: 5.2rem;
+            left: 0;
+            flex-direction: column;
+            // box-shadow: 0 .5rem 1rem -.2rem black;
+        }
+        @include respond(desktop) {
+            top: 5.6rem;
+        }
+
+    }
+    &__navigation-blog-item {
+        display: none;
+
+        @include respond(tab-port) {
+            display: inline-block;
+            padding: 2rem 3rem;
+            background-color: var(--color-dark-3);
+            color: var(--color-light-2);
+            font-size: 1rem;
+            text-transform: uppercase;
+            border-top: 2px solid var(--color-dark-4);
+
+        &:hover,
+        &:active {
+            background-color: var(--color-dark-2);
+            color: whitesmoke;
+        }
         }
     }
     }

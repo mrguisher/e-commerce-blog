@@ -63,18 +63,22 @@ var status_display = 0;
 
     function blog_items() {
 
-    console.log("kniurwa");
-
-    $(".nav-phone__toggle").click(function() {
+    $(".nav-blog__toggle").click(function() {
 
         if(status_display === 0) {
             $(".navigation-phone__blog-item").css(
                 "display", "inline"
             );
+            $(".nav-bar__navigation-blog-list").css(
+                "display", "flex"
+            );
             status_display = 1;
         }
         else {
             $(".navigation-phone__blog-item").css(
+                "display", "none"
+            );
+            $(".nav-bar__navigation-blog-list").css(
                 "display", "none"
             );
             status_display = 0;

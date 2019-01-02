@@ -13,26 +13,36 @@
 <body>
         <header class="header">
             <section class="nav-bar">
+                <a class="nav-bar__toggle"></a>
                 <a href="index.html" class="nav-bar__logo-link"><img src="img/logo.svg" alt="Logo" class="nav-bar__logo"></a>
                 <nav class="nav-bar__navigation">
-                    <a class="nav-bar__toggle"><div class="nav-bar__nav-phone"></div></a>
-                    <a class="nav-bar__toggle"><div class="nav-bar__nav-phone-crossed"></div></a>
-                    <ol class="nav-bar__nav-list">
-                        <li class="nav-bar__navigation-item"><a href="index.html">Blog</a> </li>
-                        <li class="nav-bar__navigation-item"><a href="about.html">O mnie</a> </li>
+                    <div class="nav-bar__nav-phone"></div>
+                    <div class="nav-bar__nav-phone-crossed"></div>
+                    <ul class="nav-bar__nav-list">
+                        <li class="nav-bar__navigation-item nav-blog__toggle">Blog</li> 
+                            <ul class="nav-bar__navigation-blog-list">
+                                <a href="category.html" class="nav-bar__navigation-blog-item">Omnichannel</a>
+                                <a href="category.html" class="nav-bar__navigation-blog-item">E-commerce</a>
+                                <a href="category.html" class="nav-bar__navigation-blog-item">Optymalizacja konwersji</a>
+                                <a href="category.html" class="nav-bar__navigation-blog-item">Generowanie leadów</a>
+                            </ul>
+                        <a href="about.html" class="nav-bar__navigation-item">O mnie</a> 
                         <!-- <li class="nav-bar__navigation-item"><a href="#">Współpraca</a> </li>    -->
-                        <li class="nav-bar__navigation-item"><a href="contact.html">Kontakt</a> </li>
-                    </ol>
+                        <a href="about.html" class="nav-bar__navigation-item">Kontakt</a> 
+                    </ul>
                 </nav>
             </section>
-            
-                    <!-- --- MOBILE NAV --- -->
-            
+    
+            <!-- --- MOBILE NAV --- -->
+    
             <nav class="navigation-phone">
                 <ul class="navigation-phone__list">
-                    <a href="index.html" class="navigation-phone__item">
-                        <li>Blog</li>
-                    </a>
+                        <li class="navigation-phone__item nav-blog__toggle">Blog</li>
+                        <a href="category.html" class="navigation-phone__blog-item">Omnichannel</a>
+                        <a href="category.html" class="navigation-phone__blog-item">E-commerce</a>
+                        <a href="category.html" class="navigation-phone__blog-item">Optymalizacja konwersji</a>
+                        <a href="category.html" class="navigation-phone__blog-item">Generowanie leadów</a>
+                        
                     <a href="about.html" class="navigation-phone__item">
                         <li>O mnie</li>
                     </a>
