@@ -7,15 +7,10 @@
     z-index: 0;
    
     min-height: 90vh;
-    // @include respond(large-phone) {
-    //     min-height: 95vh;
-    // }
-    // @include respond(tab-port) {
-    //     min-height: 95vh;
-    // }
-    // @include respond(tab-land) {
-    //     min-height: 100vh;
-    // }
+    
+    @include respond(tab-port) {
+        min-height: 100vh;
+    }
     @include respond(big-desktop) {
         min-height: 80vh;
     }

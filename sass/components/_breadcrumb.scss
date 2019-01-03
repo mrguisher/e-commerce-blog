@@ -16,9 +16,18 @@
             font-size: 1.5rem;
         }
     }
-    &__item-slash {
-        padding: 0 1.2rem;
-        font-weight: 300;
+    &__item {
+
+        font-size: 1.6rem;
+
+        &:not(:last-of-type)::after {
+            content: "/";
+            // padding: 0 1.2rem;
+            font-weight: 300;
+            margin: 0 2rem;
+            right: 1rem;
+        }
+        
     }
     &__link{
         &:link,

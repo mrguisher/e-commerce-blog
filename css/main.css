@@ -384,9 +384,13 @@ input {
     @media only screen and (min-width: 40.6em) {
       .breadcrumb__list {
         font-size: 1.5rem; } }
-  .breadcrumb__item-slash {
-    padding: 0 1.2rem;
-    font-weight: 300; }
+  .breadcrumb__item {
+    font-size: 1.6rem; }
+    .breadcrumb__item:not(:last-of-type)::after {
+      content: "/";
+      font-weight: 300;
+      margin: 0 2rem;
+      right: 1rem; }
   .breadcrumb__link:link, .breadcrumb__link:visited {
     color: var(--color-dark); }
   .breadcrumb__link:active {
@@ -455,6 +459,9 @@ input {
   display: flex;
   z-index: 0;
   min-height: 90vh; }
+  @media only screen and (min-width: 40.6em) {
+    .header-home {
+      min-height: 100vh; } }
   @media only screen and (min-width: 112.5em) {
     .header-home {
       min-height: 80vh; } }
@@ -786,7 +793,8 @@ input {
     display: flex;
     align-items: stretch;
     list-style-type: none;
-    z-index: 1; }
+    z-index: 1;
+    color: var(--color-light); }
   .nav-bar__navigation-item {
     display: none; }
     @media only screen and (min-width: 40.6em) {
@@ -798,7 +806,7 @@ input {
         padding: 1.5rem 3rem;
         letter-spacing: .1rem;
         cursor: pointer; }
-        .nav-bar__navigation-item:hover {
+        .nav-bar__navigation-item:hover, .nav-bar__navigation-item:active {
           background-color: var(--color-dark-2); } }
   @media only screen and (min-width: 40.6em) and (min-width: 75em) {
     .nav-bar__navigation-item {

@@ -125,6 +125,7 @@
         align-items: stretch;
         list-style-type: none;
         z-index: 1;
+        color: var(--color-light);
     }
 
     &__navigation-item {
@@ -139,11 +140,11 @@
             letter-spacing: .1rem;
             cursor: pointer;
 
-            &:hover {
+            &:hover,
+            &:active {
                 background-color: var(--color-dark-2);
+              
             }
-
-
             @include respond(desktop) {
                 margin-right: 4rem;
                 font-size: 1.4rem;
