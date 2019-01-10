@@ -18,14 +18,6 @@ h1 {
         }   
 }
 h2 {
-    font-size: 2.5rem;
-    line-height: 3rem;
-    
-    @include respond (tab-port) {
-        line-height: 3.5rem;
-    }
-}
-h3 {
     font-size: 3rem;
 
     @include respond(large-phone) {
@@ -36,11 +28,10 @@ h3 {
         } 
     @include respond(tab-land) {
         font-size: 3.7rem;
-        } 
+        }
+    
 }
-h4 {
-    font-size: 2.7rem;
-}
+
 p {
     line-height: 2.2rem;
     letter-spacing: .05rem;
@@ -62,11 +53,11 @@ p {
 .text-dark {
     color: var(--color-dark);
 }
-.text-gradient {
-    background: -webkit-linear-gradient(var(--color-primary), var(--color-primary-2));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+// .text-gradient {
+//     background: -webkit-linear-gradient(var(--color-primary), var(--color-primary-2));
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+// }
 
 // --- font-awesome ---
 .contact-icon-email, .contact-icon-mobile  {

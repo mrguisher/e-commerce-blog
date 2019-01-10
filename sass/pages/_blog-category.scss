@@ -3,10 +3,10 @@
     background-blend-mode: overlay;
     background-color: rgba(36, 36, 36, .35);
     background-size: cover;
-    padding: 2rem 3rem;
+    padding: 4rem 3rem;
     
     @include respond(large-phone) {
-        padding: 4rem 5rem;
+        padding: 5rem 10rem;
     }
     @include respond(desktop) {
         padding: 8rem 20rem;
@@ -16,10 +16,11 @@
     }
     &__heading {
         margin-bottom: 2rem;
+        font-size: 3rem;
     }
     &__description {
         font-size: 1.6rem;
-        color: var(--color-light-4);
+        color: var(--color-light-3);
         letter-spacing: .1rem;
         line-height: 2.4rem;
         text-align: justify;

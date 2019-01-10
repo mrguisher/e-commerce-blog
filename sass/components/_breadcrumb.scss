@@ -1,33 +1,47 @@
 .breadcrumb {
-    padding-left: 4rem;
-    margin: 1rem 0;
+    padding-left: 2rem;
+    margin: 0;
+    margin: 2rem 0;
     
+    @include respond(tab-port) {
+        padding-left: 4rem;
+    }
     @include respond(desktop) {
         padding-left: 8rem;
-        margin: 2rem 0;
+        
     }
     &__list {
         display: flex;
         flex-direction: row;
-        font-size: 1.4rem;
+        flex-wrap: wrap;
+        font-size: 1.2rem;
         list-style-type: none;
 
-        @include respond(tab-port) {
-            font-size: 1.5rem;
-        }
     }
     &__item {
-
-        font-size: 1.6rem;
-
-        &:not(:last-of-type)::after {
-            content: "/";
-            // padding: 0 1.2rem;
-            font-weight: 300;
-            margin: 0 2rem;
-            right: 1rem;
-        }
+        font-size: 1.2rem;
+        font-weight: 300;
         
+        @include respond(tab-port) {
+            font-size: 1.2rem;
+        }
+        @include respond(tab-land) {
+            font-size: 1.4rem;
+        }
+        @include respond(tab-land) {
+            font-size: 1.6rem;
+        }
+
+        &:not(:last-child)::after {
+            content: "/";
+            font-weight: 300;
+            margin: 0 1rem;
+            right: 1rem;
+
+            @include respond(tab-land) {
+                margin: 2rem;
+            }
+        }
     }
     &__link{
         &:link,

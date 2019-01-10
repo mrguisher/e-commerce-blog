@@ -73,14 +73,13 @@
 
     </header>
 
-
     <main class="home">
         <div class="home__heading-text-box margin-bottom-medium margin-top-medium">
             <h1 class="heading text-black heading-secondary ">Najnowsze wpisy</h1>
         </div>
 
         <section class="home__blogpost-container">
-        
+      
             <div class="post-min">
                 <div class="post-min__img-container">
                     <img src="img/blog2-min.jpg" alt="Front img" class="post-min__img">
@@ -151,13 +150,14 @@
         <section class="aside__box">
             <div class="aside__box-category">
                 <span class="newsletter__category">newsletter</span>
-                <h3 class="heading text-white aside__heading">Stay updated</h3>
+                <h2 class="heading text-white aside__heading">Stay updated</h2>
             </div>
-            <div class="newsletter__main">
+            <form class="newsletter__main">
                 <input type="email" class="newsletter__input" placeholder="Twój email" id="email" required>
-                <a href="ty-page.html" class="btn btn-cta newsletter__button">Subskrybuj <span class="newsletter__button-arrow">&roarr;</span></a>
-                
-            </div>
+                <div class="newsletter__disclaimer"><input type="checkbox" id="checkbox_1" class="newsletter__checkbox"> <label for="checkbox_1" class="newsletter__checkbox-label">Wyrażam zgodę na przetwarzanie moich danych osobowych przez (nazwa firmy) w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko.</label></div>
+                <div class="newsletter__disclaimer"><input type="checkbox" id="checkbox_2" class="newsletter__checkbox"> <label for="checkbox_2" class="newsletter__checkbox-label">Wyrażam zgodę na przetwarzanie moich danych osobowych przez (nazwa firmy) w celu prowadzenia rekrutacji na rzanie moich danych osobowych przez (nazwa firmy) w celu prowadzenia rekrutacji na apaplikowane przeze mnie stanowisko.</label></div>
+                <button href="ty-page.html" class="btn btn-cta newsletter__button" submit="ty-page.html">Subskrybuj <span class="newsletter__button-arrow">&roarr;</span></button>
+            </form>
         </section>
     </aside>
     </main>
@@ -169,14 +169,14 @@
                 <p class="footer__about-text">Content that is written in all caps or with the first letter of every word capitalized can still be rephrased by this software. Otherwise, as long as the grammar of the content is sensible and recognizable.</p>
             </div>
             <div class="footer__site-map">
-                <h3 class="footer__heading">Mapa strony</h3>
+                <h2 class="footer__heading">Mapa strony</h2>
                 <div class="footer__map">
                     <a href="index.html" class="footer__map-item">Blog</a>
                         <ul class="footer__list">
-                            <li class="footer__list-item"> <a href="category.html" class="text-white">Omnichannel</a> </li>
-                            <li class="footer__list-item"> <a href="category.html" class="text-white">E-commerce</a> </li>
-                            <li class="footer__list-item"> <a href="category.html" class="text-white">Optymalizacja konwersji</a> </li>
-                            <li class="footer__list-item"> <a href="category.html" class="text-white">Generowanie leadów</a> </li>
+                            <li class="footer__list-item"> <a href="category.html">Omnichannel</a> </li>
+                            <li class="footer__list-item"> <a href="category.html">E-commerce</a> </li>
+                            <li class="footer__list-item"> <a href="category.html">Optymalizacja konwersji</a> </li>
+                            <li class="footer__list-item"> <a href="category.html">Generowanie leadów</a> </li>
                         </ul>
                     <a href="about.html" class="footer__map-item">O mnie</a>
                     <!-- <a href="#" class="footer__map-item">Współpraca</a> -->
@@ -185,7 +185,7 @@
                 </div>
             </div>
             <div class="footer__contact-container">     
-                <h4 class="footer__contact-heading">Kamil Jakubczyk</h4>
+                <h2 class="footer__contact-heading">Kamil Jakubczyk</h2>
                 <div class="footer__contact">
                         <div class="footer__contact-icons">
                             <i class="fas fa-envelope-open-text contact-icon-email"></i>

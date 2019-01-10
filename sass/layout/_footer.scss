@@ -1,7 +1,7 @@
 .footer {
-    background-color: var(--color-dark-4);
+    background-color: var(--color-dark);
     position: relative;
-    color: var(--color-light-2);
+    color: var(--color-light);
 
     &__main {
         display: flex;
@@ -40,26 +40,25 @@
     &__logo {
         width: 18rem;
         align-self: center;
-        margin-bottom: 4rem;
 
         @include respond(tab-port) {
             width: 20rem;
-            margin-bottom: 6rem;
         }
         @include respond(desktop) {
             width: 16rem;
-            margin-bottom: 6rem;
         }
     }
     &__about-text {
         text-align: justify;
         font-size: 1.4rem;
-        color: var(--color-light-5);
+        color: var(--color-light-3);
         font-weight: 300;
         letter-spacing: .1rem;
+        margin-top: 4rem;
 
         @include respond(tab-port) {
             font-size: 1.6rem;
+            margin-top: 6rem;
         }
     }
 
@@ -83,11 +82,11 @@
         font-size: 1.6rem;
     }
     &__map a {
-        color: var(--color-light-2);
+        color: var(--color-light);
     }
     &__map-item {
         text-decoration: none;
-        color: var(--color-light-4);
+        color: var(--color-light);
         font-weight: 300;
         letter-spacing: .1rem;
         display: inline-block;
@@ -107,7 +106,7 @@
         line-height: 3rem;
     }
     &__list-item a {
-        color: var(--color-light-5);
+        color: var(--color-light-3);
     }
 
     // --- CONTACT ---
@@ -121,7 +120,8 @@
     &__contact-heading {
         font-weight: 300;
         letter-spacing: .1rem;
-        margin-bottom: 3rem; 
+        margin-bottom: 3rem;
+        text-align: center;
     }
     &__contact {
         margin-bottom: 5rem;
@@ -133,7 +133,7 @@
     &__contact-email-link, &__contact-mobile-link {
         text-decoration: none;
         font-size: 1.8rem;
-        color: var(--color-light-5);
+        color: var(--color-light-2);
 
         @include respond(small-phone) {
             font-size: 1.6rem;
@@ -161,10 +161,10 @@
     }
     &__fb {
         margin-right: 3rem;
-        color: var(---color-light);
+        color: var(---color-light-3);
     }
     &__twitter {
-        color: var(---color-light);
+        color: var(---color-light-3);
     }
 
     // --- LEGAL ---
@@ -175,7 +175,7 @@
         padding: 2rem 0;
         line-height: 2rem;
         font-size: .9rem;
-        color: var(--color-light-4);
+        color: var(--color-light-3);
         justify-content: center;
         
         @include respond(desktop) {
@@ -183,7 +183,7 @@
             padding: 1rem 0;
         }
         &--left {
-            border-right: 1px solid var(--color-light-4);
+            border-right: 1px solid var(--color-light-3);
             padding-right: 2rem;
         }
         &--right {
