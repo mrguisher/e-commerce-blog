@@ -1,5 +1,5 @@
 .header-home {
-    background-image: url("../img/bcg2.jpg");
+    background-image: url("../img/gradient.svg");
     background-blend-mode: overlay;
     background-color: var(--color-photo-overlay);
     background-size: cover;
@@ -122,4 +122,5 @@
         font-size: 3rem;
         animation: moveDownArrows 1.4s infinite;
     }
+
 }
