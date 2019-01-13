@@ -211,6 +211,14 @@ hr {
   100% {
     opacity: 1; } }
 
+@keyframes GradientAnimation {
+  0% {
+    background-position: 0% 46%; }
+  50% {
+    background-position: 100% 55%; }
+  100% {
+    background-position: 0% 46%; } }
+
 .btn, .btn:link, .btn:visited {
   text-align: center;
   display: inline-block;
@@ -390,10 +398,11 @@ hr {
     border-color: var(--color-primary); }
 
 .header-home {
-  background-image: url("../img/gradient.svg");
-  background-blend-mode: overlay;
-  background-color: var(--color-photo-overlay);
-  background-size: cover;
+  background: linear-gradient(335deg, #9370db, #00ced1b2);
+  background-size: 800% 800%;
+  -webkit-animation: GradientAnimation 20s ease infinite;
+  -moz-animation: GradientAnimation 20s ease infinite;
+  animation: GradientAnimation 20s ease infinite;
   display: flex;
   z-index: 0;
   min-height: 90vh; }
@@ -451,33 +460,27 @@ hr {
     padding: 3rem 2rem;
     display: flex;
     flex-direction: column; }
-    .slider__description-box::after {
-      content: "";
-      width: 100%;
-      height: .01px;
-      background-color: transparent;
-      display: inline-block;
-      position: absolute;
-      right: 0;
-      top: 50%;
-      box-shadow: 0 1rem 20rem 5rem rgba(0, 0, 0, 0.1);
-      z-index: 0; }
-      @media only screen and (min-width: 40.6em) {
-        .slider__description-box::after {
-          box-shadow: 0 1rem 110rem 20rem rgba(0, 0, 0, 0.1); } }
     @media only screen and (max-width: 25em) {
       .slider__description-box {
         padding: 3rem 1rem; } }
+    @media only screen and (min-width: 75em) {
+      .slider__description-box {
+        max-width: 40vw;
+        align-self: center; } }
   .slider__description {
     font-size: 1.6em;
     text-align: justify;
     color: var(--color-light-2);
-    letter-spacing: .1rem;
+    letter-spacing: .2rem;
     font-weight: 100;
     z-index: 5; }
     @media only screen and (max-width: 25em) {
       .slider__description {
         font-size: 1.4rem; } }
+    @media only screen and (min-width: 75em) {
+      .slider__description {
+        font-size: 2rem;
+        line-height: 3rem; } }
   .slider__btn-header {
     margin-top: 4rem;
     z-index: 1; }
@@ -1151,7 +1154,12 @@ input[type=checkbox] {
   overflow: hidden;
   background-color: var(--color-dark-3);
   max-width: 80vw;
-  border: 3px solid var(--color-dark-2); }
+  border: 3px solid var(--color-dark-2);
+  transition: all .4s; }
+  .post-min:hover {
+    -webkit-filter: drop-shadow(0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.377));
+    filter: drop-shadow(0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.308));
+    transform: translateY(-0.5rem); }
   @media only screen and (min-width: 56.25em) {
     .post-min:nth-child(odd) {
       margin-right: 5rem; } }
