@@ -1,8 +1,21 @@
 .header-home {
-    background-image: url("../img/gradient.svg");
-    background-blend-mode: overlay;
-    background-color: var(--color-photo-overlay);
-    background-size: cover;
+    // background-image: url("../img/gradient.svg");
+    // background-blend-mode: overlay;
+    // background-color: var(--color-photo-overlay);
+    // background-size: cover;
+
+    // 2nd background animation
+
+    background: linear-gradient(335deg, #9370db,#00ced1b2);
+    background-size: 800% 800%;
+    -webkit-animation: GradientAnimation 20s ease infinite;
+    -moz-animation: GradientAnimation 20s ease infinite;
+    animation: GradientAnimation 20s ease infinite;
+    // height: 100vh;
+    // width: 100%;
+    // overflow: none;
+    // position: relative;
+
     display: flex;
     z-index: 0;
    
@@ -69,36 +82,44 @@
         display: flex;
         flex-direction: column;
         
-        &::after {
-            content: "";
-            width: 100%;
-            height: .01px;
-            background-color: transparent;
-            display: inline-block;
-            position: absolute;
-            right: 0;
-            top: 50%;
-            box-shadow: 0 1rem 20rem 5rem rgba(0, 0, 0, .1);
-            z-index: 0;
+        // &::after {
+        //     content: "";
+        //     width: 100%;
+        //     height: .01px;
+        //     background-color: transparent;
+        //     display: inline-block;
+        //     position: absolute;
+        //     right: 0;
+        //     top: 50%;
+        //     box-shadow: 0 1rem 20rem 5rem rgba(0, 0, 0, .1);
+        //     z-index: 0;
 
-            @include respond(tab-port) {
-                box-shadow: 0 1rem 110rem 20rem rgba(0, 0, 0, .1);
-            }
-        }
+        //     @include respond(tab-port) {
+        //         box-shadow: 0 1rem 110rem 20rem rgba(0, 0, 0, .1);
+        //     }
+        // }
         @include respond(small-phone) {
             padding: 3rem 1rem;
+        }
+        @include respond(desktop) {
+            max-width: 40vw;
+            align-self: center;
         }
     }
     &__description {
         font-size: 1.6em;
         text-align: justify;
         color: var(--color-light-2);
-        letter-spacing: .1rem;
+        letter-spacing: .2rem;
         font-weight: 100;
         z-index: 5;
 
         @include respond(small-phone) {
             font-size: 1.4rem;
+        }
+        @include respond(desktop) {
+            font-size: 2rem;
+            line-height: 3rem;
         }
     }
     &__btn-header {
