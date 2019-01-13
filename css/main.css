@@ -226,12 +226,16 @@ hr {
   transition: all .2s;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
   align-self: center;
-  padding: 1.3rem 3rem;
+  padding: 1.5rem 2rem;
   font-weight: 300;
-  letter-spacing: .2rem;
+  letter-spacing: .25rem;
   font-size: 1.4rem;
+  text-transform: uppercase;
   border-radius: 4px;
   -webkit-tap-highlight-color: transparent; }
+  @media only screen and (min-width: 75em) {
+    .btn, .btn:link, .btn:visited {
+      font-size: 1.4rem; } }
   .btn:hover, .btn:link:hover, .btn:visited:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5);
@@ -912,8 +916,9 @@ hr {
       margin-left: 20rem; } }
 
 .newsletter__button {
-  margin: 2rem 0;
-  text-transform: uppercase; }
+  margin: 3rem 0;
+  text-transform: uppercase;
+  padding-top: 1rem; }
 
 .newsletter__button-arrow {
   font-size: 2rem;
