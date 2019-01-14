@@ -22,6 +22,8 @@ $breakpoint argument choices:
   --color-primary-2: #ff4918;
   --color-primary-opacity: rgba(255, 38, 215, 0.564);
   --color-primary-2-opacity: rgba(255, 70, 70, 0.622);
+  --color-secondary: #00ced1b2;
+  --color-secondary-2: #9370db;
   --color-dark: rgb(30, 30, 30);
   --color-dark-2: rgb(70, 70, 70);
   --color-dark-3: rgb(45, 45, 45);
@@ -402,7 +404,7 @@ hr {
     border-color: var(--color-primary); }
 
 .header-home {
-  background: linear-gradient(335deg, #9370db, #00ced1b2);
+  background: linear-gradient(335deg, var(--color-secondary-2), var(--color-secondary));
   background-size: 800% 800%;
   -webkit-animation: GradientAnimation 20s ease infinite;
   -moz-animation: GradientAnimation 20s ease infinite;
@@ -1040,17 +1042,37 @@ input[type=checkbox] {
   display: inline-block; }
 
 .blog-category {
-  background-image: url("../img/category.png");
-  background-blend-mode: overlay;
-  background-color: rgba(35, 12, 65, 0.295);
+  background: url("../img/category.png") no-repeat center center fixed;
   background-size: cover;
+  width: 100%;
+  height: 100%;
   padding: 4rem 3rem; }
+  .blog-category::before {
+    background-color: white;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: darken;
+    position: absolute;
+    top: 0;
+    left: 0; }
+  .blog-category::after {
+    background-color: black;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    mix-blend-mode: lighten;
+    position: absolute;
+    top: 0;
+    left: 0; }
   @media only screen and (min-width: 34.4em) {
     .blog-category {
-      padding: 5rem 10rem; } }
+      padding: 8rem 10rem; } }
   @media only screen and (min-width: 75em) {
     .blog-category {
-      padding: 8rem 20rem; } }
+      padding: 12rem 20rem; } }
   @media only screen and (min-width: 112.5em) {
     .blog-category {
       padding: 16rem 30rem; } }
