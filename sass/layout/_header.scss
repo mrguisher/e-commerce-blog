@@ -6,7 +6,7 @@
 
     // 2nd background animation
 
-    background: linear-gradient(335deg, #9370db,#00ced1b2);
+    background: linear-gradient(335deg, var(--color-secondary-2),var(--color-secondary));
     background-size: 800% 800%;
     -webkit-animation: GradientAnimation 20s ease infinite;
     -moz-animation: GradientAnimation 20s ease infinite;
