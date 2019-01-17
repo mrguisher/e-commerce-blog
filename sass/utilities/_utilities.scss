@@ -39,5 +39,9 @@
     }
 }
 .padding-nav {
-    padding-top: 7rem;
+    padding-top: 5rem;
+
+    @include respond(desktop) {
+        padding-top: 7rem;
+    }
 }
