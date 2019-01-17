@@ -17,6 +17,10 @@
     border-radius: .1rem;
     cursor: pointer;
 
+    @include respond(tab-land) {
+        margin-left: 2rem;
+    }
+
     &:hover {
         color: var(--color-light);
         text-decoration: none;
