@@ -83,10 +83,17 @@
     }
 }
 .testimonials {
-    background-image: url("../img/gradient.svg");
-    background-blend-mode: overlay;
-    background-color: rgba(255, 228, 196, 0.344);
-    background-size: cover;
+    // background-image: url("../img/gradient.svg");
+    // background-blend-mode: overlay;
+    // background-color: rgba(255, 228, 196, 0.344);
+    // background-size: cover;
+
+    background: linear-gradient(178deg, var(--color-secondary-2),var(--color-secondary));
+    background-size: 100% 160%;
+    // -webkit-animation: GradientAnimation 10s ease infinite;
+    // -moz-animation: GradientAnimation 10s ease infinite;
+    // animation: GradientAnimation 10s ease infinite;
+
     width: 100%;
     height: 50rem;
     padding: 10rem 5rem;
