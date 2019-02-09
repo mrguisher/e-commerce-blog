@@ -36,12 +36,13 @@
         font-size: 1.8rem;
         line-height: 2.8rem;
         background-color: var(--color-light);
-        padding: 5rem;
+        padding: 3rem;
 
         @include respond(desktop) {
             width: 60vw;
             margin-left: auto;
             margin-right: auto;
+            padding: 5rem;
         }
     }
     &__tag-container {

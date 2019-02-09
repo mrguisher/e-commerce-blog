@@ -1122,12 +1122,13 @@ input[type=checkbox] {
     font-size: 1.8rem;
     line-height: 2.8rem;
     background-color: var(--color-light);
-    padding: 5rem; }
+    padding: 3rem; }
     @media only screen and (min-width: 75em) {
       .blogpost__text-content {
         width: 60vw;
         margin-left: auto;
-        margin-right: auto; } }
+        margin-right: auto;
+        padding: 5rem; } }
   .blogpost__tag-container {
     margin-bottom: 2rem; }
     @media only screen and (min-width: 75em) {
