@@ -1,0 +1,62 @@
+
+.disclaimer {
+        // margin-left: 1rem;
+  
+        // &:not(:last-of-type) {
+        //     margin-bottom: 1rem;
+        // }
+        // @include respond(tab-port) {
+        //     margin-left: 5rem;
+        // }
+        // @include respond(tab-land) {
+        //     margin-left: 10rem;
+        // }
+        // @include respond(desktop) {
+        //     margin-left: 20rem;
+        // }
+
+        display: flex;
+        margin-bottom: 4rem;
+
+        &__cb-column, &__label-column {
+            display: flex;
+            flex-direction: column;
+
+        }
+        &__cb-column {
+           margin-right: 2rem;
+        }
+
+        &__checkbox:not(:last-of-type) {
+            margin-bottom: 4rem;
+        }
+        &__checkbox-label {
+            color: var(--color-light-3);
+            margin-left: 1rem;
+            font-size: .8rem;
+
+            &:not(:last-of-type) {
+                margin-bottom: 4rem;
+            }   
+        }
+    }
+
+    input[type=checkbox] {
+        width: 2rem;
+        height: 2rem;
+        // display: none;
+    }
+.disclaimer-form {
+    // margin: 0 2rem;
+}
+.disclaimer-newsletter {
+    margin: 0 auto;
+    max-width: 80vw;
+
+    @include respond(tab-port) {
+        max-width: 60vw;
+    }
+    @include respond(desktop) {
+        max-width: 40vw;
+    }
+}
