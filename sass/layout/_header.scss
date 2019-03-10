@@ -1,20 +1,7 @@
 .header-home {
-    // background-image: url("../img/gradient.svg");
-    // background-blend-mode: overlay;
-    // background-color: var(--color-photo-overlay);
-    // background-size: cover;
-
-    // 2nd background animation
 
     background: linear-gradient(178deg, var(--color-secondary-2),var(--color-secondary));
     background-size: 100% 160%;
-    // -webkit-animation: GradientAnimation 10s ease infinite;
-    // -moz-animation: GradientAnimation 10s ease infinite;
-    // animation: GradientAnimation 10s ease infinite;
-    // height: 100vh;
-    // width: 100%;
-    // overflow: none;
-    // position: relative;
 
     display: flex;
     z-index: 0;
