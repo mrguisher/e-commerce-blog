@@ -3,6 +3,17 @@
     margin-left: 4rem;
     margin-right: 4rem;
     padding: 2rem 0;
+    font-size: 1.4rem;
+
+    @include respond(tab-port) {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 6rem 0;
+        max-width: 70%;
+    }
+    @include respond(desktop) {
+        font-size: 1.6rem;
+    }
 
     @include respond(tab-land) {
         margin-left: auto;
@@ -20,7 +31,6 @@
             padding: 4rem;
         }
     }
-   
     &__heading {
         text-align: left;
         margin: 2rem 0;
@@ -28,12 +38,10 @@
         font-weight: 300;
     }
     &__description {
-        font-size: 1.6rem;
         color: var(--color-dark-3);
 
         @include respond(tab-port) {
             line-height: 2.3rem;
-            font-size: 1.4rem;
         }
     }    
     &__description-box {
@@ -52,14 +60,133 @@
         font-size: 2.5rem;
     }
 }
+
+.experience {
+    background-color: var(--color-light);
+    padding: 2rem 4rem;
+    align-items: center;
+    font-size: 1.4rem;
+    
+    @include respond(tab-port) {
+        padding: 4rem 0;
+    }
+    @include respond(desktop) {
+        font-size: 1.6rem;
+    }
+
+    
+    &__main-container {
+        
+        @include respond(tab-port) {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 6rem 0;
+            max-width: 70%;
+        }
+        @include respond(tab-land) {
+            max-width: 60vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include respond(desktop) {
+            max-width: 50vw;
+        }
+    }   
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include respond(tab-land) {
+            flex-direction: row;
+        } 
+    }
+    &__description, &__skills-item, &__numbers-description {
+        color: var(--color-dark-3);
+
+        @include respond(tab-port) {
+            line-height: 2.3rem;
+        }
+        @include respond(desktop) {
+            line-height: 2.3rem;
+        }
+    }
+    &__heading {
+        text-align: left;
+        margin: 2rem 0;
+        font-size: 2.5rem;
+        font-weight: 300;
+    }
+    &__text-box {
+        margin-bottom: 4rem;
+
+        @include respond(tab-land) {
+            width: 25vw;
+            margin-bottom: 0;
+        }
+    }
+    &__skills {
+        margin-left: 2rem;
+        margin-bottom: 4rem;
+    }
+    &__skills-item {
+        margin-left: 2rem;
+        list-style-type: circle;
+        
+        &:not(:last-of-type) {
+            margin-bottom: 1rem;
+        }
+    }
+    &__numbers {
+        display: flex;
+        flex-direction: column;
+        padding: 4rem 0;
+        // background-color: red;
+
+        @include respond(tab-land) {
+            flex-direction: row;
+        }
+    }
+    &__numbers-item {
+        margin: 0 auto;
+        display: inline-block;
+        text-align: center;
+        width: 50%;
+        margin-bottom: 4rem;
+
+        @include respond(tab-port) {
+            margin-bottom: 0;
+        }
+    }
+    &__numbers-badge {
+        font-size: 6rem;
+        margin-bottom: 2rem;
+
+        background: -webkit-linear-gradient(168deg, var(--color-secondary), var(--color-secondary-2));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+}
+
 .testimonials {
 
     background: linear-gradient(148deg, var(--color-secondary-2),var(--color-secondary));
     background-size: 100% 160%;
-
+    font-size: 1.4rem;
     width: 100%;
-    height: 50rem;
+    // height: 50rem;
     padding: 10rem 5rem;
+    color: var(--color-light-2);
+
+
+    
+   
+
+    @include respond(desktop) {
+        font-size: 1.6rem;
+    }
 
     &__subtitle {
         display: block;
@@ -74,14 +201,50 @@
         font-weight: 300;
         padding-top: 1rem;
         letter-spacing: .3rem;
+        margin-bottom: 4rem;
     }
-    &__review-box {
-        margin-top: 5rem;
+
+    &__container {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+
+        @include respond(tab-port) {
+            max-width: 60%;
+        }
     }
-    &__testimonials__remark {
+   
+    &__review-text {
         text-align: center;
-        display: inline;
-        font-size: 3rem;
+        position: relative;
+        margin-bottom: 4rem;
+        z-index: 0;
+
+        &::before {
+            content: "\201E";
+            position: absolute;
+            // display: inline-block;
+            left: 0;
+            top: -15vh;
+            font-size: 30rem;
+            color: var(--color-dark-3);
+            opacity: .2;
+            z-index: -1;
+        }
 
     }
+
+   &__person {
+       display: flex;
+       flex-direction: column;
+       text-align: center;
+   }
+   &__name {
+       font-size: 2rem;
+       color: var(--color-light)
+   }
+   &__position {
+       color: var(--color-light-2);
+       font-size: 1.2rem;
+   }
 }
