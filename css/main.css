@@ -984,17 +984,19 @@ input[type=checkbox] {
       margin-left: auto;
       margin-right: auto;
       padding: 6rem 0;
-      max-width: 70%; } }
+      max-width: 70vw; } }
   @media only screen and (min-width: 75em) {
     .about {
-      font-size: 1.6rem; } }
-  @media only screen and (min-width: 56.25em) {
-    .about {
-      margin-left: auto;
-      margin-right: auto;
-      padding: 6rem 0;
-      flex-direction: row;
-      justify-content: space-between; } }
+      min-width: 50vw; } }
+  .about__main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    @media only screen and (min-width: 75em) {
+      .about__main-container {
+        font-size: 1.6rem;
+        flex-direction: row;
+        justify-content: space-between; } }
   .about__main-heading-box {
     background: linear-gradient(168deg, var(--color-secondary-2), var(--color-secondary));
     background-size: 200% 160%;
@@ -1007,22 +1009,26 @@ input[type=checkbox] {
     margin: 2rem 0;
     font-size: 2.5rem;
     font-weight: 300; }
+  @media only screen and (min-width: 56.25em) {
+    .about__text-box {
+      max-width: 60vw; } }
+  @media only screen and (min-width: 75em) {
+    .about__text-box {
+      width: 25vw;
+      margin-bottom: 0; } }
   .about__description {
     color: var(--color-dark-3); }
     @media only screen and (min-width: 40.6em) {
       .about__description {
         line-height: 2.3rem; } }
-  @media only screen and (min-width: 56.25em) {
-    .about__description-box {
-      max-width: 60vw; } }
-  @media only screen and (min-width: 75em) {
-    .about__description-box {
-      max-width: 50vw; } }
   .about__name {
     text-align: right;
     margin: 2rem 0;
     font-weight: 300;
     font-size: 2.5rem; }
+  .about__photo {
+    margin-top: 2rem;
+    margin-bottom: 2rem; }
 
 .experience {
   background-color: var(--color-light);
@@ -1096,9 +1102,10 @@ input[type=checkbox] {
     text-align: center;
     width: 50%;
     margin-bottom: 4rem; }
-    @media only screen and (min-width: 40.6em) {
+    @media only screen and (min-width: 56.25em) {
       .experience__numbers-item {
-        margin-bottom: 0; } }
+        margin-bottom: 0;
+        max-width: 13vw; } }
   .experience__numbers-badge {
     font-size: 6rem;
     margin-bottom: 2rem;
@@ -1111,7 +1118,7 @@ input[type=checkbox] {
   background-size: 100% 160%;
   font-size: 1.4rem;
   width: 100%;
-  padding: 10rem 5rem;
+  padding: 10rem 2rem;
   color: var(--color-light-2); }
   @media only screen and (min-width: 75em) {
     .testimonials {
@@ -1135,7 +1142,7 @@ input[type=checkbox] {
     flex-direction: row; }
     @media only screen and (min-width: 40.6em) {
       .testimonials__container {
-        max-width: 60%; } }
+        max-width: 80%; } }
   .testimonials__review-text {
     text-align: center;
     position: relative;
@@ -1160,6 +1167,31 @@ input[type=checkbox] {
   .testimonials__position {
     color: var(--color-light-2);
     font-size: 1.2rem; }
+  .testimonials__arrow-box {
+    padding: 4rem 2rem;
+    margin: 0 4vw;
+    align-self: center;
+    cursor: pointer; }
+    @media only screen and (min-width: 56.25em) {
+      .testimonials__arrow-box {
+        padding: 4rem 6rem; } }
+  .testimonials__arrow--left {
+    font-size: 3rem; }
+    @media only screen and (min-width: 40.6em) {
+      .testimonials__arrow--left {
+        font-size: 3vw; } }
+  .testimonials__arrow--right {
+    font-size: 3rem; }
+    @media only screen and (min-width: 40.6em) {
+      .testimonials__arrow--right {
+        font-size: 3vw; } }
+
+.grey-box {
+  width: 20rem;
+  height: 25rem;
+  background-color: gray;
+  margin-left: auto;
+  margin-right: auto; }
 
 .blog-category {
   background: url("../img/category.png") no-repeat center center fixed;
