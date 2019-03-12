@@ -218,10 +218,16 @@
         flex-direction: row;
 
         @include respond(tab-port) {
-            max-width: 80%;
+            max-width: 90%;
         }
+       
     }
-   
+    &__review-box {
+        display: none;
+        flex-direction: column;
+        margin: 0 auto;
+        
+    }
     &__review-text {
         text-align: center;
         position: relative;
@@ -231,12 +237,11 @@
         &::before {
             content: "\201E";
             position: absolute;
-            // display: inline-block;
             left: 0;
             top: -15vh;
             font-size: 30rem;
-            color: var(--color-dark-3);
-            opacity: .2;
+            color: var(--color-dark);
+            opacity: .1;
             z-index: -1;
         }
     }
@@ -285,4 +290,8 @@
     background-color: gray;
     margin-left: auto;
     margin-right: auto;
+}
+.active {
+    display: flex;
+
 }
