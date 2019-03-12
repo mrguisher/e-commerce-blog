@@ -39,13 +39,10 @@ const listHandle = document.querySelector(".nav-bar__navigation-blog-list");
 
         if (dropdownMenuStatus === 0) {
             listHandle.style.display = 'flex';
-
-            console.log('sdfjlk');
             dropdownMenuStatus = 1;
         }
         else {
             listHandle.style.display = 'none';
-
             dropdownMenuStatus = 0;
         }
     }
@@ -53,14 +50,12 @@ const listHandle = document.querySelector(".nav-bar__navigation-blog-list");
 
         if (dropdownMenuStatus === 0) {
             listHandleMobile.style.display = 'flex';
-
-            console.log('huj');
             dropdownMenuStatus = 1;
         }
         else {
             listHandleMobile.style.display = 'none';
-
             dropdownMenuStatus = 0;
         }
     }
+
 
