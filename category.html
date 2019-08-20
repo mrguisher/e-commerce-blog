@@ -19,8 +19,8 @@
                 <div class="nav-bar__nav-phone"></div>
                 <div class="nav-bar__nav-phone-crossed"></div>
                 <ul class="nav-bar__nav-list">
-                    <li class="nav-bar__navigation-item nav-blog__toggle">Blog</li> 
-                        <ul class="nav-bar__navigation-blog-list">
+                    <li class="nav-bar__navigation-item" id="toggle-dropdown">Blog</li> 
+                        <ul class="nav-bar__navigation-blog-list" id="dropdown-list">
                             <a href="category.html" class="nav-bar__navigation-blog-item">Omnichannel</a>
                             <a href="category.html" class="nav-bar__navigation-blog-item">E-commerce</a>
                             <a href="category.html" class="nav-bar__navigation-blog-item">Optymalizacja konwersji</a>
@@ -28,7 +28,7 @@
                         </ul>
                     <a href="about.html" class="nav-bar__navigation-item">O mnie</a> 
                     <!-- <li class="nav-bar__navigation-item"><a href="#">Współpraca</a> </li>    -->
-                    <a href="about.html" class="nav-bar__navigation-item">Kontakt</a> 
+                    <a href="contact.html" class="nav-bar__navigation-item">Kontakt</a> 
                 </ul>
             </nav>
         </section>
@@ -37,11 +37,14 @@
 
         <nav class="navigation-phone">
             <ul class="navigation-phone__list">
-                    <li class="navigation-phone__item nav-blog__toggle">Blog</li>
-                    <a href="category.html" class="navigation-phone__blog-item">Omnichannel</a>
-                    <a href="category.html" class="navigation-phone__blog-item">E-commerce</a>
-                    <a href="category.html" class="navigation-phone__blog-item">Optymalizacja konwersji</a>
-                    <a href="category.html" class="navigation-phone__blog-item">Generowanie leadów</a>
+                    <li class="navigation-phone__item" id="toggle-dropdown-mobile">Blog</li>
+
+                    <div class="navigation-phone__blog-box" id="dropdown-list-mobile">
+                        <a href="category.html" class="navigation-phone__blog-item">Omnichannel</a>
+                        <a href="category.html" class="navigation-phone__blog-item">E-commerce</a>
+                        <a href="category.html" class="navigation-phone__blog-item">Optymalizacja konwersji</a>
+                        <a href="category.html" class="navigation-phone__blog-item">Generowanie leadów</a>
+                    </div>
                     
                 <a href="about.html" class="navigation-phone__item">
                     <li>O mnie</li>
@@ -52,7 +55,7 @@
                 <a href="contact.html" class="navigation-phone__item">
                     <li>Kontakt</li>
                 </a>
-                <a href="index.html" class="navigation-phone__item">
+                <a href="blogpost.html" class="navigation-phone__item">
                     <li>Najpopularniejsze wpisy</li>
                 </a>
             </ul>       
@@ -63,10 +66,9 @@
         <nav class="breadcrumb margin-bottom-small margin-top-small">
             <ul class="breadcrumb__list text-dark">
                 <li class="breadcrumb__item"> <a href="index.html" class="breadcrumb__link">Strona główna</a></li>
-                <li class="breadcrumb__item"><a href="category.html" class="breadcrumb__link">E-commerce</a></li>
+                <li class="breadcrumb__item"><a href="category.html" class="breadcrumb__link">Kategorie</a></li>
             </ul>
         </nav>
-        
     
         <div class="blog-category margin-top-small">
             <p class="blog-category__heading text-white">E-commerce</p>

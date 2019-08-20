@@ -19,8 +19,8 @@
                 <div class="nav-bar__nav-phone"></div>
                 <div class="nav-bar__nav-phone-crossed"></div>
                 <ul class="nav-bar__nav-list">
-                    <li class="nav-bar__navigation-item nav-blog__toggle">Blog</li> 
-                        <ul class="nav-bar__navigation-blog-list">
+                    <li class="nav-bar__navigation-item" id="toggle-dropdown">Blog</li> 
+                        <ul class="nav-bar__navigation-blog-list" id="dropdown-list">
                             <a href="category.html" class="nav-bar__navigation-blog-item">Omnichannel</a>
                             <a href="category.html" class="nav-bar__navigation-blog-item">E-commerce</a>
                             <a href="category.html" class="nav-bar__navigation-blog-item">Optymalizacja konwersji</a>
@@ -37,13 +37,15 @@
 
         <nav class="navigation-phone">
             <ul class="navigation-phone__list">
-                    <li class="navigation-phone__item nav-blog__toggle">Blog</li>
-                    <div class="navigation-phone__blog-box">
-                            <a href="category.html" class="navigation-phone__blog-item">Omnichannel</a>
-                            <a href="category.html" class="navigation-phone__blog-item">E-commerce</a>
-                            <a href="category.html" class="navigation-phone__blog-item">Optymalizacja konwersji</a>
-                            <a href="category.html" class="navigation-phone__blog-item">Generowanie leadów</a>
-                        </div>
+                    <li class="navigation-phone__item" id="toggle-dropdown-mobile">Blog</li>
+
+                    <div class="navigation-phone__blog-box" id="dropdown-list-mobile">
+                        <a href="category.html" class="navigation-phone__blog-item">Omnichannel</a>
+                        <a href="category.html" class="navigation-phone__blog-item">E-commerce</a>
+                        <a href="category.html" class="navigation-phone__blog-item">Optymalizacja konwersji</a>
+                        <a href="category.html" class="navigation-phone__blog-item">Generowanie leadów</a>
+                    </div>
+                    
                 <a href="about.html" class="navigation-phone__item">
                     <li>O mnie</li>
                 </a>
@@ -53,7 +55,7 @@
                 <a href="contact.html" class="navigation-phone__item">
                     <li>Kontakt</li>
                 </a>
-                <a href="#" class="navigation-phone__item">
+                <a href="blogpost.html" class="navigation-phone__item">
                     <li>Najpopularniejsze wpisy</li>
                 </a>
             </ul>       
@@ -142,24 +144,24 @@
                 <div class="testimonials__review-box active"  id="slide1">
                     <p class="testimonials__review-text">m, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit</p>
                     <div class="testimonials__person">
-                        <span class="testimonials__name">Tes ksjufoe safsam</span> 
-                        <span class="testimonials__position">nem ullam corQuis autem</span>
+                        <span class="testimonials__name">Vicki Stuart</span> 
+                        <span class="testimonials__position">Budget analyst</span>
                     </div>
                     
                 </div>
                 <div class="testimonials__review-box" id="slide2">
                     <p class="testimonials__review-text">voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit  exercitationem ullam corporis suscip exercitationem ullam corporis susciplaboriosam, nisi ut aliquid ex ea commodi consequatur. Quis autem vel eum iure reprehenderit</p>
                     <div class="testimonials__person">
-                        <span class="testimonials__name">Esuscipit laboriosam</span> 
-                        <span class="testimonials__position">exercitationem ullam corporis Quis autem</span>
+                        <span class="testimonials__name">Kelsey Morales</span> 
+                        <span class="testimonials__position">Software Developer</span>
                     </div>
                     
                 </div>
                 <div class="testimonials__review-box" id="slide3">
                     <p class="testimonials__review-text">Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit  exercixercitationem ullam corporis suscipltationem ullam corporis suscip eaboriosam, nisi ut aliquid ex ea commodi consequatur. Quis it  exercixercitationem ullam corporis suscipltationem ullam corporis suscip eaboriosam, nisi ut aliquid ex ea commodi consequatur. Quisautem vel eum iure reprehenderit</p>
                     <div class="testimonials__person">
-                        <span class="testimonials__name">Tesuscipit laboriosam</span> 
-                        <span class="testimonials__position">exercitationem ullam corporis Quis autem</span>
+                        <span class="testimonials__name">Carmelo Gould</span> 
+                        <span class="testimonials__position">Public Relations Specialist</span>
                     </div>
                     
                 </div>
@@ -168,10 +170,7 @@
                 </div>
             </div>
         </div>
-       
 
-
-        
 <!-- ----- ASIDE ----- -->
 
 <aside class="aside margin-bottom-medium margin-top-medium">
@@ -237,5 +236,6 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="index.js"></script>
+    <script src="testimonials.js"></script>
 </body>
 </html>
