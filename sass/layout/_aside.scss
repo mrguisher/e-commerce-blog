@@ -75,27 +75,7 @@
         }
     }
    
-    &__checkbox-label {
-        color: var(--color-light-3);
-        margin-left: 1rem;
-        font-size: .8rem;
-    }
-    &__disclaimer {
-        margin-left: 1rem;
-  
-        &:not(:last-of-type) {
-            margin-bottom: 1rem;
-        }
-        @include respond(tab-port) {
-            margin-left: 5rem;
-        }
-        @include respond(tab-land) {
-            margin-left: 10rem;
-        }
-        @include respond(desktop) {
-            margin-left: 20rem;
-        }
-    }
+    
     &__button {
        margin: 3rem 0;
        text-transform: uppercase;
@@ -110,11 +90,6 @@
     }
 }
 
-input[type=checkbox] {
-    width: 2rem;
-    height: 2rem;
-    // display: none;
-}
 .blog-categories {
 
     &__main {

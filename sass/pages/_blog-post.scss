@@ -38,7 +38,7 @@
         background-color: var(--color-light);
         padding: 3rem;
 
-        @include respond(desktop) {
+        @include respond(tab-port) {
             width: 60vw;
             margin-left: auto;
             margin-right: auto;
