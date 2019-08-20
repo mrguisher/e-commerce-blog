@@ -68,8 +68,7 @@ html {
       font-size: 52.5%; } }
 
 body {
-  background-color: var(--color-light);
-  opacity: 0; }
+  background-color: var(--color-light); }
 
 .lock-scroll {
   overflow: hidden; }
@@ -717,42 +716,35 @@ input[type=checkbox] {
     width: 10rem; }
   .nav-bar__navigation {
     position: relative;
-    transition: all .1; }
+    transition: all 1s; }
   .nav-bar__nav-phone {
     position: relative;
-    opacity: 1; }
+    opacity: 1;
+    border-bottom: 2px solid var(--color-light);
+    border-top: 2px solid var(--color-light);
+    background-color: transparent;
+    width: 3.6rem;
+    height: 1.2rem; }
     @media only screen and (min-width: 40.6em) {
       .nav-bar__nav-phone {
         display: none; } }
-    .nav-bar__nav-phone, .nav-bar__nav-phone::before, .nav-bar__nav-phone::after {
-      border-bottom: 2px solid var(--color-light);
-      border-top: 2px solid var(--color-light);
-      background-color: transparent;
-      width: 3.6rem;
-      height: 1.8rem; }
-      @media only screen and (min-width: 40.6em) {
-        .nav-bar__nav-phone, .nav-bar__nav-phone::before, .nav-bar__nav-phone::after {
-          display: none; } }
     .nav-bar__nav-phone::after {
       content: "";
       position: absolute;
-      left: 0; }
-    .nav-bar__nav-phone::after {
-      content: "";
-      top: .56rem; }
-      @media only screen and (min-width: 34.4em) {
-        .nav-bar__nav-phone::after {
-          top: .65rem; } }
+      border-top: 2px solid var(--color-light);
+      width: 3.6rem;
+      left: 0;
+      top: 1.8rem; }
   .nav-bar__nav-phone-crossed {
-    opacity: 0;
+    display: none;
     position: relative;
-    top: -.6rem; }
-    .nav-bar__nav-phone-crossed, .nav-bar__nav-phone-crossed::before, .nav-bar__nav-phone-crossed::after {
+    bottom: .5rem; }
+    .nav-bar__nav-phone-crossed::before, .nav-bar__nav-phone-crossed::after {
       background-color: var(--color-light);
       width: 3.6rem;
       height: 2px; }
       @media only screen and (min-width: 40.6em) {
-        .nav-bar__nav-phone-crossed, .nav-bar__nav-phone-crossed::before, .nav-bar__nav-phone-crossed::after {
+        .nav-bar__nav-phone-crossed::before, .nav-bar__nav-phone-crossed::after {
           display: none; } }
     .nav-bar__nav-phone-crossed::before, .nav-bar__nav-phone-crossed::after {
       content: "";
@@ -838,7 +830,8 @@ input[type=checkbox] {
   z-index: 10;
   background-color: var(--color-dark-3);
   left: -100%;
-  padding-top: 7rem; }
+  padding-top: 7rem;
+  transition: all .2s; }
   @media only screen and (min-width: 40.6em) {
     .navigation-phone {
       display: none; } }
@@ -854,8 +847,10 @@ input[type=checkbox] {
     .navigation-phone__item:active, .navigation-phone__item:focus {
       background-color: var(--color-dark-2);
       color: var(--color-light); }
-  .navigation-phone__blog-item {
+  .navigation-phone__blog-box {
     display: none;
+    flex-direction: column; }
+  .navigation-phone__blog-item {
     color: var(--color-light-2);
     font-size: 1.2rem;
     letter-spacing: .1rem;
@@ -1142,7 +1137,11 @@ input[type=checkbox] {
     flex-direction: row; }
     @media only screen and (min-width: 40.6em) {
       .testimonials__container {
-        max-width: 80%; } }
+        max-width: 90%; } }
+  .testimonials__review-box {
+    display: none;
+    flex-direction: column;
+    margin: 0 auto; }
   .testimonials__review-text {
     text-align: center;
     position: relative;
@@ -1154,8 +1153,8 @@ input[type=checkbox] {
       left: 0;
       top: -15vh;
       font-size: 30rem;
-      color: var(--color-dark-3);
-      opacity: .2;
+      color: var(--color-dark);
+      opacity: .1;
       z-index: -1; }
   .testimonials__person {
     display: flex;
@@ -1192,6 +1191,9 @@ input[type=checkbox] {
   background-color: gray;
   margin-left: auto;
   margin-right: auto; }
+
+.active {
+  display: flex; }
 
 .blog-category {
   background: url("../img/category.png") no-repeat center center fixed;
@@ -1402,7 +1404,8 @@ input[type=checkbox] {
   .post-min__description-box {
     padding: 0 3rem;
     margin: 2rem 0;
-    overflow: hidden; }
+    overflow: hidden;
+    max-height: 15rem; }
     @media only screen and (max-width: 25em) {
       .post-min__description-box {
         padding: 0 3rem; } }
