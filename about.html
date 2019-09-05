@@ -27,7 +27,6 @@
                             <a href="category.html" class="nav-bar__navigation-blog-item">Generowanie leadów</a>
                         </ul>
                     <a href="about.html" class="nav-bar__navigation-item">O mnie</a> 
-                    <!-- <li class="nav-bar__navigation-item"><a href="#">Współpraca</a> </li>    -->
                     <a href="contact.html" class="nav-bar__navigation-item">Kontakt</a> 
                 </ul>
             </nav>
@@ -37,21 +36,16 @@
 
         <nav class="navigation-phone">
             <ul class="navigation-phone__list">
-                    <li class="navigation-phone__item" id="toggle-dropdown-mobile">Blog</li>
-
-                    <div class="navigation-phone__blog-box" id="dropdown-list-mobile">
-                        <a href="category.html" class="navigation-phone__blog-item">Omnichannel</a>
-                        <a href="category.html" class="navigation-phone__blog-item">E-commerce</a>
-                        <a href="category.html" class="navigation-phone__blog-item">Optymalizacja konwersji</a>
-                        <a href="category.html" class="navigation-phone__blog-item">Generowanie leadów</a>
-                    </div>
-                    
+                <li class="navigation-phone__item" id="toggle-dropdown-mobile">Blog</li>
+                <div class="navigation-phone__blog-box" id="dropdown-list-mobile">
+                    <a href="category.html" class="navigation-phone__blog-item">Omnichannel</a>
+                    <a href="category.html" class="navigation-phone__blog-item">E-commerce</a>
+                    <a href="category.html" class="navigation-phone__blog-item">Optymalizacja konwersji</a>
+                    <a href="category.html" class="navigation-phone__blog-item">Generowanie leadów</a>
+                </div>
                 <a href="about.html" class="navigation-phone__item">
                     <li>O mnie</li>
                 </a>
-                <!-- <a href="#" class="navigation-phone__item">
-                    <li>Współpraca</li>
-                </a> -->
                 <a href="contact.html" class="navigation-phone__item">
                     <li>Kontakt</li>
                 </a>
@@ -173,19 +167,30 @@
 
 <!-- ----- ASIDE ----- -->
 
-<aside class="aside margin-bottom-medium margin-top-medium">
-    <section class="aside__box">
-        <div class="aside__box-category">
-            <span class="newsletter__category">newsletter</span>
-            <h2 class="heading text-white aside__heading">Stay updated</h2>
-        </div>
-        <div class="newsletter__main">
-            <input type="email" class="newsletter__input" placeholder="Twój email" id="email" required>
-            <a href="ty-page.html" class="btn btn-cta newsletter__button">Subskrybuj <span class="newsletter__button-arrow">&roarr;</span></a>
-            
-        </div>
-    </section>
-</aside>
+    <aside class="aside margin-bottom-medium margin-top-medium">
+        <section class="aside__box">
+            <div class="aside__box-category">
+                <span class="newsletter__category">newsletter</span>
+                <h2 class="heading text-white aside__heading">Stay updated</h2>
+            </div>
+            <form action="ty-page.html" method="GET" class="newsletter__main">
+                <input type="email" class="newsletter__input" placeholder="Twój email" id="email" required>
+                <div class="disclaimer-newsletter">
+                    <div class="disclaimer">
+                        <div class="disclaimer__cb-column">
+                            <input type="checkbox" id="checkbox_1" class="disclaimer__checkbox" required> 
+                            <input type="checkbox" id="checkbox_2" class="disclaimer__checkbox" required> 
+                        </div>
+                        <div class="disclaimer__label-column">
+                            <label for="checkbox_1" class="disclaimer__checkbox-label">Wyrażam zgodę na przetwarzanie moich danych osobowych przez (nazwa firmy) w celu prowadzenia rekrutacji na aplikowane przeze mnie stanowisko.</label>
+                            <label for="checkbox_2" class="disclaimer__checkbox-label">Wyrażam zgodę na przetwarzanie moich danych osobowych przez (nazwa firmy) w celu prowadzenia rekrutacji na rzanie moich danych osobowych przez (nazwa firmy) w celu prowadzenia rekrutacji na apaplikowane przeze mnie stanowisko.</label>
+                        </div>
+                    </div>  
+                </div>
+                <button type="submit" class="btn btn-cta newsletter__button">Subskrybuj <span class="newsletter__button-arrow">&roarr;</span></button>
+            </form>
+        </section>
+    </aside>
     </main>
 
     <footer class="footer">
@@ -199,27 +204,24 @@
                 <div class="footer__map">
                     <a href="index.html" class="footer__map-item">Blog</a>
                         <ul class="footer__list">
-                            <li class="footer__list-item"> <a href="category.html" class="text-white">Omnichannel</a> </li>
-                            <li class="footer__list-item"> <a href="category.html" class="text-white">E-commerce</a> </li>
-                            <li class="footer__list-item"> <a href="category.html" class="text-white">Optymalizacja konwersji</a> </li>
-                            <li class="footer__list-item"> <a href="category.html" class="text-white">Generowanie leadów</a> </li>
+                            <li class="footer__list-item"> <a href="category.html">Omnichannel</a> </li>
+                            <li class="footer__list-item"> <a href="category.html">E-commerce</a> </li>
+                            <li class="footer__list-item"> <a href="category.html">Optymalizacja konwersji</a> </li>
+                            <li class="footer__list-item"> <a href="category.html">Generowanie leadów</a> </li>
                         </ul>
                     <a href="about.html" class="footer__map-item">O mnie</a>
-                    <!-- <a href="#" class="footer__map-item">Współpraca</a> -->
                     <a href="contact.html" class="footer__map-item">Kontakt</a>
                     <a href="policy.html" class="footer__map-item">Regulamin i polityka prywatności</a>
                 </div>
             </div>
             <div class="footer__contact-container">     
-                <h2 class="footer__contact-heading">Kamil Jakubczyk</h2>
+                <h2 class="footer__contact-heading">Jan Nowak</h2>
                 <div class="footer__contact">
                         <div class="footer__contact-icons">
                             <i class="fas fa-envelope-open-text contact-icon-email"></i>
-                            <!-- <i class="fas fa-mobile-alt fa-white contact-icon-mobile"></i> -->
                         </div>
                         <div class="footer__contact-links">
                             <a href="#" class="footer__contact-email-link">kontakt@jakpozyskacklienta.pl</a>
-                            <!-- <a href="#" class="footer__contact-mobile-link">+48 669 305 913</a> -->
                         </div>
                 </div>
                 <div class="footer__socials">
@@ -234,7 +236,6 @@
         </div>
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="index.js"></script>
     <script src="testimonials.js"></script>
 </body>
