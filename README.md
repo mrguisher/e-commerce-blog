@@ -4,7 +4,7 @@
 
 An e-commerce specialist blog site.
 
-app url: https://www.mateuszpeciak.pl/e-commerce-blogsite/
+app url: https://www.mateuszpeciak.pl/e-commerce-blogsite
 
 ## Table of contents
 * [General info](#general-info)
@@ -14,8 +14,9 @@ app url: https://www.mateuszpeciak.pl/e-commerce-blogsite/
 * [Launch](#launch)
 
 ## General info
-This website is designed with accordance to mobile-first approach and responsive to most common screen sizes.
+This website is designed with accordance to mobile-first approach and responsive to most common screen sizes. Contains subscribe and contact form validation.
 At the very beginning a mobile menu was created using jQuery. Later on I decided to transpile code to javascript ES6 standard.
+Development was more efficient with created npm scripts to start delevopment server and compile sass files.
 
 ## Screenshots
 ![mockup e-commerce blog](/mockup/mockup.png)
@@ -24,6 +25,7 @@ At the very beginning a mobile menu was created using jQuery. Later on I decided
 * JavaScript (ES6)
 * SCSS
 * BEM methodology
+* npm
 
 ## Features
 * mobile menu
@@ -33,4 +35,6 @@ At the very beginning a mobile menu was created using jQuery. Later on I decided
 
 ## Launch
 To run this project:  
-clone it, go to the project directory and run .html files
+clone it, go to the project directory and run:   
+`$ npm install`     
+`$ npm start`
