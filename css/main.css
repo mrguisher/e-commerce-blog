@@ -1468,3 +1468,6 @@ input[type=checkbox] {
     @media only screen and (min-width: 75em) {
       .ty-page__text {
         margin-top: 4rem; } }
+
+.policy {
+  min-height: 60vh; }
