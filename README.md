@@ -1,4 +1,4 @@
-# jakpozyskacklienta_pl
+# e-commerce blog
 
 ## Introduction 
 
