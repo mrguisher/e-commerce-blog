@@ -2,7 +2,7 @@
 
 ## Introduction 
 
-A e-commerce specialist blog site.
+An e-commerce specialist blog site.
 
 app url: https://www.mateuszpeciak.pl/e-commerce-blogsite/
 
@@ -11,13 +11,14 @@ app url: https://www.mateuszpeciak.pl/e-commerce-blogsite/
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
 * [Features](#features)
+* [Launch](#launch)
 
 ## General info
 This website is designed with accordance to mobile-first approach and responsive to most common screen sizes.
 At the very beginning a mobile menu was created using jQuery. Later on I decided to transpile code to javascript ES6 standard.
 
 ## Screenshots
-![mockup TURN TIMER](/mockup/mockup.png)
+![mockup e-commerce blog](/mockup/mockup.png)
 
 ## Technologies
 * JavaScript (ES6)
