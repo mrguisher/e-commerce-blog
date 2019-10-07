@@ -17,6 +17,7 @@ app url: https://www.mateuszpeciak.pl/e-commerce-blogsite
 This website is designed with accordance to mobile-first approach and responsive to most common screen sizes. Contains subscribe and contact form validation.
 At the very beginning a mobile menu was created using jQuery. Later on I decided to transpile code to javascript ES6 standard.
 Development was more efficient with created npm scripts to start delevopment server and compile sass files.
+Php files available at https://gitlab.com/mrguisher/e-commerce-blog-wp.
 
 ## Screenshots
 ![mockup e-commerce blog](/mockup/mockup.png)
